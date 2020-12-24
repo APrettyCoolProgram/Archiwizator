@@ -1,7 +1,7 @@
 ﻿<!--
     PROJECT: Archiwizator (https://github.com/aprettycoolprogram/Archiwizator)
     FILE: MainWindow.xaml
-    UPDATED: 12-24-2020-3:21 PM
+    UPDATED: 12-24-2020-4:54 PM
     LICENSE: Apache v2 (https://apache.org/licenses/LICENSE-2.0)
     Copyright 2020 A Pretty Cool Program All rights reserved
 -->
@@ -29,7 +29,6 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <!--  ROW 0  -->
-        <!--  Logo  -->
         <!--  ROW 1  -->
         <Border x:Name="CompressionLevelOptionsBorder"
                 Grid.Row="1"
@@ -50,7 +49,7 @@
                           VerticalAlignment="Top" />
             </WrapPanel>
         </Border>
-        <!--  ROW 2, COLUMNS 1-2  -->
+        <!--  ROW 2  -->
         <Border x:Name="FolderChoiceBorder"
                 Grid.Row="2"
                 Grid.ColumnSpan="2"
@@ -58,15 +57,12 @@
                 BorderThickness="0">
             <WrapPanel x:Name="FolderChoiceWrapPanel">
                 <Label x:Name="FolderChoiceLabel"
-                       Grid.Row="2"
                        Margin="10,10,0,0"
                        HorizontalAlignment="Left"
                        VerticalAlignment="Top"
                        Content="Folder"
                        FontWeight="Bold" />
                 <TextBox x:Name="FolderChoiceDisplay"
-                         Grid.Row="2"
-                         Grid.ColumnSpan="2"
                          Width="450"
                          Margin="10,12,10,10"
                          HorizontalAlignment="Left"
@@ -75,8 +71,6 @@
                          Text="TextBox"
                          TextWrapping="Wrap" />
                 <Button x:Name="FolderChoiceButton"
-                        Grid.Row="2"
-                        Grid.Column="1"
                         Width="24"
                         Height="24"
                         Margin="10,10,10,10"
@@ -85,12 +79,13 @@
                         Content="FC" />
             </WrapPanel>
         </Border>
-        <!--  ROW 3  -->
-        <Border Grid.Row="3"
+        <!--  ROW 3, COL 0  -->
+        <Border x:Name="OptionsLeftSideBorder"
+                Grid.Row="3"
                 Grid.Column="0"
                 Background="#ffebeb"
                 BorderThickness="0">
-            <WrapPanel Grid.Column="0">
+            <WrapPanel x:Name="OptionsLeftSideWrapPanel">
                 <Label x:Name="OptionsLabel"
                        Margin="10,0,0,0"
                        HorizontalAlignment="Left"
@@ -103,26 +98,24 @@
                           VerticalAlignment="Top"
                           Content="Delete original folder after creating archive" />
                 <CheckBox x:Name="PrependDateStampCheckBox"
-                          Grid.Row="3"
                           Margin="15,5,0,0"
                           HorizontalAlignment="Left"
                           VerticalAlignment="Top"
                           Content="Prepend YYMMDD" />
             </WrapPanel>
         </Border>
-        <Border Grid.Row="3"
+        <!--  ROW 3, COL 1  -->
+        <Border x:Name="OptionsRightSideBorder"
+                Grid.Row="3"
                 Grid.Column="1"
                 Background="#ffebeb">
-            <WrapPanel Grid.Column="1">
+            <WrapPanel x:Name="OptionsRightSideWrapPanel">
                 <CheckBox x:Name="DeleteSpecificFilesBeforeCompressingCheckBox"
-                          Grid.Row="3"
-                          Grid.Column="1"
                           Margin="0,25,0,0"
                           HorizontalAlignment="Left"
                           VerticalAlignment="Top"
                           Content="Delete specific files before compressing" />
-                <TextBox Grid.Row="3"
-                         Grid.Column="1"
+                <TextBox x:Name="SpecificFilesToDeleteBeforeCompressingTextBox"
                          Width="261"
                          Height="66"
                          Margin="20,5,0,0"
@@ -130,24 +123,29 @@
                          VerticalAlignment="Top"
                          Text="TextBox"
                          TextWrapping="Wrap" />
-                <CheckBox x:Name="DeleteSpecificFilesBeforeCompressingCheckBox_Copy"
-                          Margin="0,10"
+                <CheckBox x:Name="UncompressFilesBeforeCompressingCheckBox"
+                          Width="275"
+                          Margin="0,10,0,0"
                           HorizontalAlignment="Center"
                           VerticalAlignment="Top"
-                          Content="Uncompress files" />
-                <ComboBox Margin="5,5,0,5"
+                          Content="Uncompress files before compressing" />
+                <ComboBox x:Name="LevelsOfFilesToUncompressBeforeCompressingComboBox"
                           Width="50"
-                          Background="White"/>
-                <Label Content="levels deep"
-                       Margin="0,5"/>
+                          Height="25"
+                          Margin="30,0,0,0"
+                          Background="White" />
+                <Label x:Name="LevelsOfFilesToUncompressBeforeCompressingLabel"
+                       Margin="0,5"
+                       Content="levels deep" />
             </WrapPanel>
         </Border>
         <!--  ROW 4  -->
-        <Border x:Name="CompressAndUpdateUserBorder"
+        <Border x:Name="StartAndUpdateUserBorder"
                 Grid.Row="4"
                 Grid.ColumnSpan="2">
-            <WrapPanel x:Name="CompressAndUpdateUserWrapPanel">
-                <Button Width="100"
+            <WrapPanel x:Name="StartAndUpdateUserWrapPanel">
+                <Button x:Name="StartButton"
+                        Width="100"
                         Height="25"
                         Margin="10,10,0,0"
                         HorizontalAlignment="Left"
@@ -159,9 +157,10 @@
                         FontSize="14"
                         FontWeight="Normal"
                         Foreground="White" />
-                <Label Width="400"
+                <Label x:Name="UpdateUserLabel"
+                       Width="400"
                        Margin="10"
-                       Content="Label" />
+                       Content="Click START to begin." />
             </WrapPanel>
         </Border>
     </Grid>

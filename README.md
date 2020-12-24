@@ -24,7 +24,7 @@
 
 <h3 align="center">
 
-  <img src="resources/image/logo/archiwizator-red-none-gradient-transparent-575x150.png" alt="Archiwizator logo" width="142">
+  <img src="resources/image/logo/archiwizator-red-none-transparent-575x150.png" alt="Archiwizator logo" width="575">
   <br>
   An archiving utility.
   <br>

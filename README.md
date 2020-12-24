@@ -3,30 +3,11 @@
   https://github.com/APrettyCoolProgram/my-development-environment/tree/master/templates/github/sourcecode-repository
 -->
 
-***
-
-<h3 align="center">
-
-  THIS REPOSITORY HAS BEEN ARCHIVED<br>
-  THIS REPOSITORY HAS BEEN DEPRECIATED<br>
-  THIS IS ALPHA/BETA SOFTWARE
-
-</h3>
-
-<h4 align="center">
-
-  Development is continuing at [repository-name](URL).<br>
-  Use at your own risk
-
-</h4>
-
-***
-
 <h3 align="center">
 
   <img src="resources/image/logo/archiwizator-red-none-transparent-boxed-575x150.png" alt="Archiwizator logo" width="575">
   <br>
-  An archiving utility.
+  An archive utility.
   <br>
 
 </h3>

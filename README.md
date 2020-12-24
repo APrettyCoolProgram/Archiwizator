@@ -7,14 +7,14 @@
 
   <img src="resources/image/logo/archiwizator-red-none-transparent-boxed-575x150.png" alt="Archiwizator logo" width="575">
   <br>
-  An archive utility.
+  An archive utility
   <br>
 
 </h3>
 
 <h2 align="center">
 
-  <img src="https://img.shields.io/badge/status-active-brightgreen.svg">&nbsp;[![License](https://img.shields.io/github/license/aprettycoolprogram/repository-template)](https://www.apache.org/licenses/LICENSE-2.0)&nbsp;![GitHub release](https://img.shields.io/github/release/aprettycoolprogram/repository-template?label=latest%20release)
+  <img src="https://img.shields.io/badge/status-active-brightgreen.svg">&nbsp;[![License](https://img.shields.io/github/license/aprettycoolprogram/Archiwizator)](https://www.apache.org/licenses/LICENSE-2.0)&nbsp;![GitHub release](https://img.shields.io/github/release/aprettycoolprogram/Archiwizator?label=latest%20release)
   <br>
 
 </h2>

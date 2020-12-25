@@ -1,7 +1,7 @@
 ﻿<!--
     PROJECT: Archiwizator (https://github.com/aprettycoolprogram/Archiwizator)
     FILE: MainWindow.xaml
-    UPDATED: 12-24-2020-4:54 PM
+    UPDATED: 12-25-2020-9:27 AM
     LICENSE: Apache v2 (https://apache.org/licenses/LICENSE-2.0)
     Copyright 2020 A Pretty Cool Program All rights reserved
 -->
@@ -23,37 +23,102 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="75" />
+            <RowDefinition Height="250" />
             <RowDefinition Height="50" />
-            <RowDefinition Height="50" />
-            <RowDefinition Height="200" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <!--  ROW 0  -->
-        <!--  ROW 1  -->
-        <Border x:Name="brdrCompressionLevel"
-                Grid.Row="1"
+
+        <Border x:Name="brdrLogo"
+                Grid.Row="0"
                 Grid.ColumnSpan="2"
-                Background="#ffebeb"
-                BorderThickness="0">
-            <WrapPanel x:Name="wpnlCompressionLevelOptions">
+                BorderThickness="0" />
+
+        <Border x:Name="brdrArchiwizatorOptions"
+                Grid.Row="1"
+                Grid.Column="0"
+                Width="290"
+                BorderBrush="Black"
+                BorderThickness="1">
+            <WrapPanel x:Name="wpnlArchiwizatorOptions">
+                <Label x:Name="lblArchiwizatorOptions"
+                       Width="280"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       HorizontalContentAlignment="Center"
+                       Content="ARCHIWIZATOR OPTIONS"
+                       FontWeight="Bold" />
+                <CheckBox x:Name="ckbxPrependDateStamp"
+                          Width="250"
+                          Margin="15,10,0,0"
+                          HorizontalAlignment="Left"
+                          VerticalAlignment="Top"
+                          Content="Prepend YYMMDD datestamp"
+                          IsChecked="False" />
+                <CheckBox x:Name="ckbxUncompressFilesBeforeCompressing"
+                          Width="250"
+                          Margin="15,10,0,0"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Top"
+                          Content="Uncompress files before compressing"
+                          IsChecked="False" />
+                <CheckBox x:Name="ckbxDeleteDirectoriesBeforeCompressing"
+                          Width="250"
+                          Margin="15,10,0,0"
+                          HorizontalAlignment="Left"
+                          VerticalAlignment="Top"
+                          Checked="ckbxDeleteDirectoriesBeforeCompressing_Checked"
+                          Content="Delete directories before compressing"
+                          IsChecked="False" />
+                <TextBox x:Name="txbxSpecificDirectoriesToDeleteBeforeCompressing"
+                         Width="240"
+                         Height="18"
+                         Margin="35,5,0,0"
+                         VerticalAlignment="Top"
+                         IsEnabled="False"
+                         Text=""
+                         TextWrapping="Wrap" />
+
+            </WrapPanel>
+        </Border>
+
+        <Border x:Name="brdrSevenZipOptions"
+                Grid.Row="1"
+                Grid.Column="1"
+                Width="290"
+                BorderBrush="Black"
+                BorderThickness="1">
+            <WrapPanel x:Name="wpnlSevenZipOptions">
+                <Label x:Name="lblSevenZipOptions"
+                       Width="280"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       HorizontalContentAlignment="Center"
+                       Content="7-ZIP OPTIONS"
+                       FontWeight="Bold" />
                 <Label x:Name="lblCompressionLevelDropdown"
                        Margin="10,10,0,0"
                        HorizontalAlignment="Left"
                        VerticalAlignment="Top"
-                       Content="Compression level"
-                       FontWeight="Bold" />
+                       Content="Compression level" />
                 <ComboBox x:Name="cmbxCompressionLevel"
                           Width="150"
                           Margin="10,12,10,10"
                           HorizontalAlignment="Left"
                           VerticalAlignment="Top" />
+                <CheckBox x:Name="ckbxDeleteSourceAftercompressing"
+                          Width="250"
+                          Margin="15,0,0,0"
+                          HorizontalAlignment="Left"
+                          VerticalAlignment="Top"
+                          Content="Delete source after compressing"
+                          IsChecked="False" />
             </WrapPanel>
         </Border>
-        <!--  ROW 2  -->
+
         <Border x:Name="brdrFolderChoice"
                 Grid.Row="2"
                 Grid.ColumnSpan="2"
-                Background="#ffebeb"
+                Width="596"
                 BorderThickness="0">
             <WrapPanel x:Name="wpnlFolderChoice">
                 <Label x:Name="lblFolderChoice"
@@ -68,6 +133,7 @@
                          HorizontalAlignment="Left"
                          VerticalAlignment="Top"
                          FontSize="14"
+                         Text=""
                          TextChanged="txbxFolderChoice_TextChanged"
                          TextWrapping="Wrap" />
                 <Button x:Name="btnFolderChoice"
@@ -80,67 +146,7 @@
                         Content="FC" />
             </WrapPanel>
         </Border>
-        <!--  ROW 3, COL 0  -->
-        <Border x:Name="brdrOptionsLeftSide"
-                Grid.Row="3"
-                Grid.Column="0"
-                Background="#ffebeb"
-                BorderThickness="0">
-            <WrapPanel x:Name="wpnlOptionsLeftSide">
-                <Label x:Name="lblOptions"
-                       Margin="10,0,0,0"
-                       HorizontalAlignment="Left"
-                       VerticalAlignment="Top"
-                       Content="Options"
-                       FontWeight="Bold" />
-                <CheckBox x:Name="ckbxDeleteOriginalFolder"
-                          Margin="15,0,0,0"
-                          HorizontalAlignment="Left"
-                          VerticalAlignment="Top"
-                          Content="Delete original folder after creating archive" />
-                <CheckBox x:Name="ckbxPrependDateStamp"
-                          Margin="15,5,0,0"
-                          HorizontalAlignment="Left"
-                          VerticalAlignment="Top"
-                          Content="Prepend YYMMDD" />
-            </WrapPanel>
-        </Border>
-        <!--  ROW 3, COL 1  -->
-        <Border x:Name="brdrOptionsRightSide"
-                Grid.Row="3"
-                Grid.Column="1"
-                Background="#ffebeb">
-            <WrapPanel x:Name="wpnlOptionsRightSide">
-                <CheckBox x:Name="ckbxDeleteSpecificDirectoriesBeforeCompressing"
-                          Margin="0,25,0,0"
-                          HorizontalAlignment="Left"
-                          VerticalAlignment="Top"
-                          Content="Delete specific directories before compressing" />
-                <TextBox x:Name="txbxSpecificDirectoriesToDeleteBeforeCompressing"
-                         Width="261"
-                         Height="66"
-                         Margin="20,5,0,0"
-                         HorizontalAlignment="Left"
-                         VerticalAlignment="Top"
-                         Text="TextBox"
-                         TextWrapping="Wrap" />
-                <CheckBox x:Name="ckbxUncompressFilesBeforeCompressing"
-                          Width="275"
-                          Margin="0,10,0,0"
-                          HorizontalAlignment="Center"
-                          VerticalAlignment="Top"
-                          Content="Uncompress files before compressing" />
-                <ComboBox x:Name="cmbxLevelsOfFilesToUncompressBeforeCompressing"
-                          Width="50"
-                          Height="25"
-                          Margin="30,0,0,0"
-                          Background="White" />
-                <Label x:Name="lblLevelsOfFilesToUncompressBeforeCompressing"
-                       Margin="0,5"
-                       Content="levels deep" />
-            </WrapPanel>
-        </Border>
-        <!--  ROW 4  -->
+
         <Border x:Name="brdrStartAndUpdateUser"
                 Grid.Row="4"
                 Grid.ColumnSpan="2">
@@ -154,14 +160,16 @@
                         Background="#990000"
                         BorderBrush="Black"
                         BorderThickness="1"
+                        Click="btnStart_Click"
                         Content="START"
                         FontSize="14"
                         FontWeight="Normal"
-                        Foreground="White" Click="btnStart_Click" />
+                        Foreground="White"
+                        IsEnabled="false" />
                 <Label x:Name="lblUpdateUser"
                        Width="400"
                        Margin="10"
-                       Content="Click START to begin." />
+                       Content="" />
             </WrapPanel>
         </Border>
     </Grid>

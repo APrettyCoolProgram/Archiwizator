@@ -1,6 +1,6 @@
 ﻿/* PROJECT: Archiwizator (https://github.com/aprettycoolprogram/Archiwizator)
  *    FILE: Archiwizator.MainWindow.xaml.cs
- * UPDATED: 12-24-2020-1:30 PM
+ * UPDATED: 12-25-2020-9:27 AM
  * LICENSE: Apache v2 (https://apache.org/licenses/LICENSE-2.0)
  *          Copyright 2020 A Pretty Cool Program All rights reserved
  */
@@ -17,17 +17,14 @@ namespace Archiwizator
         {
             InitializeComponent();
 
-            Setup();
+            SetCompressionLevelOptions();
         }
 
-        public void Setup()
+        /// <summary>Setup the compression level options.</summary>
+        /// <remarks>These options mirror the options available in 7-Zip.</remarks>
+        private void SetCompressionLevelOptions()
         {
-            SetupControls();
-        }
-
-        private void SetupControls()
-        {
-            // Compression level options.
+            // TODO: This should eventually be moved to the .xaml file.
             cmbxCompressionLevel.Items.Add("Store");
             cmbxCompressionLevel.Items.Add("Fastest");
             cmbxCompressionLevel.Items.Add("Fast");
@@ -35,33 +32,16 @@ namespace Archiwizator
             cmbxCompressionLevel.Items.Add("Maximum");
             cmbxCompressionLevel.Items.Add("Ultra");
             cmbxCompressionLevel.SelectedIndex = 3;
-
-            // Folder choice.
-            txbxFolderChoice.Text = "";
-
-            // Delete original folder options.
-            ckbxDeleteOriginalFolder.IsEnabled = false;
-            ckbxDeleteOriginalFolder.IsChecked = false;
-
-            // Prepend date stamp options.
-            ckbxPrependDateStamp.IsChecked = false;
-
-            // Delete specific files options.
-            //ckbxDeleteSpecificFilesBeforeCompressing.IsEnabled = false;
-            ckbxDeleteSpecificDirectoriesBeforeCompressing.IsChecked = false;
-            txbxSpecificDirectoriesToDeleteBeforeCompressing.Text = "!Temp";
-
-            // Uncompress before compressing options.
-            //ckbxUncompressFilesBeforeCompressing.IsEnabled = false;
-            ckbxUncompressFilesBeforeCompressing.IsChecked = false;
-            cmbxLevelsOfFilesToUncompressBeforeCompressing.Items.Add("1");
-            cmbxLevelsOfFilesToUncompressBeforeCompressing.Items.Add("2");
-            cmbxLevelsOfFilesToUncompressBeforeCompressing.Items.Add("3");
-
-            // Start button.
-            btnStart.IsEnabled = false;
         }
 
+        /// <summary>Enables/disables the txbxSpecificDirectoriesToDeleteBeforeCompressing control.</summary>
+        private void ModifyTxbxSpecificDirectoriesToDeleteBeforeCompressingState()
+        {
+            txbxSpecificDirectoriesToDeleteBeforeCompressing.IsEnabled = (bool)ckbxDeleteDirectoriesBeforeCompressing.IsChecked;
+
+        }
+
+        /// <summary>Enables/disables the btnStart control.</summary>
         private void ModifyStartButtonState()
         {
             if(txbxFolderChoice.Text != "")
@@ -70,6 +50,7 @@ namespace Archiwizator
             }
         }
 
+        /// <summary>Prompts the user to choose a folder.</summary>
         private void ChooseFolder()
         {
             txbxFolderChoice.Text = DuFolderDialog.GetFolderPath();
@@ -77,12 +58,35 @@ namespace Archiwizator
 
         private void Start()
         {
-            SevenZip.Create(txbxFolderChoice.Text, (string)cmbxCompressionLevel.SelectedItem, lblUpdateUser, (bool)ckbxDeleteOriginalFolder.IsChecked, (bool)ckbxPrependDateStamp.IsChecked, (bool)ckbxDeleteSpecificDirectoriesBeforeCompressing.IsChecked, txbxSpecificDirectoriesToDeleteBeforeCompressing.Text, (bool)ckbxUncompressFilesBeforeCompressing.IsChecked);
+            var sz = new DuSevenZip()
+            {
+                ArchiwizatorArgs = new DuSevenZip.ArchiwizatorArguments()
+                {
+                    PostfixDateStamp                      = (bool)ckbxPrependDateStamp.IsChecked,
+                    RemoveDirectoriesPriorToCompression   = (bool)ckbxDeleteDirectoriesBeforeCompressing.IsChecked,
+                    DirectoriesToRemovePriorToCompression = txbxSpecificDirectoriesToDeleteBeforeCompressing.Text,
+                    UncompressPriorToCompression          = (bool)ckbxUncompressFilesBeforeCompressing.IsChecked
+                },
+                SevenZipArgs = new DuSevenZip.SevenZipArguments()
+                {
+                    Action                      = "a",
+                    SourcePath                  = txbxFolderChoice.Text,
+                    DestinationPath             = "",
+                    CompressionLevel            = (string)cmbxCompressionLevel.SelectedItem,
+                    DeleteFilesAfterCompression = true
+                }
+            };
+
+            //DuSevenZip.Compress(sz);
+
+            SevenZip.Create(sz);
         }
 
         // EVENT HANDLERS
         private void btnFolderChoice_Click(object sender, RoutedEventArgs e) => ChooseFolder();
         private void txbxFolderChoice_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e) => ModifyStartButtonState();
         private void btnStart_Click(object sender, RoutedEventArgs e) => Start();
+        private void ckbxDeleteDirectoriesBeforeCompressing_Checked(object sender, RoutedEventArgs e) => ModifyTxbxSpecificDirectoriesToDeleteBeforeCompressingState();
+
     }
 }

@@ -6,7 +6,6 @@
  */
 
 using System;
-using System.IO;
 using System.Windows.Controls;
 using System.Windows.Threading;
 using Du;
@@ -33,19 +32,19 @@ namespace Archiwizator
         /// <param name="compressLevel">The compression level.</param>
         /// <param name="lblProgress">The progress indicator</param>
         /// <param name="deleteOriginalFolder">Determines if the original folder should be deleted after archiving.</param>
-        public static void Create(DuSevenZip sz)
+        public static void Create(DuArchiwizator az, DuSevenZip sz)
         {
-            var subDirectories = DuDirectory.GetSubDirectoryNames(sz.SevenZipArgs.SourcePath);
+            //var subDirectories = DuDirectory.GetSubDirectoryNames(sz.SourcePath);
 
-            var numberOfSubDirectories = subDirectories.Count;
-            var currSubDirectoryCount = 1;
+            //var numberOfSubDirectories = subDirectories.Count;
+            //var currSubDirectoryCount = 1;
 
-            foreach(var subDirectory in subDirectories)
-            {
-                var cmd = DuSevenZip.BuildSevenZipCommand(sz);
+            //foreach(var subDirectory in subDirectories)
+            //{
+            //    var cmd = DuSevenZip.BuildSevenZipCommand(sz);
 
 
-            }
+            //}
 
 
 

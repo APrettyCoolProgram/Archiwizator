@@ -58,28 +58,27 @@ namespace Archiwizator
 
         private void Start()
         {
+            var az = new DuArchiwizator()
+            {
+                SourcePath                            = txbxFolderChoice.Text,
+                PostfixDateStamp                      = (bool)ckbxPrependDateStamp.IsChecked,
+                RemoveDirectoriesPriorToCompression   = (bool)ckbxDeleteDirectoriesBeforeCompressing.IsChecked,
+                DirectoriesToRemovePriorToCompression = txbxSpecificDirectoriesToDeleteBeforeCompressing.Text,
+                UncompressPriorToCompression          = (bool)ckbxUncompressFilesBeforeCompressing.IsChecked
+            };
+
             var sz = new DuSevenZip()
             {
-                ArchiwizatorArgs = new DuSevenZip.ArchiwizatorArguments()
-                {
-                    PostfixDateStamp                      = (bool)ckbxPrependDateStamp.IsChecked,
-                    RemoveDirectoriesPriorToCompression   = (bool)ckbxDeleteDirectoriesBeforeCompressing.IsChecked,
-                    DirectoriesToRemovePriorToCompression = txbxSpecificDirectoriesToDeleteBeforeCompressing.Text,
-                    UncompressPriorToCompression          = (bool)ckbxUncompressFilesBeforeCompressing.IsChecked
-                },
-                SevenZipArgs = new DuSevenZip.SevenZipArguments()
-                {
-                    Action                      = "a",
-                    SourcePath                  = txbxFolderChoice.Text,
-                    DestinationPath             = "",
-                    CompressionLevel            = (string)cmbxCompressionLevel.SelectedItem,
-                    DeleteFilesAfterCompression = true
-                }
+                Action                      = "a",
+                SourcePath                  = az.SourcePath,
+                DestinationPath             = az.SourcePath,
+                CompressionLevel            = (string)cmbxCompressionLevel.SelectedItem,
+                DeleteFilesAfterCompression = true
             };
 
             //DuSevenZip.Compress(sz);
 
-            SevenZip.Create(sz);
+            DuArchiwizator.Create(az, sz);
         }
 
         // EVENT HANDLERS

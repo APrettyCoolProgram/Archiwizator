@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Windows.Controls;
 using System.Windows.Threading;
 using Du;
@@ -26,7 +27,7 @@ namespace Archiwizator
         /// <param name="compressLevel">The compression level.</param>
         /// <param name="lblProgress">The progress indicator</param>
         /// <param name="deleteOriginalFolder">Determines if the original folder should be deleted after archiving.</param>
-        public static void Create(string folderPath, string compressLevel, Label lblProgress, bool deleteOriginalFolder, bool prependDateStamp, string directoriesToDelete)
+        public static void Create(string folderPath, string compressLevel, Label lblProgress, bool deleteOriginalFolder, bool prependDateStamp, bool deleteSpecificDirectories, string directoriesToDelete, bool uncompressFilesBeforeCompressing)
         {
             var subDirectories= DuDirectory.GetSubDirectoryNames(folderPath);
 
@@ -47,12 +48,50 @@ namespace Archiwizator
             var numberOfSubDirectories = subDirectories.Count;
             var currSubDirectoryCount = 1;
 
-            var dirsToDelete = DuString.SplitAtDelimiter(directoriesToDelete, ',');
+            var dirsToDelete = DuString.ToListAtDelimiter(directoriesToDelete, ',');
 
             foreach(var subDirectory in subDirectories)
             {
                 var sourceDirectory = $"{folderPath}{subDirectory}\\";
                 var archiveFilePath = "";
+
+                if(deleteSpecificDirectories)
+                {
+                    var subSubDirectories = DuDirectory.GetSubDirectoryNames(sourceDirectory);
+
+                    foreach(var subsub in subSubDirectories)
+                    {
+                        if(directoriesToDelete.Contains(subsub))
+                        {
+                            DuDirectory.Delete($"{sourceDirectory}{subsub}\\");
+                        }
+                    }
+                }
+
+                if(uncompressFilesBeforeCompressing)
+                {
+                    var files = DuDirectory.GetFileNames(sourceDirectory);
+
+                    foreach(var file in files)
+                    {
+                        var fileExtension = file.Extension.ToLower();
+
+
+
+
+                        if(fileExtension == ".zip")
+                        {
+                            var fi = Path.GetFileNameWithoutExtension(file.FullName);
+
+                            archiveFilePath = $"{file.FullName}";
+                            var extractCommand = $"x {archiveFilePath} -o{sourceDirectory}{fi}";
+                            DuCompression.SevenZip.ExtractToDirectory(sevenZipExecutablePath, archiveFilePath, extractCommand);
+                        }
+
+
+
+                    }
+                }
 
                 if(prependDateStamp)
                 {
@@ -65,7 +104,7 @@ namespace Archiwizator
                     archiveFilePath = $"{folderPath}{subDirectory}.7z";
                 }
 
-                var command = $"a -t7z {compressionLevel} \"{archiveFilePath}\" \"{sourceDirectory}*\"";
+                var command = $"a {compressionLevel} \"{archiveFilePath}\" \"{sourceDirectory}*\"";
 
                 lblProgress.Content = $"PROGRESS: File {currSubDirectoryCount} of {numberOfSubDirectories}: {subDirectory}";
                 Refresh(lblProgress);

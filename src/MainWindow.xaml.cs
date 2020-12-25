@@ -49,10 +49,10 @@ namespace Archiwizator
             // Delete specific files options.
             //ckbxDeleteSpecificFilesBeforeCompressing.IsEnabled = false;
             ckbxDeleteSpecificDirectoriesBeforeCompressing.IsChecked = false;
-            txbxSpecificDirectoriesToDeleteBeforeCompressing.Text    = "*temp*, *Temp*";
+            txbxSpecificDirectoriesToDeleteBeforeCompressing.Text = "!Temp";
 
             // Uncompress before compressing options.
-            ckbxUncompressFilesBeforeCompressing.IsEnabled = false;
+            //ckbxUncompressFilesBeforeCompressing.IsEnabled = false;
             ckbxUncompressFilesBeforeCompressing.IsChecked = false;
             cmbxLevelsOfFilesToUncompressBeforeCompressing.Items.Add("1");
             cmbxLevelsOfFilesToUncompressBeforeCompressing.Items.Add("2");
@@ -77,7 +77,7 @@ namespace Archiwizator
 
         private void Start()
         {
-            SevenZip.Create(txbxFolderChoice.Text, (string)cmbxCompressionLevel.SelectedItem, lblUpdateUser, (bool)ckbxDeleteOriginalFolder.IsChecked, (bool)ckbxPrependDateStamp.IsChecked, txbxSpecificDirectoriesToDeleteBeforeCompressing.Text);
+            SevenZip.Create(txbxFolderChoice.Text, (string)cmbxCompressionLevel.SelectedItem, lblUpdateUser, (bool)ckbxDeleteOriginalFolder.IsChecked, (bool)ckbxPrependDateStamp.IsChecked, (bool)ckbxDeleteSpecificDirectoriesBeforeCompressing.IsChecked, txbxSpecificDirectoriesToDeleteBeforeCompressing.Text, (bool)ckbxUncompressFilesBeforeCompressing.IsChecked);
         }
 
         // EVENT HANDLERS

@@ -73,7 +73,7 @@ namespace Archiwizator
                 SourcePath                  = az.SourcePath,
                 DestinationPath             = az.SourcePath,
                 CompressionLevel            = (string)cmbxCompressionLevel.SelectedItem,
-                DeleteFilesAfterCompression = true
+                DeleteFilesAfterCompression = (bool)ckbxDeleteSourceAfterCompressing.IsChecked
             };
 
             //DuSevenZip.Compress(sz);

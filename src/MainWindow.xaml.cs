@@ -1,6 +1,6 @@
 ﻿/* PROJECT: Archiwizator (https://github.com/aprettycoolprogram/Archiwizator)
  *    FILE: Archiwizator.MainWindow.xaml.cs
- * UPDATED: 12-25-2020-9:27 AM
+ * UPDATED: 12-26-2020-3:41 PM
  * LICENSE: Apache v2 (https://apache.org/licenses/LICENSE-2.0)
  *          Copyright 2020 A Pretty Cool Program All rights reserved
  */
@@ -38,7 +38,6 @@ namespace Archiwizator
         private void ModifyTxbxSpecificDirectoriesToDeleteBeforeCompressingState()
         {
             txbxSpecificDirectoriesToDeleteBeforeCompressing.IsEnabled = (bool)ckbxDeleteDirectoriesBeforeCompressing.IsChecked;
-
         }
 
         /// <summary>Enables/disables the btnStart control.</summary>
@@ -76,16 +75,13 @@ namespace Archiwizator
                 DeleteFilesAfterCompression = (bool)ckbxDeleteSourceAfterCompressing.IsChecked
             };
 
-            //DuSevenZip.Compress(sz);
-
-            DuArchiwizator.Create(az, sz);
+            DuArchiwizator.Create(az, sz, lblProgressOverview, lblProgressDetails);
         }
 
         // EVENT HANDLERS
-        private void btnFolderChoice_Click(object sender, RoutedEventArgs e) => ChooseFolder();
+        private void btnFolderChoice_Click(object sender, RoutedEventArgs e)                                     => ChooseFolder();
         private void txbxFolderChoice_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e) => ModifyStartButtonState();
-        private void btnStart_Click(object sender, RoutedEventArgs e) => Start();
-        private void ckbxDeleteDirectoriesBeforeCompressing_Checked(object sender, RoutedEventArgs e) => ModifyTxbxSpecificDirectoriesToDeleteBeforeCompressingState();
-
+        private void btnStart_Click(object sender, RoutedEventArgs e)                                            => Start();
+        private void ckbxDeleteDirectoriesBeforeCompressing_Checked(object sender, RoutedEventArgs e)            => ModifyTxbxSpecificDirectoriesToDeleteBeforeCompressingState();
     }
 }

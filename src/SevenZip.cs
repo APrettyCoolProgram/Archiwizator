@@ -34,22 +34,6 @@ namespace Archiwizator
         /// <param name="deleteOriginalFolder">Determines if the original folder should be deleted after archiving.</param>
         public static void Create(DuArchiwizator az, DuSevenZip sz)
         {
-            //var subDirectories = DuDirectory.GetSubDirectoryNames(sz.SourcePath);
-
-            //var numberOfSubDirectories = subDirectories.Count;
-            //var currSubDirectoryCount = 1;
-
-            //foreach(var subDirectory in subDirectories)
-            //{
-            //    var cmd = DuSevenZip.BuildSevenZipCommand(sz);
-
-
-            //}
-
-
-
-
-
 
 
 

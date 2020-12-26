@@ -1,7 +1,7 @@
 ﻿<!--
     PROJECT: Archiwizator (https://github.com/aprettycoolprogram/Archiwizator)
     FILE: MainWindow.xaml
-    UPDATED: 12-25-2020-9:27 AM
+    UPDATED: 12-26-2020-3:41 PM
     LICENSE: Apache v2 (https://apache.org/licenses/LICENSE-2.0)
     Copyright 2020 A Pretty Cool Program All rights reserved
 -->
@@ -166,10 +166,14 @@
                         FontWeight="Normal"
                         Foreground="White"
                         IsEnabled="false" />
-                <Label x:Name="lblUpdateUser"
+                <Label x:Name="lblProgressOverview"
                        Width="400"
-                       Margin="10"
+                       Margin="10,10,0,0"
                        Content="" />
+                <Label x:Name="lblProgressDetails"
+                       Width="400"
+                       Margin="120,0,0,0"
+                       Content="eee" FontSize="8" />
             </WrapPanel>
         </Border>
     </Grid>

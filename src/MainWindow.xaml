@@ -1,7 +1,7 @@
 ﻿<!--
     PROJECT: Archiwizator (https://github.com/aprettycoolprogram/Archiwizator)
     FILE: MainWindow.xaml
-    UPDATED: 12-28-2020-11:12 AM
+    UPDATED: 12-28-2020-12:17 PM
     LICENSE: Apache v2 (https://apache.org/licenses/LICENSE-2.0)
     Copyright 2020 A Pretty Cool Program All rights reserved
 -->
@@ -28,16 +28,15 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Border x:Name="brdrLogo"
+        <Border x:Name="brdrArchiwizatorLogo"
                 Grid.Row="0"
                 Grid.ColumnSpan="2"
                 BorderThickness="0">
-            <Image x:Name="imgLogo"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
+            <Image x:Name="imgArchiwizatorLogo"
+                   Width="575"
                    Height="150"
-                   Width="575">
-            </Image>
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" />
         </Border>
         <Border x:Name="brdrArchiwizatorOptions"
                 Grid.Row="1"
@@ -177,8 +176,8 @@
                        Margin="10,10,0,0"
                        Content="" />
                 <Label x:Name="lblProgressDetails"
-                       Width="400"
-                       Margin="120,0,0,0"
+                       Width="575"
+                       Margin="10,10,0,0"
                        Content="eee"
                        FontSize="8" />
             </WrapPanel>

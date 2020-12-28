@@ -1,12 +1,13 @@
 ﻿/* PROJECT: Archiwizator (https://github.com/aprettycoolprogram/Archiwizator)
  *    FILE: Archiwizator.MainWindow.xaml.cs
- * UPDATED: 12-28-2020-11:20 AM
+ * UPDATED: 12-28-2020-12:19 PM
  * LICENSE: Apache v2 (https://apache.org/licenses/LICENSE-2.0)
  *          Copyright 2020 A Pretty Cool Program All rights reserved
  */
 
 using System.IO;
 using System.Windows;
+using System.Windows.Media.Imaging;
 using Du;
 
 namespace Archiwizator
@@ -18,19 +19,17 @@ namespace Archiwizator
             InitializeComponent();
 
             SetLogo();
-
             SetCompressionLevelOptions();
         }
 
+        /// <summary>Setup the Archiwizator logo.</summary>
         public void SetLogo()
         {
-            var ass = System.Reflection.Assembly.GetExecutingAssembly().GetName().Name;
-            var ass2 = ass.ToString();
-            var bm = DuBitmap.FromUri(ass, "./Resources/Asset/Image/Logo/archiwizator-575x150.png");
-            imgLogo.Source = bm;
+            var assemblyName           = System.Reflection.Assembly.GetExecutingAssembly().GetName().Name;
+            BitmapImage bitmapLogo     = DuBitmap.FromUri(assemblyName, "./Resources/Asset/Image/Logo/archiwizator-575x150.png");
+            imgArchiwizatorLogo.Source = bitmapLogo;
 
         }
-
 
         /// <summary>Setup the compression level options.</summary>
         /// <remarks>These options mirror the options available in 7-Zip.</remarks>
@@ -67,9 +66,10 @@ namespace Archiwizator
             txbxFolderChoice.Text = DuFolderDialog.GetFolderPath();
         }
 
+        /// <summary>Start Archiwizator.</summary>
         private void Start()
         {
-            var az = new DuArchiwizator()
+            var archiwizator = new DuArchiwizator()
             {
                 SourcePath                            = txbxFolderChoice.Text,
                 PostfixDateStamp                      = (bool)ckbxPrependDateStamp.IsChecked,
@@ -78,22 +78,22 @@ namespace Archiwizator
                 UncompressPriorToCompression          = (bool)ckbxUncompressFilesBeforeCompressing.IsChecked
             };
 
-            var sz = new DuSevenZip()
+            var sevenZip = new DuSevenZip()
             {
                 Action                      = "a",
-                SourcePath                  = az.SourcePath,
-                DestinationPath             = az.SourcePath,
+                SourcePath                  = archiwizator.SourcePath,
+                DestinationPath             = archiwizator.SourcePath,
                 CompressionLevel            = (string)cmbxCompressionLevel.SelectedItem,
                 DeleteFilesAfterCompression = (bool)ckbxDeleteSourceAfterCompressing.IsChecked
             };
 
-            DuArchiwizator.Create(az, sz, lblProgressOverview, lblProgressDetails);
+            DuArchiwizator.Create(archiwizator, sevenZip, lblProgressOverview, lblProgressDetails);
         }
 
         // EVENT HANDLERS
-        private void btnFolderChoice_Click(object sender, RoutedEventArgs e)                                     => ChooseFolder();
+        private void btnFolderChoice_Click(object sender, RoutedEventArgs e) => ChooseFolder();
         private void txbxFolderChoice_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e) => ModifyStartButtonState();
-        private void btnStart_Click(object sender, RoutedEventArgs e)                                            => Start();
-        private void ckbxDeleteDirectoriesBeforeCompressing_Checked(object sender, RoutedEventArgs e)            => ModifyTxbxSpecificDirectoriesToDeleteBeforeCompressingState();
+        private void btnStart_Click(object sender, RoutedEventArgs e) => Start();
+        private void ckbxDeleteDirectoriesBeforeCompressing_Checked(object sender, RoutedEventArgs e) => ModifyTxbxSpecificDirectoriesToDeleteBeforeCompressingState();
     }
 }

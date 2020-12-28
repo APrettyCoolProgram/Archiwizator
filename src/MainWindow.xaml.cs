@@ -48,7 +48,7 @@ namespace Archiwizator
         /// <summary>Enables/disables the txbxSpecificDirectoriesToDeleteBeforeCompressing control.</summary>
         private void ModifyTxbxSpecificDirectoriesToDeleteBeforeCompressingState()
         {
-            txbxSpecificDirectoriesToDeleteBeforeCompressing.IsEnabled = (bool)ckbxDeleteDirectoriesBeforeCompressing.IsChecked;
+            txbxRemoveDirectoriesThatStartWith.IsEnabled = (bool)ckbxRemoveDirectoriesThatStartWith.IsChecked;
         }
 
         /// <summary>Enables/disables the btnStart control.</summary>
@@ -73,18 +73,19 @@ namespace Archiwizator
             {
                 SourcePath                            = txbxFolderChoice.Text,
                 PostfixDateStamp                      = (bool)ckbxPrependDateStamp.IsChecked,
-                RemoveDirectoriesPriorToCompression   = (bool)ckbxDeleteDirectoriesBeforeCompressing.IsChecked,
-                DirectoriesToRemovePriorToCompression = txbxSpecificDirectoriesToDeleteBeforeCompressing.Text,
-                UncompressPriorToCompression          = (bool)ckbxUncompressFilesBeforeCompressing.IsChecked
+                RemoveDirectoriesThatStartWith        = (bool)ckbxRemoveDirectoriesThatStartWith.IsChecked,
+                RemoveDirectoriesNamed                = (bool)ckbxRemoveDirectoriesNamed.IsChecked,
+                DirectoriesToRemovePriorToCompression = txbxRemoveDirectoriesThatStartWith.Text,
+                UncompressPriorToCompression          = (bool)ckbxUncompressExistingArchives.IsChecked
             };
 
             var sevenZip = new DuSevenZip()
             {
-                Action                      = "a",
-                SourcePath                  = archiwizator.SourcePath,
-                DestinationPath             = archiwizator.SourcePath,
-                CompressionLevel            = (string)cmbxCompressionLevel.SelectedItem,
-                DeleteFilesAfterCompression = (bool)ckbxDeleteSourceAfterCompressing.IsChecked
+                Action                       = "a",
+                SourcePath                   = archiwizator.SourcePath,
+                DestinationPath              = archiwizator.SourcePath,
+                CompressionLevel             = (string)cmbxCompressionLevel.SelectedItem,
+                DeleteSourceAfterCompression = (bool)ckbxDeleteSourceAfterCompressing.IsChecked
             };
 
             DuArchiwizator.Create(archiwizator, sevenZip, lblProgressOverview, lblProgressDetails);

@@ -5,9 +5,9 @@
 
 <h3 align="center">
 
-  <img src="resources/image/logo/archiwizator-red-none-transparent-boxed-575x150.png" alt="Archiwizator logo" width="575">
+  <img src="resources/image/logo/archiwizator-575x150.png" alt="Archiwizator logo" width="575">
   <br>
-  An archive utility
+  A 7-Zip GUI
   <br>
 
 </h3>
@@ -21,14 +21,14 @@
 
 <h1 align="center">
 
-  <img src="resources/image/screenshot/screenshot.png" alt="Repository Screenshot" width="500">
+  <img src="resources/image/screenshot/archiwizator.png" alt="Archiwizator v1 Screenshot" width="500">
   <br>
 
 </h1>
 
 <h6 align="center">
 
-  [WEBSITE](URL)&nbsp;&bull;&nbsp;[DEMO](URL)&nbsp;&bull;&nbsp;[MANUAL](doc/manual/manual.md)&nbsp;&bull;&nbsp;[CHANGELOG](doc/repository/changelog.md)&nbsp;&bull;&nbsp;[ROADMAP](doc/repository/roadmap.md)&nbsp;&bull;&nbsp;[KNOWN ISSUES](doc/repository/known-issues.md)&nbsp;&bull;&nbsp;[SUPPORT](doc/repository/support.md)
+  [MANUAL](src/Resources/Doc/Manual/archiwizator-manual.md)&nbsp;&bull;&nbsp;[CHANGELOG](src/Resources/Doc/archiwizator-changelog.md)&nbsp;&bull;&nbsp;[ROADMAP](src/Resources/Doc/archiwizator-roadmap.md)&nbsp;&bull;&nbsp;[KNOWN ISSUES](src/Resources/Doc/archiwizator-known-issues.md)&nbsp;&bull;&nbsp;[SUPPORT](src/Resources/Doc/archiwizator-support.md)
   <br>
 
 </h6>
@@ -55,17 +55,18 @@
 </table>
 
 # ABOUT
-This is a template for GitHub repositories.
+Archiwizator is a Graphical User Interface (GUI) front-end for [7-Zip](https://www.7-zip.org/).
+
+**Archiwizator v1.0 is pretty rough! It works, but it's a bit wonky. Use at your own risk!** 
 
 ### Features
-* Feature #1
-* Feature #2
-* Feature #3
+* Batch archiving
+* Datestamp postfixes
 
 # GETTING STARTED
 
 ### Before you begin
-Things you should do before you begin.
+Please note that while v1.0 of Archiwizator works, it's not pretty and is not feature-complete.
 
 ### Prerequisites
 * Prerequisite #1
@@ -153,33 +154,33 @@ I think so.
 # DEVELOPMENT
 A blurb about development can go here.
 
-* [Project homepage](https://github.com/github-account/repository-name)
-* [Changelog](resources/doc/changelog.md)
-* [Roadmap](resources/doc/roadmap.md)
-* [Known issues](resources/doc/known-issues.md)
-* [Support](resources/doc/support.md)
-* [Testing](resources/doc/testing.md)
-* [Built with](resources/doc/built-with.md)
-* [Contributors](resources/doc/contributors.md)
-* [Acknowledgements](resources/doc/acknowledgements.md)
-* [Notices](resources/doc/third-party-notices.md)
-* [Related projects](resources/doc/related-projects.md)
-* [Additional reading](resources/doc/additional-reading.md)
+* [Project homepage](https://github.com/github-account/archiwizator)
+* [Changelog](src/Resources/Doc/archiwizator-changelog.md)
+* [Roadmap](src/Resources/Doc/archiwizator-roadmap.md)
+* [Known issues](src/Resources/Doc/archiwizator-known-issues.md)
+* [Support](src/Resources/Doc/archiwizator-support.md)
+* [Testing](src/Resources/Doc/archiwizator-testing.md)
+* [Built with](src/Resources/Doc/archiwizator-built-with.md)
+* [Contributors](src/Resources/Doc/archiwizator-contributors.md)
+* [Acknowledgements](src/Resources/Doc/archiwizator-acknowledgements.md)
+* [Notices](src/Resources/Doc/archiwizator-third-party-notices.md)
+* [Related projects](src/Resources/Doc/archiwizator-related-projects.md)
+* [Additional reading](src/Resources/Doc/archiwizator-additional-reading.md)
 
 ### Contributing
 If you are interested in contributing to this project, please see our:
-* [Code of conduct](resources/doc/code-of-conduct.md)
-* [Contributing guidelines](resources/doc/contributing.md)
-* [Testing procedures](resources/doc/testing.md)
-* [Issue template](resources/doc/issue-template.md)
-* [Pull request template](resources/doc/pull-request-template.md)
+* [Code of conduct](src/Resources/Doc/archiwizator-code-of-conduct.md)
+* [Contributing guidelines](src/Resources/Doc/archiwizator-contributing.md)
+* [Testing procedures](src/Resources/Doc/archiwizator-testing.md)
+* [Issue template](src/Resources/Doc/archiwizator-issue-template.md)
+* [Pull request template](src/Resources/Doc/archiwizator-pull-request-template.md)
 
 ### Repository
-* [Issues](https://github.com/github-account/repository-name/issues)
-* [Pull request](https://github.com/github-account/repository-name/pulls)
-* [Projects](https://github.com/github-account/repository-name/projects)
-* [Wiki](https://github.com/github-account/repository-name/wiki)
-* [Insights](https://github.com/github-account/repository-name/pulse)
+* [Issues](https://github.com/aprettycoolprogram/Archiwizator/issues)
+* [Pull request](https://github.com/aprettycoolprogram/Archiwizator/pulls)
+* [Projects](https://github.com/aprettycoolprogram/Archiwizator/projects)
+* [Wiki](https://github.com/aprettycoolprogram/Archiwizator/wiki)
+* [Insights](https://github.com/aprettycoolprogram/Archiwizator/pulse)
 
 ***
 

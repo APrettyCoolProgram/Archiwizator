@@ -21,7 +21,7 @@
 
 <h1 align="center">
 
-  <img src="resources/image/screenshot/archiwizator-v1.png" alt="Archiwizator v1 Screenshot" width="300">
+  <img src="resources/image/screenshot/archiwizator-v1.png" alt="Archiwizator v1 Screenshot" width="400">
   <br>
 
 </h1>

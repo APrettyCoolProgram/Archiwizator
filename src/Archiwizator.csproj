@@ -4,19 +4,23 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
-    <AssemblyVersion>0.9.20361.2058</AssemblyVersion>
-    <FileVersion>0.9.20361.2058</FileVersion>
+    <AssemblyVersion>0.10.20363.1627</AssemblyVersion>
+    <FileVersion>0.10.20363.1627</FileVersion>
     <Version>0.0.0.0</Version>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Asset\Image\Logo\archiwizator-575x150.png" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\du\src\Du.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Resources\Asset\Image\Logo\archiwizator-575x150.png">
+    <Content Include="Resources\Asset\Image\Logo\archiwizator-575x150.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Content>
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 ﻿/* PROJECT: Archiwizator (https://github.com/aprettycoolprogram/Archiwizator)
  *    FILE: Archiwizator.MainWindow.xaml.cs
- * UPDATED: 12-26-2020-3:41 PM
+ * UPDATED: 12-28-2020-11:20 AM
  * LICENSE: Apache v2 (https://apache.org/licenses/LICENSE-2.0)
  *          Copyright 2020 A Pretty Cool Program All rights reserved
  */
@@ -17,8 +17,20 @@ namespace Archiwizator
         {
             InitializeComponent();
 
+            SetLogo();
+
             SetCompressionLevelOptions();
         }
+
+        public void SetLogo()
+        {
+            var ass = System.Reflection.Assembly.GetExecutingAssembly().GetName().Name;
+            var ass2 = ass.ToString();
+            var bm = DuBitmap.FromUri(ass, "./Resources/Asset/Image/Logo/archiwizator-575x150.png");
+            imgLogo.Source = bm;
+
+        }
+
 
         /// <summary>Setup the compression level options.</summary>
         /// <remarks>These options mirror the options available in 7-Zip.</remarks>

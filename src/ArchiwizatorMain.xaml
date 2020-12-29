@@ -1,7 +1,7 @@
 ﻿<!--
     PROJECT: Archiwizator (https://github.com/aprettycoolprogram/Archiwizator)
     FILE: ArchiwizatorMain.xaml
-    UPDATED: 12-29-2020-2:40 PM
+    UPDATED: 12-29-2020-4:51 PM
     LICENSE: Apache v2 (https://apache.org/licenses/LICENSE-2.0)
     Copyright 2020 A Pretty Cool Program All rights reserved
 -->
@@ -14,7 +14,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         Title="Archiwizator"
         Width="825"
-        Height="650"
+        Height="700"
         mc:Ignorable="d">
     <Grid>
 
@@ -33,7 +33,8 @@
                    Width="575"
                    Height="150"
                    HorizontalAlignment="Center"
-                   VerticalAlignment="Center" />
+                   VerticalAlignment="Center"
+                   Source="/Resources/Asset/Image/Logo/archiwizator-575x150.png" />
         </Border>
 
         <!--  Archiwizator : Archiwizator options  -->
@@ -297,165 +298,15 @@
                     </CheckBox.ToolTip>
                 </CheckBox>
 
-                <!--  Archiwizator : Archiwizator options : Preparation : Remove sub-directories that start with  -->
-                <CheckBox x:Name="ckbxRemoveSubDirectoriesThatStartWith"
-                          Margin="10,5,0,0"
-                          HorizontalAlignment="Left"
-                          Content="Remove sub-directories that start with:"
-                          IsChecked="False"
-                          ToolTipService.ShowDuration="10000">
-                    <CheckBox.ToolTip>
-                        <StackPanel>
-                            <TextBlock Margin="0,0,0,5"
-                                       FontSize="18"
-                                       FontWeight="Bold"
-                                       Foreground="#990000">
-                                Remove sub-directories that start with
-                            </TextBlock>
-                            <TextBlock Margin="0,0,0,5"
-                                       FontSize="14">
-                                Removes sub-directories that start with any member of the provided list.
-                            </TextBlock>
-                            <TextBlock Margin="0,0,0,5"
-                                       FontSize="12">
-                                Enable this option if there are general sub-directories that you don't want<LineBreak />
-                                included when using Archiwizator.</TextBlock>
-                            <Border Margin="0,8"
-                                    BorderBrush="#990000"
-                                    BorderThickness="0,1,0,0" />
-                            <TextBlock Margin="0,0,0,5"
-                                       FontSize="12"
-                                       FontWeight="Bold">
-                                <TextBlock.TextDecorations>
-                                    <TextDecoration />
-                                </TextBlock.TextDecorations>
-                                EXAMPLE
-                            </TextBlock>
-                            <TextBlock Margin="0,0,0,5"
-                                       FontSize="12">
-                                If the provided list is:
-                            </TextBlock>
-                            <TextBlock Margin="10,0,0,5"
-                                       FontSize="12"
-                                       FontStyle="Italic">
-                                &quot;temp, old, ignore&quot;
-                            </TextBlock>
-                            <TextBlock Margin="0,0,0,5"
-                                       FontSize="12">
-                                the following directories would not be archived:
-                            </TextBlock>
-                            <TextBlock Margin="10,0,0,5"
-                                       FontSize="12"
-                                       FontStyle="Italic">
-                                ../SourcePath/temporary/<LineBreak />
-                                ../SourcePath/old_data/<LineBreak />
-                                ../SourcePath/ignore-this-folder/</TextBlock>
-                            <TextBlock Margin="0,0,0,5"
-                                       FontSize="12">
-                                The remaining sub-directories would then be archived by Archiwizator.
-                            </TextBlock>
-                            <TextBlock Margin="0,0,0,5"
-                                       FontSize="12"
-                                       FontWeight="Bold">
-                                <TextBlock.TextDecorations>
-                                    <TextDecoration />
-                                </TextBlock.TextDecorations>
-                                NOTES
-                            </TextBlock>
-                            <TextBlock Margin="0,0,0,5"
-                                       FontSize="12">
-                                - Use caution when using this option!<LineBreak />
-                                - You should probably use the &quot;Remove sub-directories named&quot; option instead.</TextBlock>
-                            <Border Margin="0,8"
-                                    BorderBrush="#990000"
-                                    BorderThickness="0,2,0,0" />
-                            <TextBlock Margin="0,0,0,5"
-                                       HorizontalAlignment="Center"
-                                       FontSize="12">
-                                For more information, please see the Archwizator manual.
-                            </TextBlock>
-                        </StackPanel>
-                    </CheckBox.ToolTip>
-                </CheckBox>
-                <TextBox x:Name="txbxRemoveDirectoriesThatStartWith"
-                         Width="200"
-                         Height="18"
-                         Margin="10,5,0,0"
-                         VerticalAlignment="Top"
-                         BorderBrush="Black"
-                         IsEnabled="False"
-                         Text=""
-                         TextWrapping="Wrap"
-                         ToolTipService.ShowDuration="10000"
-                         ToolTipService.ShowOnDisabled="True">
-                    <TextBox.ToolTip>
-                        <StackPanel>
-                            <TextBlock Margin="0,0,0,5"
-                                       FontSize="18"
-                                       FontWeight="Bold"
-                                       Foreground="#990000">
-                                List of sub-directories that start with
-                            </TextBlock>
-                            <TextBlock Margin="0,0,0,5"
-                                       FontSize="14">
-                                Removes sub-directories that start with any member of this list.
-                            </TextBlock>
-                            <TextBlock Margin="0,0,0,5"
-                                       FontSize="12">
-                                Members are not quoted, and are seperated by commas.
-                            </TextBlock>
-                            <Border Margin="0,8"
-                                    BorderBrush="#990000"
-                                    BorderThickness="0,1,0,0" />
-                            <TextBlock Margin="0,0,0,5"
-                                       FontSize="12"
-                                       FontWeight="Bold">
-                                <TextBlock.TextDecorations>
-                                    <TextDecoration />
-                                </TextBlock.TextDecorations>
-                                EXAMPLE
-                            </TextBlock>
-                            <TextBlock Margin="0,0,0,5"
-                                       FontSize="12">
-                                If you wanted to remove sub-directories that start with &quot;temp&quot;, &quot;old&quot; or<LineBreak />
-                                &quot;ignore&quot;, the list would look like this:</TextBlock>
-                            <TextBlock Margin="10,0,0,5"
-                                       FontSize="12"
-                                       FontStyle="Italic">
-                                temp, old, ignore
-                            </TextBlock>
-                            <TextBlock Margin="0,0,0,5"
-                                       FontSize="12"
-                                       FontWeight="Bold">
-                                <TextBlock.TextDecorations>
-                                    <TextDecoration />
-                                </TextBlock.TextDecorations>
-                                NOTES
-                            </TextBlock>
-                            <TextBlock Margin="0,0,0,5"
-                                       FontSize="12">
-                                - Only active when a &quot;Remove sub-directories that start with&quot; is checked.<LineBreak />
-                                - Don't use quotes.<LineBreak />
-                                - Seperate with commas.</TextBlock>
-                            <Border Margin="0,8"
-                                    BorderBrush="#990000"
-                                    BorderThickness="0,2,0,0" />
-                            <TextBlock Margin="0,0,0,5"
-                                       HorizontalAlignment="Center"
-                                       FontSize="12">
-                                For more information, please see the Archwizator manual.
-                            </TextBlock>
-                        </StackPanel>
-                    </TextBox.ToolTip>
-                </TextBox>
-
                 <!--  Archiwizator : Archiwizator options : Preparation : Remove sub-directories named  -->
                 <CheckBox x:Name="ckbxRemoveSubDirectoriesNamed"
                           Margin="10,5,0,0"
                           HorizontalAlignment="Left"
+                          Checked="ckbxRemoveSubDirectoriesNamed_CheckChanged"
                           Content="Remove sub-directories named:"
                           IsChecked="False"
-                          ToolTipService.ShowDuration="10000">
+                          ToolTipService.ShowDuration="10000"
+                          Unchecked="ckbxRemoveSubDirectoriesNamed_CheckChanged">
                     <CheckBox.ToolTip>
                         <StackPanel>
                             <TextBlock Margin="0,0,0,5"
@@ -529,7 +380,7 @@
                         </StackPanel>
                     </CheckBox.ToolTip>
                 </CheckBox>
-                <TextBox x:Name="txbxRemoveDirectoriesNamed"
+                <TextBox x:Name="txbxRemoveSubDirectoriesNamed"
                          Width="200"
                          Height="18"
                          Margin="10,5,0,0"
@@ -587,6 +438,165 @@
                             <TextBlock Margin="0,0,0,5"
                                        FontSize="12">
                                 - Only active when a &quot;Remove sub-directories named&quot; is checked.<LineBreak />
+                                - Don't use quotes.<LineBreak />
+                                - Seperate with commas.</TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,2,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
+                                       FontSize="12">
+                                For more information, please see the Archwizator manual.
+                            </TextBlock>
+                        </StackPanel>
+                    </TextBox.ToolTip>
+                </TextBox>
+
+                <!--  Archiwizator : Archiwizator options : Preparation : Remove sub-directories starting with  -->
+                <CheckBox x:Name="ckbxRemoveSubDirectoriesStartingWith"
+                          Margin="10,5,0,0"
+                          HorizontalAlignment="Left"
+                          Checked="ckbxRemoveSubDirectoriesStartingWith_CheckChanged"
+                          Content="Remove sub-directories starting with:"
+                          IsChecked="False"
+                          IsEnabled="True"
+                          ToolTipService.ShowDuration="10000"
+                          ToolTipService.ShowOnDisabled="True"
+                          Unchecked="ckbxRemoveSubDirectoriesStartingWith_CheckChanged">
+                    <CheckBox.ToolTip>
+                        <StackPanel>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="#990000">
+                                Remove sub-directories starting with
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="14">
+                                Removes sub-directories that start with any member of the provided list.
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                This option is currently disabled.<LineBreak />
+                                <LineBreak />
+                                Enable this option if there are general sub-directories that you don't want<LineBreak />
+                                included when using Archiwizator.</TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,1,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12"
+                                       FontWeight="Bold">
+                                <TextBlock.TextDecorations>
+                                    <TextDecoration />
+                                </TextBlock.TextDecorations>
+                                EXAMPLE
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                If the provided list is:
+                            </TextBlock>
+                            <TextBlock Margin="10,0,0,5"
+                                       FontSize="12"
+                                       FontStyle="Italic">
+                                &quot;temp, old, ignore&quot;
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                the following directories would not be archived:
+                            </TextBlock>
+                            <TextBlock Margin="10,0,0,5"
+                                       FontSize="12"
+                                       FontStyle="Italic">
+                                ../SourcePath/temporary/<LineBreak />
+                                ../SourcePath/old_data/<LineBreak />
+                                ../SourcePath/ignore-this-folder/</TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                The remaining sub-directories would then be archived by Archiwizator.
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12"
+                                       FontWeight="Bold">
+                                <TextBlock.TextDecorations>
+                                    <TextDecoration />
+                                </TextBlock.TextDecorations>
+                                NOTES
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                - Currently not enabled<LineBreak />
+                                - Use caution when using this option!<LineBreak />
+                                - You should probably use the &quot;Remove sub-directories named&quot; option instead.</TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,2,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
+                                       FontSize="12">
+                                For more information, please see the Archwizator manual.
+                            </TextBlock>
+                        </StackPanel>
+                    </CheckBox.ToolTip>
+                </CheckBox>
+                <TextBox x:Name="txbxRemoveSubDirectoriesStartingWith"
+                         Width="200"
+                         Height="18"
+                         Margin="10,5,0,0"
+                         VerticalAlignment="Top"
+                         BorderBrush="Black"
+                         IsEnabled="False"
+                         Text=""
+                         TextWrapping="Wrap"
+                         ToolTipService.ShowDuration="10000"
+                         ToolTipService.ShowOnDisabled="True">
+                    <TextBox.ToolTip>
+                        <StackPanel>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="#990000">
+                                List of sub-directories starting with
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="14">
+                                Removes sub-directories that start with any member of this list.
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                Members are not quoted, and are seperated by commas.
+                            </TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,1,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12"
+                                       FontWeight="Bold">
+                                <TextBlock.TextDecorations>
+                                    <TextDecoration />
+                                </TextBlock.TextDecorations>
+                                EXAMPLE
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                If you wanted to remove sub-directories that start with &quot;temp&quot;, &quot;old&quot; or<LineBreak />
+                                &quot;ignore&quot;, the list would look like this:</TextBlock>
+                            <TextBlock Margin="10,0,0,5"
+                                       FontSize="12"
+                                       FontStyle="Italic">
+                                temp, old, ignore
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12"
+                                       FontWeight="Bold">
+                                <TextBlock.TextDecorations>
+                                    <TextDecoration />
+                                </TextBlock.TextDecorations>
+                                NOTES
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                - Only active when a &quot;Remove sub-directories that start with&quot; is checked.<LineBreak />
                                 - Don't use quotes.<LineBreak />
                                 - Seperate with commas.</TextBlock>
                             <Border Margin="0,8"
@@ -979,6 +989,13 @@
                               BorderBrush="Black"
                               BorderThickness="1"
                               ToolTipService.ShowDuration="10000">
+                        <ComboBoxItem Content="Store" />
+                        <ComboBoxItem Content="Fastest" />
+                        <ComboBoxItem Content="Fast" />
+                        <ComboBoxItem Content="Normal"
+                                      IsSelected="true" />
+                        <ComboBoxItem Content="Maximum" />
+                        <ComboBoxItem Content="Ultra" />
                         <ComboBox.ToolTip>
                             <StackPanel>
                                 <TextBlock Margin="0,0,0,5"
@@ -1126,8 +1143,14 @@
                               Background="White"
                               BorderBrush="Black"
                               BorderThickness="1"
-                              IsEnabled="True"
-                              ToolTipService.ShowDuration="10000">
+                              IsEnabled="False"
+                              ToolTipService.ShowDuration="10000"
+                              ToolTipService.ShowOnDisabled="True">
+                        <ComboBoxItem Content="LZMA2"
+                                      IsSelected="True" />
+                        <ComboBoxItem Content="LZMA" />
+                        <ComboBoxItem Content="PPMd" />
+                        <ComboBoxItem Content="BZip2" />
                         <ComboBox.ToolTip>
                             <StackPanel>
                                 <TextBlock Margin="0,0,0,5"
@@ -1157,7 +1180,7 @@
                                 </TextBlock>
                                 <TextBlock Margin="0,0,0,5"
                                            FontSize="12">
-                                    The following compression methods are available:
+                                    The following compression methods will available at a later date:
                                 </TextBlock>
                                 <TextBlock Margin="10,0,0,5"
                                            FontSize="12"
@@ -1176,8 +1199,8 @@
                                 </TextBlock>
                                 <TextBlock Margin="0,0,0,5"
                                            FontSize="12">
-                                    - It is recommended that you leave the compression method set to &quot;LZMA2&quot;.
-                                </TextBlock>
+                                    - This option is disabled for now.<LineBreak />
+                                    - It is recommended that you leave the compression method set to &quot;LZMA2&quot;.</TextBlock>
                                 <Border Margin="0,8"
                                         BorderBrush="#990000"
                                         BorderThickness="0,2,0,0" />
@@ -1193,11 +1216,11 @@
             </WrapPanel>
         </WrapPanel>
 
-        <!--  Archiwizator : Source folder  -->
-        <Border x:Name="brdrFolderChoice"
+        <!--  Archiwizator : Source  -->
+        <Border x:Name="brdrSource"
                 Grid.Row="3">
-            <WrapPanel x:Name="wpnlFolderChoice">
-                <Label x:Name="lblFolderChoice"
+            <WrapPanel x:Name="wpnlSource">
+                <Label x:Name="lblSource"
                        Margin="10,10,0,0"
                        HorizontalAlignment="Left"
                        VerticalAlignment="Top"
@@ -1229,15 +1252,15 @@
                     </Label.ToolTip>
                 </Label>
 
-                <!--  Archiwizator : Source folder : Text  -->
-                <TextBox x:Name="txbxFolderChoice"
+                <!--  Archiwizator : Source : Text  -->
+                <TextBox x:Name="txbxSource"
                          Width="450"
                          Margin="10,12,10,10"
                          HorizontalAlignment="Left"
                          VerticalAlignment="Top"
                          FontSize="14"
                          Text=""
-                         TextChanged="txbxFolderChoice_TextChanged"
+                         TextChanged="txbxSource_TextChanged"
                          TextWrapping="Wrap"
                          ToolTipService.ShowDuration="10000"
                          ToolTipService.ShowOnDisabled="True">
@@ -1286,13 +1309,13 @@
                 </TextBox>
 
                 <!--  Archiwizator : Source folder : Choose button  -->
-                <Button x:Name="btnFolderChoice"
+                <Button x:Name="btnChooseSource"
                         Width="24"
                         Height="24"
                         Margin="10,10,10,10"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
-                        Click="btnFolderChoice_Click"
+                        Click="btnChooseSource_Click"
                         Content="FC"
                         ToolTipService.ShowDuration="10000"
                         ToolTipService.ShowOnDisabled="True">

@@ -7,6 +7,8 @@
 
 
 ## FEATURES
+* Add ToolTipService.ShowOnDisabled="True" to all tooltips
+* Add a tooltip delay
 * Cleanup unused xaml tags
 * Clean up help/tooltips
 * Clean up the remove directories lists (i.e. quotes, *, etc)

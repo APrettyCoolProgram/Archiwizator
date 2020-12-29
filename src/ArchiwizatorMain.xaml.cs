@@ -1,13 +1,13 @@
 ﻿/* PROJECT: Archiwizator (https://github.com/aprettycoolprogram/Archiwizator)
  *    FILE: Archiwizator.ArchiwizatorMain.xaml.cs
- * UPDATED: 12-29-2020-11:49 AM
+ * UPDATED: 12-29-2020-4:51 PM
  * LICENSE: Apache v2 (https://apache.org/licenses/LICENSE-2.0)
  *          Copyright 2020 A Pretty Cool Program All rights reserved
  */
 
 using System.IO;
 using System.Windows;
-using System.Windows.Media.Imaging;
+using System.Windows.Controls;
 using Du;
 
 namespace Archiwizator
@@ -17,83 +17,53 @@ namespace Archiwizator
         public MainWindow()
         {
             InitializeComponent();
-
-            SetLogo();
-            SetCompressionLevelOptions();
-            SetCompressionmethodOptions();
         }
 
-        /// <summary>Setup the Archiwizator logo.</summary>
-        public void SetLogo()
+        /// <summary>
+        /// Enables/disables the textboxes that contains sub-directories to remove information.
+        /// </summary>
+        /// <remarks>This handles both sub-directory list boxes.</remarks>
+        private static void ModifyRemoveSubDirectoryTextBoxes(TextBox txbx, bool isEnabled)
         {
-            var assemblyName           = System.Reflection.Assembly.GetExecutingAssembly().GetName().Name;
-            BitmapImage bitmapLogo     = DuBitmap.FromUri(assemblyName, "./Resources/Asset/Image/Logo/archiwizator-575x150.png");
-            imgArchiwizatorLogo.Source = bitmapLogo;
+            DuTextBox.SetIsEnabled(txbx, isEnabled);
+            DuTextBox.SaveTextAndClear(txbx);
         }
 
-        /// <summary>Setup the compression level options.</summary>
-        /// <remarks>These options mirror the options available in 7-Zip.</remarks>
-        private void SetCompressionLevelOptions()
+        /// <summary>
+        /// Enables/disables the btnStart control.
+        /// </summary>
+        /// <remarks>The Archiwizate button is only enabled if there is a valid source folder.</remarks>
+        private void ModifyArchiwizateButton()
         {
-            // TODO: This should eventually be moved to the .xaml file.
-            cmbxCompressionLevel.Items.Add("Store");
-            cmbxCompressionLevel.Items.Add("Fastest");
-            cmbxCompressionLevel.Items.Add("Fast");
-            cmbxCompressionLevel.Items.Add("Normal");
-            cmbxCompressionLevel.Items.Add("Maximum");
-            cmbxCompressionLevel.Items.Add("Ultra");
-
-            cmbxCompressionLevel.SelectedIndex = 3;
-        }
-
-        /// <summary>Setup the compression method options.</summary>
-        /// <remarks>These options mirror the options available in 7-Zip.</remarks>
-        private void SetCompressionmethodOptions()
-        {
-            // TODO: This should eventually be moved to the .xaml file.
-            cmbxCompressionMethod.Items.Add("LZMA2");
-            cmbxCompressionMethod.Items.Add("LZMA");
-            cmbxCompressionMethod.Items.Add("PPMd");
-            cmbxCompressionMethod.Items.Add("BZip2");
-
-            cmbxCompressionMethod.SelectedIndex = 0;
-        }
-
-
-        /// <summary>Enables/disables the txbxSpecificDirectoriesToDeleteBeforeCompressing control.</summary>
-        private void ModifyTxbxSpecificDirectoriesToDeleteBeforeCompressingState()
-        {
-            txbxRemoveDirectoriesThatStartWith.IsEnabled = (bool)ckbxRemoveSubDirectoriesThatStartWith.IsChecked;
-        }
-
-        /// <summary>Enables/disables the btnStart control.</summary>
-        private void ModifyStartButtonState()
-        {
-            if(txbxFolderChoice.Text != "")
+            if(txbxSource.Text != "")
             {
-                btnArchiwizate.IsEnabled = Directory.Exists(txbxFolderChoice.Text);
+                btnArchiwizate.IsEnabled = Directory.Exists(txbxSource.Text);
             }
         }
 
-        /// <summary>Prompts the user to choose a folder.</summary>
-        private void ChooseFolder()
+        /// <summary>
+        /// Prompts the user to choose a folder.
+        /// </summary>
+        private void ChooseSource()
         {
-            txbxFolderChoice.Text = DuFolderDialog.GetFolderPath();
+            txbxSource.Text = DuFolderDialog.GetFolderPath();
         }
 
-        /// <summary>Start Archiwizator.</summary>
-        private void Start()
+        /// <summary>
+        /// Start Archiwizator.
+        /// </summary>
+        private void Archiwizate()
         {
             var archiwizator = new DuArchiwizator()
             {
-                SourcePath                            = txbxFolderChoice.Text,
-                PostfixDateStamp                      = (bool)ckbxPrependDateStamp.IsChecked,
-                ExtractRootArchives                   = (bool)ckbxExtractRootArchives.IsChecked,
-                ExtractSubDirectoryArchives           = (bool)ckbxExtractSubDirectoryArchives.IsChecked,
-                RemoveDirectoriesThatStartWith        = (bool)ckbxRemoveSubDirectoriesThatStartWith.IsChecked,
-                DirectoriesThatStartWith              = txbxRemoveDirectoriesThatStartWith.Text,
-                RemoveDirectoriesNamed                = (bool)ckbxRemoveSubDirectoriesNamed.IsChecked,
-                DirectoriesNamed                      = txbxRemoveDirectoriesNamed.Text
+                SourcePath                     = txbxSource.Text,
+                PostfixDateStamp               = (bool)ckbxPrependDateStamp.IsChecked,
+                ExtractRootArchives            = (bool)ckbxExtractRootArchives.IsChecked,
+                ExtractSubDirectoryArchives    = (bool)ckbxExtractSubDirectoryArchives.IsChecked,
+                RemoveDirectoriesThatStartWith = (bool)ckbxRemoveSubDirectoriesStartingWith.IsChecked,
+                DirectoriesThatStartWith       = txbxRemoveSubDirectoriesStartingWith.Text,
+                RemoveDirectoriesNamed         = (bool)ckbxRemoveSubDirectoriesNamed.IsChecked,
+                DirectoriesNamed               = txbxRemoveSubDirectoriesNamed.Text
             };
 
             var sevenZip = new DuSevenZip()
@@ -101,7 +71,7 @@ namespace Archiwizator
                 Action                       = "a",
                 SourcePath                   = archiwizator.SourcePath,
                 DestinationPath              = archiwizator.SourcePath,
-                CompressionLevel             = (string)cmbxCompressionLevel.SelectedItem,
+                CompressionLevel             = cmbxCompressionLevel.Text,
                 DeleteSourceAfterCompression = (bool)ckbxDeleteSourceAfterCompressing.IsChecked
             };
 
@@ -109,9 +79,29 @@ namespace Archiwizator
         }
 
         // EVENT HANDLERS
-        private void btnFolderChoice_Click(object sender, RoutedEventArgs e) => ChooseFolder();
-        private void txbxFolderChoice_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e) => ModifyStartButtonState();
-        private void btnArchiwizate_Click(object sender, RoutedEventArgs e) => Start();
-        private void ckbxDeleteDirectoriesBeforeCompressing_Checked(object sender, RoutedEventArgs e) => ModifyTxbxSpecificDirectoriesToDeleteBeforeCompressingState();
+        private void btnChooseSource_Click(object sender, RoutedEventArgs e)
+        {
+            ChooseSource();
+        }
+
+        private void txbxSource_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ModifyArchiwizateButton();
+        }
+
+        private void btnArchiwizate_Click(object sender, RoutedEventArgs e)
+        {
+            Archiwizate();
+        }
+
+        private void ckbxRemoveSubDirectoriesNamed_CheckChanged(object sender, RoutedEventArgs e)
+        {
+            ModifyRemoveSubDirectoryTextBoxes(txbxRemoveSubDirectoriesNamed, (bool)ckbxRemoveSubDirectoriesNamed.IsChecked);
+        }
+
+        private void ckbxRemoveSubDirectoriesStartingWith_CheckChanged(object sender, RoutedEventArgs e)
+        {
+            ModifyRemoveSubDirectoryTextBoxes(txbxRemoveSubDirectoriesStartingWith, (bool)ckbxRemoveSubDirectoriesStartingWith.IsChecked);
+        }
     }
 }

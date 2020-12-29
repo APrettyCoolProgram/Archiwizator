@@ -7,9 +7,11 @@
 
 
 ## FEATURES
-
+* Cleanup unused xaml tags
+* Clean up help/tooltips
+* Clean up the remove directories lists (i.e. quotes, *, etc)
 * Pre-extract other formats
-* Tooltips can open the manual
+* Tooltips can open the manual (and center this line)
 * Always start one directory in
 * Fix progress info
 * Remove cmd windows

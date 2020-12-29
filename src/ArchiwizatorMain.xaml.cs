@@ -20,6 +20,7 @@ namespace Archiwizator
 
             SetLogo();
             SetCompressionLevelOptions();
+            SetCompressionmethodOptions();
         }
 
         /// <summary>Setup the Archiwizator logo.</summary>
@@ -28,7 +29,6 @@ namespace Archiwizator
             var assemblyName           = System.Reflection.Assembly.GetExecutingAssembly().GetName().Name;
             BitmapImage bitmapLogo     = DuBitmap.FromUri(assemblyName, "./Resources/Asset/Image/Logo/archiwizator-575x150.png");
             imgArchiwizatorLogo.Source = bitmapLogo;
-
         }
 
         /// <summary>Setup the compression level options.</summary>
@@ -52,11 +52,11 @@ namespace Archiwizator
         {
             // TODO: This should eventually be moved to the .xaml file.
             cmbxCompressionMethod.Items.Add("LZMA2");
-            cmbxCompressionLevel.Items.Add("LZMA");
-            cmbxCompressionLevel.Items.Add("PPMd");
-            cmbxCompressionLevel.Items.Add("BZip2");
+            cmbxCompressionMethod.Items.Add("LZMA");
+            cmbxCompressionMethod.Items.Add("PPMd");
+            cmbxCompressionMethod.Items.Add("BZip2");
 
-            cmbxCompressionLevel.SelectedIndex = 0;
+            cmbxCompressionMethod.SelectedIndex = 0;
         }
 
 

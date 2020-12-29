@@ -1,7 +1,15 @@
-﻿<Application x:Class="Archiwizator.App"
+﻿<!--
+    PROJECT: Archiwizator (https://github.com/aprettycoolprogram/Archiwizator)
+    FILE: App.xaml
+    UPDATED: 12-29-2020-9:37 AM
+    LICENSE: Apache v2 (https://apache.org/licenses/LICENSE-2.0)
+    Copyright 2020 A Pretty Cool Program All rights reserved
+-->
+
+<Application x:Class="Archiwizator.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Archiwizator"
-             StartupUri="MainWindow.xaml">
+             StartupUri="ArchiwizatorMain.xaml">
     <Application.Resources />
 </Application>

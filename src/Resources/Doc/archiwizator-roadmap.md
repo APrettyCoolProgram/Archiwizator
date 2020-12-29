@@ -1,5 +1,15 @@
 ﻿# Archiwizator: Roadmap
 
+
+## FIXES/REFACTORS
+* ComboBox options should be in the .xaml file, not the .cs file.
+* Move tooltip code someplace else
+
+
+## FEATURES
+
+* Pre-extract other formats
+* Tooltips can open the manual
 * Always start one directory in
 * Fix progress info
 * Remove cmd windows
@@ -10,3 +20,5 @@
 * Don't overwrite existing
 * SHA hashes
 * Get the EXE once
+
+* Metal soudtrack

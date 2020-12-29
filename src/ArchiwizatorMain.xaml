@@ -1,7 +1,7 @@
 ﻿<!--
     PROJECT: Archiwizator (https://github.com/aprettycoolprogram/Archiwizator)
     FILE: ArchiwizatorMain.xaml
-    UPDATED: 12-29-2020-11:47 AM
+    UPDATED: 12-29-2020-2:40 PM
     LICENSE: Apache v2 (https://apache.org/licenses/LICENSE-2.0)
     Copyright 2020 A Pretty Cool Program All rights reserved
 -->
@@ -26,7 +26,7 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <!--  Archiwizator logo  -->
+        <!--  Archiwizator : Logo  -->
         <Border x:Name="brdrArchiwizatorLogo"
                 Grid.Row="0">
             <Image x:Name="imgArchiwizatorLogo"
@@ -36,7 +36,7 @@
                    VerticalAlignment="Center" />
         </Border>
 
-        <!--  Archiwizator options block  -->
+        <!--  Archiwizator : Archiwizator options  -->
         <WrapPanel x:Name="dpnlArchiwizatorOptions"
                    Grid.Row="1">
             <TextBlock x:Name="lblArchiwizatorOptions"
@@ -46,7 +46,6 @@
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"
                        Background="#990000"
-                       DockPanel.Dock="Left"
                        FontFamily="Consolas"
                        FontSize="14"
                        FontWeight="Bold"
@@ -58,16 +57,22 @@
                 <TextBlock.ToolTip>
                     <StackPanel>
                         <TextBlock Margin="0,0,0,5"
+                                   HorizontalAlignment="Left"
                                    FontSize="18"
                                    FontWeight="Bold"
                                    Foreground="#990000">
                             Archiwizinator options
                         </TextBlock>
                         <TextBlock Margin="0,0,0,5"
+                                   HorizontalAlignment="Left"
                                    FontSize="14">
-                            Archiwization options.
+                            Archiwizator options are to the right.
                         </TextBlock>
-
+                        <TextBlock Margin="0,0,0,5"
+                                   HorizontalAlignment="Left"
+                                   FontSize="12">
+                            Mouse over any of the options to the right, and a pop-up will appear with option<LineBreak />
+                            descriptions, details, and examples.</TextBlock>
                         <Border Margin="0,8"
                                 BorderBrush="#990000"
                                 BorderThickness="0,2,0,0" />
@@ -79,7 +84,7 @@
                 </TextBlock.ToolTip>
             </TextBlock>
 
-            <!--  Archiwizator preparation options  -->
+            <!--  Archiwizator : Archiwizator options : Preparation  -->
             <StackPanel x:Name="spnlArchiwizatorPreparationOptions"
                         Width="250"
                         Margin="0,10,0,10">
@@ -104,13 +109,17 @@
                             </TextBlock>
                             <TextBlock Margin="0,0,0,5"
                                        FontSize="14">
-                                These options will be performed prior to Archiwization.
+                                These options will be performed prior to Archiwizator compression.
                             </TextBlock>
-
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                Mouse over any of the options below, and a pop-up will appear with option<LineBreak />
+                                descriptions, details, and examples.</TextBlock>
                             <Border Margin="0,8"
                                     BorderBrush="#990000"
                                     BorderThickness="0,2,0,0" />
                             <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
                                        FontSize="12">
                                 For more information, please see the Archwizator manual.
                             </TextBlock>
@@ -118,6 +127,7 @@
                     </Label.ToolTip>
                 </Label>
 
+                <!--  Archiwizator : Archiwizator options : Preparation : Extract root archives  -->
                 <CheckBox x:Name="ckbxExtractRootArchives"
                           Margin="10,10,0,0"
                           HorizontalAlignment="Left"
@@ -191,12 +201,15 @@
                                     BorderBrush="#990000"
                                     BorderThickness="0,2,0,0" />
                             <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
                                        FontSize="12">
                                 For more information, please see the Archwizator manual.
                             </TextBlock>
                         </StackPanel>
                     </CheckBox.ToolTip>
                 </CheckBox>
+
+                <!--  Archiwizator : Archiwizator options : Preparation : Extract sub-directory archives  -->
                 <CheckBox x:Name="ckbxExtractSubDirectoryArchives"
                           Margin="10,5,0,0"
                           HorizontalAlignment="Left"
@@ -276,12 +289,15 @@
                                     BorderBrush="#990000"
                                     BorderThickness="0,2,0,0" />
                             <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
                                        FontSize="12">
                                 For more information, please see the Archwizator manual.
                             </TextBlock>
                         </StackPanel>
                     </CheckBox.ToolTip>
                 </CheckBox>
+
+                <!--  Archiwizator : Archiwizator options : Preparation : Remove sub-directories that start with  -->
                 <CheckBox x:Name="ckbxRemoveSubDirectoriesThatStartWith"
                           Margin="10,5,0,0"
                           HorizontalAlignment="Left"
@@ -354,6 +370,7 @@
                                     BorderBrush="#990000"
                                     BorderThickness="0,2,0,0" />
                             <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
                                        FontSize="12">
                                 For more information, please see the Archwizator manual.
                             </TextBlock>
@@ -424,12 +441,15 @@
                                     BorderBrush="#990000"
                                     BorderThickness="0,2,0,0" />
                             <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
                                        FontSize="12">
                                 For more information, please see the Archwizator manual.
                             </TextBlock>
                         </StackPanel>
                     </TextBox.ToolTip>
                 </TextBox>
+
+                <!--  Archiwizator : Archiwizator options : Preparation : Remove sub-directories named  -->
                 <CheckBox x:Name="ckbxRemoveSubDirectoriesNamed"
                           Margin="10,5,0,0"
                           HorizontalAlignment="Left"
@@ -502,6 +522,7 @@
                                     BorderBrush="#990000"
                                     BorderThickness="0,2,0,0" />
                             <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
                                        FontSize="12">
                                 For more information, please see the Archwizator manual.
                             </TextBlock>
@@ -572,6 +593,7 @@
                                     BorderBrush="#990000"
                                     BorderThickness="0,2,0,0" />
                             <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
                                        FontSize="12">
                                 For more information, please see the Archwizator manual.
                             </TextBlock>
@@ -580,7 +602,7 @@
                 </TextBox>
             </StackPanel>
 
-            <!--  Archiwizator during compressing options  -->
+            <!--  Archiwizator : Archiwizator options : During compression  -->
             <StackPanel x:Name="spnlArchiwizatorDuringCompressingOptions"
                         Width="250"
                         Margin="0,10,0,10">
@@ -607,19 +629,25 @@
                             </TextBlock>
                             <TextBlock Margin="0,0,0,5"
                                        FontSize="14">
-                                These options will be performed during Archiwization.
+                                These options will be performed while Archiwizator is creating archives.
                             </TextBlock>
-
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                Mouse over any of the options below, and a pop-up will appear with option<LineBreak />
+                                descriptions, details, and examples.</TextBlock>
                             <Border Margin="0,8"
                                     BorderBrush="#990000"
                                     BorderThickness="0,2,0,0" />
                             <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
                                        FontSize="12">
                                 For more information, please see the Archwizator manual.
                             </TextBlock>
                         </StackPanel>
                     </Label.ToolTip>
                 </Label>
+
+                <!--  Archiwizator : Archiwizator options : During compression : Prepend datestamp  -->
                 <CheckBox x:Name="ckbxPrependDateStamp"
                           Margin="10,0,0,0"
                           Content="Prepend datestamp"
@@ -665,6 +693,7 @@
                                     BorderBrush="#990000"
                                     BorderThickness="0,2,0,0" />
                             <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
                                        FontSize="12">
                                 For more information, please see the Archwizator manual.
                             </TextBlock>
@@ -673,7 +702,7 @@
                 </CheckBox>
             </StackPanel>
 
-            <!--  Archiwizator cleanup options  -->
+            <!--  Archiwizator : Archiwizator options : Cleanup  -->
             <StackPanel x:Name="spnlArchiwizatorCleanupOptions"
                         Width="250"
                         Margin="0,10,0,10">
@@ -700,18 +729,25 @@
                             </TextBlock>
                             <TextBlock Margin="0,0,0,5"
                                        FontSize="14">
-                                These options will be performed after Archiwization is complete.
-                            </TextBlock>
+                                These options will be performed after Archiwizator has finished compressing a<LineBreak />
+                                sub-directory.</TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                Mouse over any of the options below, and a pop-up will appear with option<LineBreak />
+                                descriptions, details, and examples.</TextBlock>
                             <Border Margin="0,8"
                                     BorderBrush="#990000"
                                     BorderThickness="0,2,0,0" />
                             <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
                                        FontSize="12">
                                 For more information, please see the Archwizator manual.
                             </TextBlock>
                         </StackPanel>
                     </Label.ToolTip>
                 </Label>
+
+                <!--  Archiwizator : Archiwizator options : Cleanup : Delete source after compressing  -->
                 <CheckBox x:Name="ckbxDeleteSourceAfterCompressing"
                           Margin="10,0,0,0"
                           HorizontalAlignment="Left"
@@ -754,6 +790,7 @@
                                     BorderBrush="#990000"
                                     BorderThickness="0,2,0,0" />
                             <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
                                        FontSize="12">
                                 For more information, please see the Archwizator manual.
                             </TextBlock>
@@ -763,7 +800,7 @@
             </StackPanel>
         </WrapPanel>
 
-        <!--  7-Zip Options  -->
+        <!--  Archiwizator : 7-Zip Options  -->
         <WrapPanel x:Name="wpnlSevenZipOptions"
                    Grid.Row="2">
             <TextBlock x:Name="lblSevenZipOptions"
@@ -785,26 +822,35 @@
                 <TextBlock.ToolTip>
                     <StackPanel>
                         <TextBlock Margin="0,0,0,5"
+                                   HorizontalAlignment="Left"
                                    FontSize="18"
                                    FontWeight="Bold"
                                    Foreground="#990000">
                             7-Zip options
                         </TextBlock>
                         <TextBlock Margin="0,0,0,5"
+                                   HorizontalAlignment="Left"
                                    FontSize="14">
-                            7-Zip options.
+                            7-Zip options are to the right.
                         </TextBlock>
-
+                        <TextBlock Margin="0,0,0,5"
+                                   HorizontalAlignment="Left"
+                                   FontSize="12">
+                            Mouse over any of the options to the right, and a pop-up will appear with option<LineBreak />
+                            descriptions, details, and examples.</TextBlock>
                         <Border Margin="0,8"
                                 BorderBrush="#990000"
                                 BorderThickness="0,2,0,0" />
                         <TextBlock Margin="0,0,0,5"
+                                   HorizontalAlignment="Center"
                                    FontSize="12">
                             For more information, please see the Archwizator manual.
                         </TextBlock>
                     </StackPanel>
                 </TextBlock.ToolTip>
             </TextBlock>
+
+            <!--  Archiwizator : 7-Zip Options : Compression options  -->
             <WrapPanel x:Name="wpnlCompressionOptions"
                        Width="240"
                        Margin="0,15,0,0">
@@ -816,7 +862,7 @@
                        HorizontalContentAlignment="Center"
                        BorderBrush="Black"
                        BorderThickness="1"
-                       Content="Compression"
+                       Content="COMPRESSION"
                        FontFamily="Consolas"
                        FontWeight="Bold"
                        ToolTipService.ShowDuration="10000">
@@ -830,19 +876,25 @@
                             </TextBlock>
                             <TextBlock Margin="0,0,0,5"
                                        FontSize="14">
-                                Compression options
+                                7-Zip compression options
                             </TextBlock>
-
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                Mouse over any of the options below, and a pop-up will appear with option<LineBreak />
+                                descriptions, details, and examples.</TextBlock>
                             <Border Margin="0,8"
                                     BorderBrush="#990000"
                                     BorderThickness="0,2,0,0" />
                             <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
                                        FontSize="12">
                                 For more information, please see the Archwizator manual.
                             </TextBlock>
                         </StackPanel>
                     </Label.ToolTip>
                 </Label>
+
+                <!--  Archiwizator : 7-Zip Options : Compression options : Compression level  -->
                 <StackPanel x:Name="spnlCompressionLevelOptions"
                             Width="120"
                             HorizontalAlignment="Left">
@@ -911,6 +963,7 @@
                                         BorderBrush="#990000"
                                         BorderThickness="0,2,0,0" />
                                 <TextBlock Margin="0,0,0,5"
+                                           HorizontalAlignment="Center"
                                            FontSize="12">
                                     For more information, please see the Archwizator manual.
                                 </TextBlock>
@@ -982,6 +1035,7 @@
                                         BorderBrush="#990000"
                                         BorderThickness="0,2,0,0" />
                                 <TextBlock Margin="0,0,0,5"
+                                           HorizontalAlignment="Center"
                                            FontSize="12">
                                     For more information, please see the Archwizator manual.
                                 </TextBlock>
@@ -989,6 +1043,8 @@
                         </ComboBox.ToolTip>
                     </ComboBox>
                 </StackPanel>
+
+                <!--  Archiwizator : 7-Zip Options : Compression options : Compression method  -->
                 <StackPanel x:Name="spnlCompressionMethodOptions"
                             Width="120"
                             HorizontalAlignment="Left">
@@ -1055,6 +1111,7 @@
                                         BorderBrush="#990000"
                                         BorderThickness="0,2,0,0" />
                                 <TextBlock Margin="0,0,0,5"
+                                           HorizontalAlignment="Center"
                                            FontSize="12">
                                     For more information, please see the Archwizator manual.
                                 </TextBlock>
@@ -1125,6 +1182,7 @@
                                         BorderBrush="#990000"
                                         BorderThickness="0,2,0,0" />
                                 <TextBlock Margin="0,0,0,5"
+                                           HorizontalAlignment="Center"
                                            FontSize="12">
                                     For more information, please see the Archwizator manual.
                                 </TextBlock>
@@ -1135,6 +1193,7 @@
             </WrapPanel>
         </WrapPanel>
 
+        <!--  Archiwizator : Source folder  -->
         <Border x:Name="brdrFolderChoice"
                 Grid.Row="3">
             <WrapPanel x:Name="wpnlFolderChoice">
@@ -1162,12 +1221,15 @@
                                     BorderBrush="#990000"
                                     BorderThickness="0,2,0,0" />
                             <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
                                        FontSize="12">
                                 For more information, please see the Archwizator manual.
                             </TextBlock>
                         </StackPanel>
                     </Label.ToolTip>
                 </Label>
+
+                <!--  Archiwizator : Source folder : Text  -->
                 <TextBox x:Name="txbxFolderChoice"
                          Width="450"
                          Margin="10,12,10,10"
@@ -1215,12 +1277,15 @@
                                     BorderBrush="#990000"
                                     BorderThickness="0,2,0,0" />
                             <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
                                        FontSize="12">
                                 For more information, please see the Archwizator manual.
                             </TextBlock>
                         </StackPanel>
                     </TextBox.ToolTip>
                 </TextBox>
+
+                <!--  Archiwizator : Source folder : Choose button  -->
                 <Button x:Name="btnFolderChoice"
                         Width="24"
                         Height="24"
@@ -1251,6 +1316,7 @@
                                     BorderBrush="#990000"
                                     BorderThickness="0,2,0,0" />
                             <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
                                        FontSize="12">
                                 For more information, please see the Archwizator manual.
                             </TextBlock>
@@ -1260,10 +1326,13 @@
             </WrapPanel>
         </Border>
 
+        <!--  Archiwizator : Start and update user  -->
         <Border x:Name="brdrStartAndUpdateUser"
                 Grid.Row="4"
                 Grid.ColumnSpan="2">
             <WrapPanel x:Name="wpnlStartAndUpdateUser">
+
+                <!--  Archiwizator : Start and update user : Start button  -->
                 <Button x:Name="btnArchiwizate"
                         Width="100"
                         Height="25"
@@ -1317,12 +1386,15 @@
                                     BorderBrush="#990000"
                                     BorderThickness="0,2,0,0" />
                             <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
                                        FontSize="12">
                                 For more information, please see the Archwizator manual.
                             </TextBlock>
                         </StackPanel>
                     </Button.ToolTip>
                 </Button>
+
+                <!--  Archiwizator : Start and update user : Progress overview  -->
                 <Label x:Name="lblProgressOverview"
                        Width="650"
                        Margin="10,10,0,0"
@@ -1345,12 +1417,15 @@
                                     BorderBrush="#990000"
                                     BorderThickness="0,2,0,0" />
                             <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
                                        FontSize="12">
                                 For more information, please see the Archwizator manual.
                             </TextBlock>
                         </StackPanel>
                     </Label.ToolTip>
                 </Label>
+
+                <!--  Archiwizator : Start and update user : Progress details  -->
                 <Label x:Name="lblProgressDetails"
                        Width="625"
                        Height="48"
@@ -1375,6 +1450,7 @@
                                     BorderBrush="#990000"
                                     BorderThickness="0,2,0,0" />
                             <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
                                        FontSize="12">
                                 For more information, please see the Archwizator manual.
                             </TextBlock>

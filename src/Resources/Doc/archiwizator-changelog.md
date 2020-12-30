@@ -1,14 +1,10 @@
 ﻿# Archiwizator: Changelog
 
-* `INFO` UI redesign
-* `ADDED` btnPrependDateStamp
+#### v2.0
+> This is the official release of Archiwizator Version 2.0
 
-
-#### v1.100.20363.1837
-* `ADDED` Start of Archiwizator II development
-* `ADDED` Archiwizator II logo
-* `ADDED` /Resources/Doc/
-* `ADDED` /Resources/Doc/archiwizator-changelog.md
+#### v1.900.20365.1432
+> This is the v2.0 development branch, and consists mostly of UI changes and code refactoring.
 
 #### v1.0
-* `INFO` Initial release
+> This is the official release of Archiwizator Version 1.0

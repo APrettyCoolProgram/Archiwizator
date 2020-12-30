@@ -33,6 +33,9 @@
 
 
 #### Code
+* Version in title bar
+* Verify that the source/dest textboxes validate correctly.
+* Change lblProgressDetails to a TextBox/TextBlock
 * Add ToolTipService.ShowOnDisabled="True" to all tooltips
 * Add a tooltip delay
 * Cleanup unused xaml tags

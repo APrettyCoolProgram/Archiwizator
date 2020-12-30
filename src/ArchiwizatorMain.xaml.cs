@@ -60,8 +60,8 @@ namespace Archiwizator
                 PostfixDateStamp               = (bool)ckbxPrependDateStamp.IsChecked,
                 ExtractRootArchives            = (bool)ckbxExtractRootArchives.IsChecked,
                 ExtractSubDirectoryArchives    = (bool)ckbxExtractSubDirectoryArchives.IsChecked,
-                RemoveDirectoriesThatStartWith = (bool)ckbxRemoveSubDirectoriesStartingWith.IsChecked,
-                DirectoriesThatStartWith       = txbxRemoveSubDirectoriesStartingWith.Text,
+                //RemoveDirectoriesThatStartWith = (bool)ckbxRemoveSubDirectoriesStartingWith.IsChecked, // This is disabled in the current release.
+                //DirectoriesThatStartWith       = txbxRemoveSubDirectoriesStartingWith.Text,            // This is disabled in the current release.
                 RemoveDirectoriesNamed         = (bool)ckbxRemoveSubDirectoriesNamed.IsChecked,
                 DirectoriesNamed               = txbxRemoveSubDirectoriesNamed.Text
             };
@@ -84,9 +84,21 @@ namespace Archiwizator
             ChooseSource();
         }
 
+        // This is disabled in the current release.
+        private void btnChooseDestination_Click(object sender, RoutedEventArgs e)
+        {
+            //ChooseDestination();
+        }
+
         private void txbxSource_TextChanged(object sender, TextChangedEventArgs e)
         {
             ModifyArchiwizateButton();
+        }
+
+        // This is disabled in the current release.
+        private void txbxDestination_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            //ModifyArchiwizateButton();
         }
 
         private void btnArchiwizate_Click(object sender, RoutedEventArgs e)
@@ -99,9 +111,10 @@ namespace Archiwizator
             ModifyRemoveSubDirectoryTextBoxes(txbxRemoveSubDirectoriesNamed, (bool)ckbxRemoveSubDirectoriesNamed.IsChecked);
         }
 
-        private void ckbxRemoveSubDirectoriesStartingWith_CheckChanged(object sender, RoutedEventArgs e)
-        {
-            ModifyRemoveSubDirectoryTextBoxes(txbxRemoveSubDirectoriesStartingWith, (bool)ckbxRemoveSubDirectoriesStartingWith.IsChecked);
-        }
+        // This is disabled in the current release.
+        //private void ckbxRemoveSubDirectoriesStartingWith_CheckChanged(object sender, RoutedEventArgs e)
+        //{
+        //    ModifyRemoveSubDirectoryTextBoxes(txbxRemoveSubDirectoriesStartingWith, (bool)ckbxRemoveSubDirectoriesStartingWith.IsChecked);
+        //}
     }
 }

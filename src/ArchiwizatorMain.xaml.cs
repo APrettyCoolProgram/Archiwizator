@@ -1,6 +1,6 @@
 ﻿/* PROJECT: Archiwizator (https://github.com/aprettycoolprogram/Archiwizator)
  *    FILE: Archiwizator.ArchiwizatorMain.xaml.cs
- * UPDATED: 12-29-2020-4:51 PM
+ * UPDATED: 12-30-2020-12:08 PM
  * LICENSE: Apache v2 (https://apache.org/licenses/LICENSE-2.0)
  *          Copyright 2020 A Pretty Cool Program All rights reserved
  */
@@ -30,7 +30,7 @@ namespace Archiwizator
         }
 
         /// <summary>
-        /// Enables/disables the btnStart control.
+        /// Enables/disables the btnArchiwizate control.
         /// </summary>
         /// <remarks>The Archiwizate button is only enabled if there is a valid source folder.</remarks>
         private void ModifyArchiwizateButton()
@@ -59,7 +59,7 @@ namespace Archiwizator
                 SourcePath                     = txbxSource.Text,
                 PostfixDateStamp               = (bool)ckbxPrependDateStamp.IsChecked,
                 ExtractRootArchives            = (bool)ckbxExtractRootArchives.IsChecked,
-                ExtractSubDirectoryArchives    = (bool)ckbxExtractSubDirectoryArchives.IsChecked,
+                ExtractTargetArchives          = (bool)ckbxExtractTargetArchives.IsChecked,
                 //RemoveDirectoriesThatStartWith = (bool)ckbxRemoveSubDirectoriesStartingWith.IsChecked, // This is disabled in the current release.
                 //DirectoriesThatStartWith       = txbxRemoveSubDirectoriesStartingWith.Text,            // This is disabled in the current release.
                 RemoveDirectoriesNamed         = (bool)ckbxRemoveSubDirectoriesNamed.IsChecked,
@@ -84,9 +84,9 @@ namespace Archiwizator
             ChooseSource();
         }
 
-        // This is disabled in the current release.
         private void btnChooseDestination_Click(object sender, RoutedEventArgs e)
         {
+            // This is disabled in the current release.
             //ChooseDestination();
         }
 
@@ -95,9 +95,9 @@ namespace Archiwizator
             ModifyArchiwizateButton();
         }
 
-        // This is disabled in the current release.
         private void txbxDestination_TextChanged(object sender, TextChangedEventArgs e)
         {
+            // This is disabled in the current release.
             //ModifyArchiwizateButton();
         }
 
@@ -111,10 +111,10 @@ namespace Archiwizator
             ModifyRemoveSubDirectoryTextBoxes(txbxRemoveSubDirectoriesNamed, (bool)ckbxRemoveSubDirectoriesNamed.IsChecked);
         }
 
-        // This is disabled in the current release.
-        //private void ckbxRemoveSubDirectoriesStartingWith_CheckChanged(object sender, RoutedEventArgs e)
-        //{
-        //    ModifyRemoveSubDirectoryTextBoxes(txbxRemoveSubDirectoriesStartingWith, (bool)ckbxRemoveSubDirectoriesStartingWith.IsChecked);
-        //}
+        private void ckbxRemoveSubDirectoriesStartingWith_CheckChanged(object sender, RoutedEventArgs e)
+        {
+            // This is disabled in the current release.
+            //ModifyRemoveSubDirectoryTextBoxes(txbxRemoveSubDirectoriesStartingWith, (bool)ckbxRemoveSubDirectoriesStartingWith.IsChecked);
+        }
     }
 }

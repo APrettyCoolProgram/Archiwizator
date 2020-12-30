@@ -228,11 +228,12 @@
                 </CheckBox>
 
                 <!--  Archiwizator : Archiwizator options : Preparation : Extract sub-directory archives  -->
-                <CheckBox x:Name="ckbxExtractSubDirectoryArchives"
+                <CheckBox x:Name="ckbxExtractTargetArchives"
                           Margin="15,5,0,0"
+                          Width="230"
                           HorizontalAlignment="Left"
                           BorderBrush="#990000"
-                          Content="Extract existing sub-directory archives"
+                          Content="Extract existing archives in the target"
                           Foreground="#990000"
                           IsChecked="False"
                           ToolTipService.InitialShowDelay="2000"

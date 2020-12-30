@@ -56,22 +56,22 @@ namespace Archiwizator
         {
             var archiwizator = new DuArchiwizator()
             {
-                SourcePath                     = txbxSource.Text,
-                PostfixDateStamp               = (bool)ckbxPrependDateStamp.IsChecked,
-                ExtractRootArchives            = (bool)ckbxExtractRootArchives.IsChecked,
-                ExtractTargetArchives          = (bool)ckbxExtractTargetArchives.IsChecked,
+                SourcePath = txbxSource.Text,
+                PostfixDateStamp = (bool)ckbxPrependDateStamp.IsChecked,
+                ExtractRootArchives = (bool)ckbxExtractRootArchives.IsChecked,
+                ExtractTargetArchives = (bool)ckbxExtractTargetArchives.IsChecked,
                 //RemoveDirectoriesThatStartWith = (bool)ckbxRemoveSubDirectoriesStartingWith.IsChecked, // This is disabled in the current release.
                 //DirectoriesThatStartWith       = txbxRemoveSubDirectoriesStartingWith.Text,            // This is disabled in the current release.
-                RemoveDirectoriesNamed         = (bool)ckbxRemoveSubDirectoriesNamed.IsChecked,
-                DirectoriesNamed               = txbxRemoveSubDirectoriesNamed.Text
+                RemoveDirectoriesNamed = (bool)ckbxRemoveSubDirectoriesNamed.IsChecked,
+                DirectoriesNamed = txbxRemoveSubDirectoriesNamed.Text
             };
 
             var sevenZip = new DuSevenZip()
             {
-                Action                       = "a",
-                SourcePath                   = archiwizator.SourcePath,
-                DestinationPath              = archiwizator.SourcePath,
-                CompressionLevel             = cmbxCompressionLevel.Text,
+                Action = "a",
+                SourcePath = archiwizator.SourcePath,
+                DestinationPath = archiwizator.SourcePath,
+                CompressionLevel = cmbxCompressionLevel.Text,
                 DeleteSourceAfterCompression = (bool)ckbxDeleteSourceAfterCompressing.IsChecked
             };
 

@@ -33,7 +33,12 @@
 
 
 #### Code
+* Before/after stats next to logo
+* Clicking source/dest opens dialog
+* Stop cmd from interuppting
+* What's going on with the Archiziwate button when archiziwating?
 * Version in title bar
+* Skip files if they exist, or overwrite
 * Verify that the source/dest textboxes validate correctly.
 * Change lblProgressDetails to a TextBox/TextBlock
 * Add ToolTipService.ShowOnDisabled="True" to all tooltips

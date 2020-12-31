@@ -1,7 +1,7 @@
 ﻿<!--
     PROJECT: Archiwizator (https://github.com/aprettycoolprogram/Archiwizator)
     FILE: ArchiwizatorMain.xaml
-    UPDATED: 12-30-2020-11:45 AM
+    UPDATED: 12-31-2020-9:05 AM
     LICENSE: Apache v2 (https://apache.org/licenses/LICENSE-2.0)
     Copyright 2020 A Pretty Cool Program All rights reserved
 -->
@@ -12,7 +12,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:Archiwizator"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        Title="Archiwizator"
+        Title="Archiwizator vX.X.X.X"
         Width="825"
         Height="725"
         mc:Ignorable="d">
@@ -229,8 +229,8 @@
 
                 <!--  Archiwizator : Archiwizator options : Preparation : Extract sub-directory archives  -->
                 <CheckBox x:Name="ckbxExtractTargetArchives"
-                          Margin="15,5,0,0"
                           Width="230"
+                          Margin="15,5,0,0"
                           HorizontalAlignment="Left"
                           BorderBrush="#990000"
                           Content="Extract existing archives in the target"
@@ -642,7 +642,6 @@
                 </TextBox>
 
                 This is disabled for the current release-->
-
             </StackPanel>
 
             <!--  Archiwizator : Archiwizator options : During compression  -->
@@ -1285,7 +1284,6 @@
                     </ComboBox>
 
                     This is disabled in the current release-->
-
                 </StackPanel>
             </WrapPanel>
         </WrapPanel>

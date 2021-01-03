@@ -7,7 +7,7 @@
 
 <h3 align="center">
 
-  >> WARNING <<
+  &gt;&gt; WARNING &lt;&lt;
   THIS IS BETA SOFTWARE!<br>
   USE AT YOUR OWN RISK!
 

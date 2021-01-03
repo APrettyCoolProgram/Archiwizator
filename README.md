@@ -11,7 +11,7 @@
   THIS IS BETA SOFTWARE!<br>
   USE AT YOUR OWN RISK!
 
-  <img src="https://img.shields.io/badge/THIS%20IS-BETA%20SOFTWARE-%23990000">
+  <img src="https://img.shields.io/badge/THIS%20IS-BETA%20SOFTWARE-%23990000?style=flat-square">
 
 </h3>
 
@@ -193,6 +193,7 @@ If you are interested in contributing to this project, please see our:
 * [Pull request template](src/Resources/Doc/archiwizator-pull-request-template.md)
 
 ### Repository
+[![Repository size](https://img.shields.io/github/repo-size/aprettycoolprogram/Archiwizator)]&nbsp;[![Lines of code](https://img.shields.io/tokei/lines/github/aprettycoolprogram/Archiwizator)]
 * [Issues](https://github.com/aprettycoolprogram/Archiwizator/issues)
 * [Pull request](https://github.com/aprettycoolprogram/Archiwizator/pulls)
 * [Projects](https://github.com/aprettycoolprogram/Archiwizator/projects)
@@ -206,6 +207,3 @@ If you are interested in contributing to this project, please see our:
 [![Repository built using](https://img.shields.io/badge/repository%20built%20using-a%20pretty%20cool%20GitHub%20repository%20template-17806D.svg)](https://github.com/APrettyCoolProgram/my-development-environment/tree/master/templates/github)
 
 
-[![Repository size](https://img.shields.io/github/repo-size/aprettycoolprogram/Archiwizator)
-
-[![Lines of code](https://img.shields.io/tokei/lines/github/aprettycoolprogram/Archiwizator)

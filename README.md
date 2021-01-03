@@ -31,9 +31,6 @@
   <img src="https://img.shields.io/badge/status-active-brightgreen?style=flat-square">&nbsp;[![License](https://img.shields.io/github/license/aprettycoolprogram/Archiwizator?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0)&nbsp;[![GitHub release](https://img.shields.io/github/v/release/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/APrettyCoolProgram/Archiwizator/releases)&nbsp;[![GitHub release date](https://img.shields.io/github/release-date/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/APrettyCoolProgram/Archiwizator/releases)
   <br>
 
-
-
-
 </h2>
 
 <h1 align="center">
@@ -197,7 +194,7 @@ If you are interested in contributing to this project, please see our:
 
 ![Release downloads](https://img.shields.io/github/downloads/aprettycoolprogram/Archiwizator/total?style=flat-square)
 
-
+![Issues](https://img.shields.io/github/issues-closed/aprettycoolprogram/Archiwizator?style=flat-square)
 
 * [Issues](https://github.com/aprettycoolprogram/Archiwizator/issues)
 * [Pull request](https://github.com/aprettycoolprogram/Archiwizator/pulls)

@@ -11,7 +11,7 @@
   THIS IS BETA SOFTWARE!<br>
   USE AT YOUR OWN RISK!
 
-  <img src="https://img.shields.io/badge/THIS%20IS-BETA%20SOFTWARE-%23990000?style=flat-square">
+  <img src="https://img.shields.io/badge/THIS%20IS-BETA%20SOFTWARE-%23990000?style=for-the-badge">
 
 </h3>
 

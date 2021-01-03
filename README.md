@@ -28,8 +28,11 @@
 
 <h2 align="center">
 
-  <img src="https://img.shields.io/badge/status-active-brightgreen?style=flat-square">&nbsp;[![License](https://img.shields.io/github/license/aprettycoolprogram/Archiwizator?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0)&nbsp;![GitHub release](https://img.shields.io/github/v/release/aprettycoolprogram/Archiwizator?style=flat-square)
+  <img src="https://img.shields.io/badge/status-active-brightgreen?style=flat-square">&nbsp;[![License](https://img.shields.io/github/license/aprettycoolprogram/Archiwizator?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0)&nbsp;[![GitHub release](https://img.shields.io/github/v/release/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/APrettyCoolProgram/Archiwizator/releases)&nbsp;[![GitHub release date](https://img.shields.io/github/release-date/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/APrettyCoolProgram/Archiwizator/releases)
   <br>
+
+
+
 
 </h2>
 

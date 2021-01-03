@@ -30,11 +30,6 @@
 
   <img src="https://img.shields.io/badge/PROJECT-17806D?style=flat-square">&nbsp;![Language count](https://img.shields.io/github/languages/count/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;![Top language](https://img.shields.io/github/languages/top/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;![Repository size](https://img.shields.io/github/repo-size/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;![Lines of code](https://img.shields.io/tokei/lines/github/aprettycoolprogram/Archiwizator?style=flat-square)
 
-
-</h2>
-
-<h2 align="left">
-
   <img src="https://img.shields.io/badge/REPOSITORY-17806D?style=flat-square">&nbsp;<img src="https://img.shields.io/badge/status-active-brightgreen?style=flat-square">&nbsp;[![License](https://img.shields.io/github/license/aprettycoolprogram/Archiwizator?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0)&nbsp;[![GitHub release](https://img.shields.io/github/v/release/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/APrettyCoolProgram/Archiwizator/releases)&nbsp;[![GitHub release date](https://img.shields.io/github/release-date/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/APrettyCoolProgram/Archiwizator/releases)
   <br>
 

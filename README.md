@@ -32,9 +32,7 @@
 
 <h1 align="center">
 
-  <img src="resources/image/screenshot/archiwizator-screenshot-01.png" alt="Archiwizator Screenshot" width="400">
-  <br>
-  <br>
+  <img src="resources/image/screenshot/archiwizator-screenshot-01.png" alt="Archiwizator Screenshot" width="400"><br>
 
 </h1>
 

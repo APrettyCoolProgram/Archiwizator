@@ -37,16 +37,7 @@
   <img src="https://img.shields.io/badge/REPOSITORY-17806D?style=flat-square">&nbsp;&nbsp;
   [![Issues](https://img.shields.io/github/issues/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/aprettycoolprogram/Archiwizator/issues)&nbsp;
   [![Pulls](https://img.shields.io/github/issues-pr/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/aprettycoolprogram/Archiwizator/pulls)&nbsp;
-  ![Release downloads](https://img.shields.io/github/downloads/aprettycoolprogram/Archiwizator/total?style=flat-square)&nbsp;
-  ![Language count](https://img.shields.io/github/languages/count/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;
-  ![Top language](https://img.shields.io/github/languages/top/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;
-  ![Repository size](https://img.shields.io/github/repo-size/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;
-  ![Lines of code](https://img.shields.io/tokei/lines/github/aprettycoolprogram/Archiwizator?style=flat-square)
-
-
-
-
-
+  ![Release downloads](https://img.shields.io/github/downloads/aprettycoolprogram/Archiwizator/total?style=flat-square)
 
 </h3>
 
@@ -215,6 +206,15 @@ If you are interested in contributing to this project, please see our:
 * [Insights](https://github.com/aprettycoolprogram/Archiwizator/pulse)
 
 ***
+
+<h3 align="left">
+
+  ![Language count](https://img.shields.io/github/languages/count/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;
+  ![Top language](https://img.shields.io/github/languages/top/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;
+  ![Repository size](https://img.shields.io/github/repo-size/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;
+  ![Lines of code](https://img.shields.io/tokei/lines/github/aprettycoolprogram/Archiwizator?style=flat-square)
+
+</h3>
 
 <!-- DEVELOPMENT FOOTER -->
 [![Developed by](https://img.shields.io/badge/developed%20by-a%20pretty%20cool%20program-17806D?style=flat-square.svg)](https://aprettycoolprogram.com)&nbsp;[![Feedback](https://img.shields.io/badge/feedback@aprettycoolprogram.com-17806D?style=flat-square.svg)](mailto:feedback@aprettycoolprogram.com)&nbsp;[![GitHub](https://img.shields.io/github/followers/aprettycoolprogram.svg?label=GitHub&style=social)](https://github.com/aprettycoolprogram)&nbsp;[![Twitter](https://img.shields.io/twitter/follow/aprettycoolprog.svg?label=Twitter&style=social)](https://twitter.com/aprettycoolprog)&nbsp;<br>

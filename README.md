@@ -3,11 +3,13 @@
   https://github.com/APrettyCoolProgram/my-development-environment/tree/master/templates/github/
 -->
 
-<h1 align="center">
+<h6 align="center">
 
   <img src="https://img.shields.io/badge/WARNING:-THIS%20IS%20BETA%20SOFTWARE-%23990000?style=for-the-badge">
 
-</h1>
+</h6>
+
+***
 
 <h3 align="center">
 
@@ -20,13 +22,10 @@
 
 <h3 align="left">
 
-  <img src="https://img.shields.io/badge/PROJECT-17806D?style=for-the-badge">&nbsp;
   <img src="https://img.shields.io/badge/status-active-brightgreen?style=flat-square">&nbsp;
   [![License](https://img.shields.io/github/license/aprettycoolprogram/Archiwizator?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0)&nbsp;
   [![GitHub release](https://img.shields.io/github/v/release/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/APrettyCoolProgram/Archiwizator/releases)&nbsp;
-  [![GitHub release date](https://img.shields.io/github/release-date/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/APrettyCoolProgram/Archiwizator/releases)&nbsp;![Release downloads](https://img.shields.io/github/downloads/aprettycoolprogram/Archiwizator/total?style=flat-square)
-  <br>
-  <img src="https://img.shields.io/badge/REPOSITORY-17806D?style=for-the-badge">&nbsp;
+  [![GitHub release date](https://img.shields.io/github/release-date/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/APrettyCoolProgram/Archiwizator/releases)&nbsp;![Release downloads](https://img.shields.io/github/downloads/aprettycoolprogram/Archiwizator/total?style=flat-square)&nbsp;
   [![Issues](https://img.shields.io/github/issues/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/aprettycoolprogram/Archiwizator/issues)&nbsp;
   [![Pulls](https://img.shields.io/github/issues-pr/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/aprettycoolprogram/Archiwizator/pulls)&nbsp;
 

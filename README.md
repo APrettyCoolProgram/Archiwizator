@@ -20,12 +20,11 @@
 
 </h3>
 
-<h3 align="left">
+<h3 align="center">
 
   <img src="https://img.shields.io/badge/status-active-brightgreen?style=flat-square">&nbsp;
   [![License](https://img.shields.io/github/license/aprettycoolprogram/Archiwizator?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0)&nbsp;
   [![GitHub release](https://img.shields.io/github/v/release/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/APrettyCoolProgram/Archiwizator/releases)&nbsp;
-  [![GitHub release date](https://img.shields.io/github/release-date/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/APrettyCoolProgram/Archiwizator/releases)&nbsp;![Release downloads](https://img.shields.io/github/downloads/aprettycoolprogram/Archiwizator/total?style=flat-square)&nbsp;
   [![Issues](https://img.shields.io/github/issues/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/aprettycoolprogram/Archiwizator/issues)&nbsp;
   [![Pulls](https://img.shields.io/github/issues-pr/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/aprettycoolprogram/Archiwizator/pulls)&nbsp;
 
@@ -203,6 +202,10 @@ If you are interested in contributing to this project, please see our:
   ![Top language](https://img.shields.io/github/languages/top/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;
   ![Repository size](https://img.shields.io/github/repo-size/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;
   ![Lines of code](https://img.shields.io/tokei/lines/github/aprettycoolprogram/Archiwizator?style=flat-square)
+
+
+  [![GitHub release date](https://img.shields.io/github/release-date/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/APrettyCoolProgram/Archiwizator/releases)&nbsp;![Release downloads](https://img.shields.io/github/downloads/aprettycoolprogram/Archiwizator/total?style=flat-square)
+
 
 </h3>
 

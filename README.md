@@ -28,8 +28,22 @@
 
 <h1 align="left">
 
-  <img src="https://img.shields.io/badge/PROJECT-17806D?style=flat-square">&nbsp;&nbsp;<img src="https://img.shields.io/badge/status-active-brightgreen?style=flat-square">&nbsp;[![License](https://img.shields.io/github/license/aprettycoolprogram/Archiwizator?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0)&nbsp;[![GitHub release](https://img.shields.io/github/v/release/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/APrettyCoolProgram/Archiwizator/releases)&nbsp;[![GitHub release date](https://img.shields.io/github/release-date/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/APrettyCoolProgram/Archiwizator/releases)
-  <img src="https://img.shields.io/badge/REPOSITORY-17806D?style=flat-square">&nbsp;&nbsp;![Language count](https://img.shields.io/github/languages/count/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;![Top language](https://img.shields.io/github/languages/top/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;![Repository size](https://img.shields.io/github/repo-size/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;![Lines of code](https://img.shields.io/tokei/lines/github/aprettycoolprogram/Archiwizator?style=flat-square)
+  <img src="https://img.shields.io/badge/PROJECT-17806D?style=flat-square">&nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/status-active-brightgreen?style=flat-square">&nbsp;
+  [![License](https://img.shields.io/github/license/aprettycoolprogram/Archiwizator?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0)&nbsp;
+  [![GitHub release](https://img.shields.io/github/v/release/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/APrettyCoolProgram/Archiwizator/releases)&nbsp;
+  [![GitHub release date](https://img.shields.io/github/release-date/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/APrettyCoolProgram/Archiwizator/releases)
+  <br>
+  <img src="https://img.shields.io/badge/REPOSITORY-17806D?style=flat-square">&nbsp;&nbsp;
+  ![Language count](https://img.shields.io/github/languages/count/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;
+  ![Top language](https://img.shields.io/github/languages/top/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;
+  ![Repository size](https://img.shields.io/github/repo-size/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;
+  ![Lines of code](https://img.shields.io/tokei/lines/github/aprettycoolprogram/Archiwizator?style=flat-square)
+
+
+![Release downloads](https://img.shields.io/github/downloads/aprettycoolprogram/Archiwizator/total?style=flat-square)
+
+[![Issues](https://img.shields.io/github/issues/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/aprettycoolprogram/Archiwizator/issues)&nbsp;[![Pulls](https://img.shields.io/github/issues-pr/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/aprettycoolprogram/Archiwizator/pulls)
 
 </h1>
 
@@ -190,11 +204,6 @@ If you are interested in contributing to this project, please see our:
 * [Pull request template](src/Resources/Doc/archiwizator-pull-request-template.md)
 
 ### Repository
-![Language count](https://img.shields.io/github/languages/count/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;![Top language](https://img.shields.io/github/languages/top/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;![Repository size](https://img.shields.io/github/repo-size/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;![Lines of code](https://img.shields.io/tokei/lines/github/aprettycoolprogram/Archiwizator?style=flat-square)
-
-![Release downloads](https://img.shields.io/github/downloads/aprettycoolprogram/Archiwizator/total?style=flat-square)
-
-[![Issues](https://img.shields.io/github/issues/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/aprettycoolprogram/Archiwizator/issues)&nbsp;[![Pulls](https://img.shields.io/github/issues-pr/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/aprettycoolprogram/Archiwizator/pulls)
 
 * [Issues](https://github.com/aprettycoolprogram/Archiwizator/issues)
 * [Pull request](https://github.com/aprettycoolprogram/Archiwizator/pulls)
@@ -205,7 +214,7 @@ If you are interested in contributing to this project, please see our:
 ***
 
 <!-- DEVELOPMENT FOOTER -->
-[![Developed by](https://img.shields.io/badge/developed%20by-a%20pretty%20cool%20program-17806D.svg)](https://aprettycoolprogram.com)&nbsp;[![Feedback](https://img.shields.io/badge/feedback@aprettycoolprogram.com-17806D.svg)](mailto:feedback@aprettycoolprogram.com)&nbsp;[![GitHub](https://img.shields.io/github/followers/aprettycoolprogram.svg?label=GitHub&style=social)](https://github.com/aprettycoolprogram)&nbsp;[![Twitter](https://img.shields.io/twitter/follow/aprettycoolprog.svg?label=Twitter&style=social)](https://twitter.com/aprettycoolprog)&nbsp;<br>
-[![Repository built using](https://img.shields.io/badge/repository%20built%20using-a%20pretty%20cool%20GitHub%20repository%20template-17806D.svg)](https://github.com/APrettyCoolProgram/my-development-environment/tree/master/templates/github)
+[![Developed by](https://img.shields.io/badge/developed%20by-a%20pretty%20cool%20program-17806D?style=flat-square.svg)](https://aprettycoolprogram.com)&nbsp;[![Feedback](https://img.shields.io/badge/feedback@aprettycoolprogram.com-17806D?style=flat-square.svg)](mailto:feedback@aprettycoolprogram.com)&nbsp;[![GitHub](https://img.shields.io/github/followers/aprettycoolprogram.svg?label=GitHub&style=social)](https://github.com/aprettycoolprogram)&nbsp;[![Twitter](https://img.shields.io/twitter/follow/aprettycoolprog.svg?label=Twitter&style=social)](https://twitter.com/aprettycoolprog)&nbsp;<br>
+[![Repository built using](https://img.shields.io/badge/repository%20built%20using-a%20pretty%20cool%20GitHub%20repository%20template-17806D?style=flat-square.svg)](https://github.com/APrettyCoolProgram/my-development-environment/tree/master/templates/github)
 
 

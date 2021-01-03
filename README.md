@@ -166,9 +166,6 @@ If your project contains an API, it should be documented here (or link to the do
 I think so.
 
 # DEVELOPMENT
-
-
-
 A blurb about development can go here.
 
 * [Project homepage](https://github.com/github-account/archiwizator)
@@ -193,7 +190,7 @@ If you are interested in contributing to this project, please see our:
 * [Pull request template](src/Resources/Doc/archiwizator-pull-request-template.md)
 
 ### Repository
-![Repository size](https://img.shields.io/github/repo-size/aprettycoolprogram/Archiwizator)]&nbsp;![Lines of code](https://img.shields.io/tokei/lines/github/aprettycoolprogram/Archiwizator)
+![Language count](https://img.shields.io/github/languages/count/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;![Top language](https://img.shields.io/github/languages/top/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;![Repository size](https://img.shields.io/github/repo-size/aprettycoolprogram/Archiwizator)&nbsp;![Lines of code](https://img.shields.io/tokei/lines/github/aprettycoolprogram/Archiwizator)
 
 * [Issues](https://github.com/aprettycoolprogram/Archiwizator/issues)
 * [Pull request](https://github.com/aprettycoolprogram/Archiwizator/pulls)

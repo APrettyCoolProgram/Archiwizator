@@ -196,6 +196,9 @@ If you are interested in contributing to this project, please see our:
 
 [![Issues](https://img.shields.io/github/issues/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/aprettycoolprogram/Archiwizator/issues)
 
+
+[![Issues](https://img.shields.io/github/issues-pr/aprettycoolprogram/Archiwizator?style=flat-square](https://github.com/aprettycoolprogram/Archiwizator/pulls)
+
 * [Issues](https://github.com/aprettycoolprogram/Archiwizator/issues)
 * [Pull request](https://github.com/aprettycoolprogram/Archiwizator/pulls)
 * [Projects](https://github.com/aprettycoolprogram/Archiwizator/projects)

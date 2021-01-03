@@ -193,7 +193,8 @@ If you are interested in contributing to this project, please see our:
 * [Pull request template](src/Resources/Doc/archiwizator-pull-request-template.md)
 
 ### Repository
-[![Repository size](https://img.shields.io/github/repo-size/aprettycoolprogram/Archiwizator)]&nbsp;[![Lines of code](https://img.shields.io/tokei/lines/github/aprettycoolprogram/Archiwizator)]
+![Repository size](https://img.shields.io/github/repo-size/aprettycoolprogram/Archiwizator)]&nbsp;![Lines of code](https://img.shields.io/tokei/lines/github/aprettycoolprogram/Archiwizator)
+
 * [Issues](https://github.com/aprettycoolprogram/Archiwizator/issues)
 * [Pull request](https://github.com/aprettycoolprogram/Archiwizator/pulls)
 * [Projects](https://github.com/aprettycoolprogram/Archiwizator/projects)

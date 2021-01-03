@@ -3,21 +3,9 @@
   https://github.com/APrettyCoolProgram/my-development-environment/tree/master/templates/github/
 -->
 
-***
-
 <h3 align="center">
-
-  &gt;&gt; WARNING &lt;&lt;<br>
-  THIS IS BETA SOFTWARE!<br>
-  USE AT YOUR OWN RISK!
 
   <img src="https://img.shields.io/badge/WARNING:-THIS%20IS%20BETA%20SOFTWARE-%23990000?style=for-the-badge">
-
-</h3>
-
-***
-
-<h3 align="center">
 
   <img src="resources/image/logo/archiwizator-575x150.png" alt="Archiwizator logo" width="575">
   <br>

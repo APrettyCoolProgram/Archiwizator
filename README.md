@@ -47,12 +47,12 @@
 
 </h1>
 
-<h5 align="center">
+<h4 align="center">
 
   [MANUAL](src/Resources/Doc/Manual/archiwizator-manual.md)&nbsp;&bull;&nbsp;[CHANGELOG](src/Resources/Doc/archiwizator-changelog.md)&nbsp;&bull;&nbsp;[ROADMAP](src/Resources/Doc/archiwizator-roadmap.md)&nbsp;&bull;&nbsp;[KNOWN ISSUES](src/Resources/Doc/archiwizator-known-issues.md)&nbsp;&bull;&nbsp;[SUPPORT](src/Resources/Doc/archiwizator-support.md)
   <br>
 
-</h5>
+</h4>
 
 <!-- The HTML indentations have to stay this way to work. -->
 <table>

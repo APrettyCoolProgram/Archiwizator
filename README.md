@@ -190,7 +190,11 @@ If you are interested in contributing to this project, please see our:
 * [Pull request template](src/Resources/Doc/archiwizator-pull-request-template.md)
 
 ### Repository
-![Language count](https://img.shields.io/github/languages/count/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;![Top language](https://img.shields.io/github/languages/top/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;![Repository size](https://img.shields.io/github/repo-size/aprettycoolprogram/Archiwizator)&nbsp;![Lines of code](https://img.shields.io/tokei/lines/github/aprettycoolprogram/Archiwizator)
+![Language count](https://img.shields.io/github/languages/count/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;![Top language](https://img.shields.io/github/languages/top/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;![Repository size](https://img.shields.io/github/repo-size/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;![Lines of code](https://img.shields.io/tokei/lines/github/aprettycoolprogram/Archiwizator?style=flat-square)
+
+![Release downloads](https://img.shields.io/github/downloads/aprettycoolprogram/Archiwizator/total?style=flat-square)
+
+
 
 * [Issues](https://github.com/aprettycoolprogram/Archiwizator/issues)
 * [Pull request](https://github.com/aprettycoolprogram/Archiwizator/pulls)

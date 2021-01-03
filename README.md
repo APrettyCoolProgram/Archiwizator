@@ -50,7 +50,7 @@
 
 <h6 align="center">
 
-  [![Manual](https://img.shields.io/badge/Manual-17806D?style=flat-square)](src/Resources/Doc/Manual/archiwizator-manual.md)&nbsp;
+  [![Manual](https://img.shields.io/badge/Manual-17806D?style=flat-square&?style=for-the-badge)](src/Resources/Doc/Manual/archiwizator-manual.md)&nbsp;
 <br>
   [MANUAL](src/Resources/Doc/Manual/archiwizator-manual.md)&nbsp;&bull;&nbsp;[CHANGELOG](src/Resources/Doc/archiwizator-changelog.md)&nbsp;&bull;&nbsp;[ROADMAP](src/Resources/Doc/archiwizator-roadmap.md)&nbsp;&bull;&nbsp;[KNOWN ISSUES](src/Resources/Doc/archiwizator-known-issues.md)&nbsp;&bull;&nbsp;[SUPPORT](src/Resources/Doc/archiwizator-support.md)
   <br>

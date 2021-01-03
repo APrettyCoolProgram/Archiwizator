@@ -1353,7 +1353,7 @@
                 <!--  Archiwizator : Source : TextBox  -->
                 <StackPanel x:Name="spnlSourceChoice"
                             Width="345">
-                    <TextBox x:Name="txbxSource"
+                    <TextBox x:Name="txbxSourcePath"
                              Width="325"
                              Height="22"
                              Margin="10,10,10,0"

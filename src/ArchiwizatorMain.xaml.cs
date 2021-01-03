@@ -1,6 +1,6 @@
 ﻿/* PROJECT: Archiwizator (https://github.com/aprettycoolprogram/Archiwizator)
  *    FILE: Archiwizator.ArchiwizatorMain.xaml.cs
- * UPDATED: 12-31-2020-10:08 AM
+ * UPDATED: 12-31-2020-1:28 PM
  * LICENSE: Apache v2 (https://apache.org/licenses/LICENSE-2.0)
  *          Copyright 2020 A Pretty Cool Program All rights reserved
  */
@@ -27,36 +27,46 @@ namespace Archiwizator
         /// <param name="archiwizatorMainWindow">The Archiwizinator MainWindow object.</param>
         private static void SetupArchiwizator(Window archiwizatorMainWindow)
         {
-            DuWindow.SetTitle(archiwizatorMainWindow, $"Archiwizator v{DuApplication.GetApplicationVersion()}");
+            archiwizatorMainWindow.Title = $"Archiwizator v{DuApplication.GetApplicationVersion()}";
         }
 
         /// <summary>Enables/disables the textboxes that contains sub-directories to remove information.</summary>
         /// <remarks>This handles both sub-directory list boxes.</remarks>
-        private static void ModifyRemoveDirectoryTextBoxes(TextBox txbx, bool isEnabled)
+        private void ModifyRemoveDirectoryTextBoxes()
         {
-            DuTextBox.SetIsEnabled(txbx, isEnabled);
-            DuTextBox.SaveTextAndClear(txbx);
+            if((bool)ckbxRemoveSubDirectoriesNamed.IsChecked)
+            {
+                txbxRemoveSubDirectoriesNamed.IsEnabled = true;
+            }
+            else
+            {
+                DuTextBox.SaveTextAndClear(txbxRemoveSubDirectoriesNamed);
+                txbxRemoveSubDirectoriesNamed.IsEnabled = false;
+            }
         }
 
         /// <summary>Enables/disables the btnArchiwizate control.</summary>
         /// <remarks>The Archiwizate button is only enabled if there is a valid source folder.</remarks>
         private void ModifyArchiwizateButton()
         {
-            if(txbxSource.Text is not "")
+            if(txbxSourcePath.Text is not "")
             {
-                btnArchiwizate.IsEnabled = Directory.Exists(txbxSource.Text);
+                btnArchiwizate.IsEnabled = Directory.Exists(txbxSourcePath.Text);
             }
         }
 
         /// <summary>Prompts the user to choose a folder.</summary>
-        private void ChooseSource() => txbxSource.Text = DuFolderDialog.GetFolderPath();
+        private void ChooseSource()
+        {
+            txbxSourcePath.Text = DuFolderDialog.GetFolderPath();
+        }
 
         /// <summary>Start Archiwizator.</summary>
         private void Archiwizate()
         {
             var archiwizator = new DuArchiwizator()
             {
-                SourcePath                       = txbxSource.Text,
+                SourcePath                       = txbxSourcePath.Text,
                 PostfixDateStamp                 = (bool)ckbxPrependDateStamp.IsChecked,
                 ExtractRootArchives              = (bool)ckbxExtractRootArchives.IsChecked,
                 ExtractTargetArchives            = (bool)ckbxExtractTargetArchives.IsChecked,
@@ -85,7 +95,7 @@ namespace Archiwizator
 
         private void btnArchiwizate_Click(object sender, RoutedEventArgs e) => Archiwizate();
 
-        private void ckbxRemoveSubDirectoriesNamed_CheckChanged(object sender, RoutedEventArgs e) => ModifyRemoveDirectoryTextBoxes(txbxRemoveSubDirectoriesNamed, (bool)ckbxRemoveSubDirectoriesNamed.IsChecked);
+        private void ckbxRemoveSubDirectoriesNamed_CheckChanged(object sender, RoutedEventArgs e) => ModifyRemoveDirectoryTextBoxes();
 
         /*  These event handlers are placeholders for functionality that is not yet implemented.
          */

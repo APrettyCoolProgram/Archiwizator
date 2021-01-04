@@ -28,7 +28,7 @@
   ### CONTENTS
   [ABOUT ARCHIWIZATOR](#about-archiwizator)<br>
   [THE MAIN WINDOW](#the-main-window)<br>
-  [ARCHIWIZATOR OPTIONS](#1-archiwizator-options)<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;[ARCHIWIZATOR OPTIONS](#1-archiwizator-options)<br>
 
 </td>
 </tr>

@@ -93,7 +93,9 @@ While Archiwizator is written in .NET Core C#, and much of it is cross-platform,
 To start Archiwizator:
 1. Go to your Archiwizator directory
 2. Double-click `Archiwizator.exe`
-3. Read the [manual](https://github.com/APrettyCoolProgram/Archiwizator/blob/development/src/Resources/Doc/Manual/manual.md)
+
+### There is a manual
+The Archiwizator [manual](https://github.com/APrettyCoolProgram/Archiwizator/blob/development/src/Resources/Doc/Manual/manual.md) is updated when a new version is released, and is the best way to learn how to use Archiwizator.
 
 # UPDATING
 Since Archiwizator is portable, you just need to replace the old version with the new version.
@@ -102,14 +104,14 @@ Since Archiwizator is portable, you just need to replace the old version with th
 Since Archiwizator is portable, you just need to delete the location where Archiwizator resides.
 
 # HOW IT WORKS
-Archiwizator is a front-end for [7-Zip](https://7-zip.org)
+Archiwizator is a front-end for [7-Zip](https://7-zip.org).
 
 # DEVELOPMENT
 Archiwizator is developed by [A Pretty Cool Program](https://aprettycoolprogram.com) and these [contributors](src/Resources/Doc/contributors.md), using these [third-party resources](https://github.com/APrettyCoolProgram/Archiwizator/blob/development/src/Resources/Doc/built-with.md).
 
-### Contributing
 You can find the development branch of Archiwizator [here](https://github.com/APrettyCoolProgram/Archiwizator/tree/development).
 
+### Contributing
 To contribute to the development branch of Archiwizator, please see our:
 * [Code of conduct](src/Resources/Doc/code-of-conduct.md)
 * [Contributing guidelines](src/Resources/Doc/contributing.md)
@@ -117,6 +119,7 @@ To contribute to the development branch of Archiwizator, please see our:
 * [Issue template](src/Resources/Doc/issue-template.md)
 * [Pull request template](src/Resources/Doc/pull-request-template.md)
 
+### Forking
 If you are interested in forking Archiwizator, you will need:
 * [.NET Core 5.0](https://dotnet.microsoft.com/download/dotnet-core)
 * [Du](https://github.com/APrettyCoolProgram/Du) (specifically [this version](https://github.com/APrettyCoolProgram/Du/tree/development-archiwizator))

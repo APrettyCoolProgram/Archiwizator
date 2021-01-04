@@ -22,13 +22,20 @@
 
 ## The main Archiwizinator window
 
-  <img src="Image/main-window-shaded.png" alt="Archiwizator main window" width="500">
-  <br>
-  1.<br>
-  2.<br>
-  3.<br>
-  <br>
+<h3 align="center">
 
+  <img src="Image/main-window-shaded-numbered.png" alt="Archiwizator main window" width="500">
+
+</h3>
+
+1. ARCHIWIZATOR<br>
+This is something
+2. 7ZIP<br>
+3. SRC<br>
+4. ARCHIWIZATE!<br>
+5. PROGRESS OVERVIEW<br>
+6. PROGRESS DETAILS<br>
+<br>
 
 
 

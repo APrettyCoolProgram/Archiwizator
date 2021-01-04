@@ -1,3 +1,0 @@
-# Archiwizator Manual
-
-Coming soon!

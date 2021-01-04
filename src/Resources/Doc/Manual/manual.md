@@ -12,11 +12,13 @@
 
 </h1>
 
-<h2 align="center">
+<h5 align="center">
 
   Archiwizator v0.905-beta&nbsp;&bull;&nbsp;Last updated January 4, 2021
 
-</h2>
+</h5>
+
+***
 
 ## The main Archiwizinator window
 ![Main Archiwizator window](https://github.com/APrettyCoolProgram/Archiwizator/blob/main/src/Resources/Doc/Manual/Image/main-window-shaded.png)

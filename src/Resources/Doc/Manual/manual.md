@@ -52,7 +52,7 @@ The main window is comprised of:
 # ARCHIWIZATOR OPTIONS
 Archiwizator options are divided into three categories:
 
-## Preparation
+## PREPARATION
 
 ### Extract existing root directories
 Extracts all archive files in the source directory, then deletes the original archive files.
@@ -77,7 +77,7 @@ The newly created sub-directories would then be archived by Archiwizator.
 #### NOTES
 * Only .zip files will be extracted.
 
-#### Extract existing archives in the target
+### Extract existing archives in the target
 Extracts any archive files in all sub-directories of the source directory, then deletes the original archive files.
 
 Enable this option if there are archive files in the sub-directories of the source directory that you want to re-archive using Archiwizator.
@@ -110,6 +110,6 @@ The newly created sub-directories would then be included in the partent when arc
 
 #### Remove sub-directories named
 
-### During compression
+## DURING COMPRESSION
 
-### Cleanup
+## CLEANUP

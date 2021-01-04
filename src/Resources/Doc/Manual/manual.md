@@ -29,6 +29,7 @@
   [ABOUT ARCHIWIZATOR](#about-archiwizator)<br>
   [THE MAIN WINDOW](#the-main-window)<br>
   &nbsp;&nbsp;&nbsp;&nbsp;[ARCHIWIZATOR OPTIONS](#1-archiwizator-options)<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;[7ZIP OPTIONS](#2-7zip-options)<br>
 
 </td>
 </tr>
@@ -64,13 +65,13 @@ The main window is comprised of:
 6. [Progress details display](#progress-details-display)
 
 # 1. ARCHIWIZATOR OPTIONS
-Archiwizator options are divided into three categories:
+Archiwizator options are divided into the following categories:
 * [Preparation](#preparation)
 * [During compression](#during-compression)
 * [Cleanup](#cleanup)
 
 ## PREPARATION
-These options take place prior to Archiwizator doing any compression.
+These options take place prior to Archiwizator compressing a sub-directory.
 
 ### Extract existing root directories
 Extracts all archive files in the source directory, then deletes the original archive files.
@@ -147,6 +148,7 @@ The remaining sub-directories would then be archived by Archiwizator.
 * Use caution with this option!
 
 ## DURING COMPRESSION
+These options take place while Archiwizator is compressing a sub-directory.
 
 ### Prepend datestamp
 Adds a `_YYMMDD` datestamp to the end of an archive filename.
@@ -160,11 +162,30 @@ An archive created on December 29th, 2020 with a prepended datestamp will have a
 ```
 
 ## CLEANUP
+These options take place after Archiwizator has compressed a sub-directory.
 
+#### Delete source files after compressing.
+Deletes the sub-directory after compressing.
 
+Enable this option to keep your directories clean, and to minimize space used.
 
-# 2. 7-ZIP OPTIONS
-7-Zip options are divided into three categories:
+#### NOTES
+* Use caution with this option!
+
+# 2. 7ZIP OPTIONS
+7-Zip options are divided into the following categories:
+* [Compression](#compression)
 
 ## COMPRESSION
-These options
+The 7-Zip compression options.
+
+### Level
+Determines the level of compression that 7-Zip will use.
+
+The following compression levels are available:
+* Store
+* Fastest
+* Fast
+* Normal (default)
+* Maximum
+* Ultra

@@ -164,7 +164,7 @@ I think so.
 # DEVELOPMENT
 A blurb about development can go here.
 
-* [Project homepage](https://github.com/github-account/archiwizator)
+* [Project homepage](https://github.com/APrettyCoolProgram/Archiwizator)
 * [Changelog](src/Resources/Doc/archiwizator-changelog.md)
 * [Roadmap](src/Resources/Doc/archiwizator-roadmap.md)
 * [Known issues](src/Resources/Doc/archiwizator-known-issues.md)
@@ -187,11 +187,9 @@ If you are interested in contributing to this project, please see our:
 
 ### Repository
 
-* [Issues](https://github.com/aprettycoolprogram/Archiwizator/issues)
-* [Pull request](https://github.com/aprettycoolprogram/Archiwizator/pulls)
-* [Projects](https://github.com/aprettycoolprogram/Archiwizator/projects)
-* [Wiki](https://github.com/aprettycoolprogram/Archiwizator/wiki)
-* [Insights](https://github.com/aprettycoolprogram/Archiwizator/pulse)
+* [Projects](https://github.com/APrettyCoolProgram/Archiwizator/projects)
+* [Wiki](https://github.com/APrettyCoolProgram/Archiwizator/wiki)
+* [Insights](https://github.com/APrettyCoolProgram/Archiwizator/pulse)
 
 ***
 
@@ -204,4 +202,4 @@ If you are interested in contributing to this project, please see our:
 [![Feedback](https://img.shields.io/badge/feedback@aprettycoolprogram.com-17806D?style=flat-square)](mailto:feedback@aprettycoolprogram.com)&nbsp;
 [![GitHub](https://img.shields.io/github/followers/aprettycoolprogram.svg?label=GitHub&style=social)](https://github.com/aprettycoolprogram)&nbsp;
 [![Twitter](https://img.shields.io/twitter/follow/aprettycoolprog.svg?label=Twitter&style=social)](https://twitter.com/aprettycoolprog)&nbsp;
-[![Repository built using](https://img.shields.io/badge/README%20built%20using-a%20pretty%20cool%20README%20template-17806D.svg)](https://github.com/APrettyCoolProgram/repository-template/tree/master)
+[![Repository built using](https://img.shields.io/badge/README%20built%20using-a%20pretty%20cool%20README%20template-17806D.svg)](https://github.com/APrettyCoolProgram/my-development-environment/tree/development/templates/github)

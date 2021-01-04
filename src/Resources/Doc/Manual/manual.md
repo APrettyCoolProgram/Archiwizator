@@ -28,13 +28,13 @@
 
 </h3>
 
-1. ARCHIWIZATOR<br>
+1. **ARCHIWIZATOR**<br>
 This is something
-2. 7ZIP<br>
-3. SRC<br>
-4. ARCHIWIZATE!<br>
-5. PROGRESS OVERVIEW<br>
-6. PROGRESS DETAILS<br>
+2. **7ZIP**<br>
+3. **SRC**<br>
+4. **ARCHIWIZATE!**<br>
+5. **PROGRESS OVERVIEW**<br>
+6. **PROGRESS DETAILS**<br>
 <br>
 
 

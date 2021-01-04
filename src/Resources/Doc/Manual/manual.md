@@ -50,12 +50,12 @@ The main window is comprised of:
 6. [Progress details display](#progress-details-display)
 <br>
 
-## Archiwizator options
+# Archiwizator options
 Archiwizator options are divided into three categories:
 
-### Preparation
+## Preparation
 
-#### Extract existing root directories
+### Extract existing root directories
 Extracts all archive files in the source directory, then deletes the original archive files.
 
 Enable this option if there are archive files in the source directory that you want to re-archive using Archiwizator.

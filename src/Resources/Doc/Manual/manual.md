@@ -74,20 +74,39 @@ would be extracted to individual sub-directories:
 ```
 The newly created sub-directories would then be archived by Archiwizator.
 
-NOTES
-- Only .zip files will be extracted.
-
-
-
-
-
-
-
-
-
-
+#### NOTES
+* Only .zip files will be extracted.
 
 #### Extract existing archives in the target
+Extracts any archive files in all sub-directories of the source directory, then deletes the original archive files.
+
+Enable this option if there are archive files in the sub-directories of the source directory that you want to re-archive using Archiwizator.
+
+EXAMPLE
+The following archives:
+```
+../SourcePath/SubDirectory01/compressed-file-01.zip
+../SourcePath/SubDirectory01/compressed-file-02.zip
+..
+../SourcePath/SubDirectory99/compressed-file-03.zip
+../SourcePath/SubDirectory99/compressed-file-04.zip
+..
+..
+```
+would be extracted to individual sub-directories:
+```
+../SourcePath/SubDirectory01/compressed-file-01/
+../SourcePath/SubDirectory01/compressed-file-02/
+..
+../SourcePath/SubDirectory99/compressed-file-03/
+../SourcePath/SubDirectory99/compressed-file-04/
+```
+The newly created sub-directories would then be included in the partent when archived by Archiwizator.
+
+#### NOTES
+* Only .zip files will be extracted
+* Only goes down one level
+
 
 #### Remove sub-directories named
 

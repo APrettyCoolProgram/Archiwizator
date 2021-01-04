@@ -21,7 +21,15 @@
 ***
 
 # ARCHIWIZATOR
+
+### What
 Archiwizator is a GUI for 7-Zip.
+
+### Why
+I couldn't find anything that did this.
+
+### How
+Uses [7-Zip](URL)
 
 # THE MAIN WINDOW
 When Archiwizator starts, you the main window will be displayed:
@@ -42,7 +50,7 @@ The main window is comprised of:
 6. [Progress details display](#progress-details-display)
 <br>
 
-## Archiwizator options
+# Archiwizator options
 Archiwizator options are divided into three categories:
 
 ### 1. Preparation

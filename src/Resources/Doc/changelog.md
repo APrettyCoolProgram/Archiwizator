@@ -1,7 +1,4 @@
-﻿> PROJECT: Archiwizator<br>
-> FILE: archiwizator-changelog.md
-
-# Archiwizator: Changelog
+﻿# CHANGELOG: Archiziwator
 
 #### v1.0
 `INFO` Initial release

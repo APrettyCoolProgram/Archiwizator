@@ -1,1 +1,1 @@
-# PULL REQUEST TEMPLATE: repository
+# PULL REQUEST TEMPLATE: Archiziwator

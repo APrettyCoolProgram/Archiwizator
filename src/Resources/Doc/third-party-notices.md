@@ -1,1 +1,1 @@
-# THIRD PARTY NOTICES: repository
+# THIRD PARTY NOTICES: Archiziwator

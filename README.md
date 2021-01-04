@@ -38,7 +38,7 @@
 
 <h4 align="center">
 
-  [MANUAL](src/Resources/Doc/Manual/archiwizator-manual.md)&nbsp;&bull;&nbsp;[CHANGELOG](src/Resources/Doc/archiwizator-changelog.md)&nbsp;&bull;&nbsp;[ROADMAP](src/Resources/Doc/archiwizator-roadmap.md)&nbsp;&bull;&nbsp;[KNOWN ISSUES](src/Resources/Doc/archiwizator-known-issues.md)&nbsp;&bull;&nbsp;[SUPPORT](src/Resources/Doc/archiwizator-support.md)
+  [MANUAL](src/Resources/Doc/Manual/archiwizator-manual.md)&nbsp;&bull;&nbsp;[CHANGELOG](src/Resources/Doc/changelog.md)&nbsp;&bull;&nbsp;[ROADMAP](src/Resources/Doc/roadmap.md)&nbsp;&bull;&nbsp;[KNOWN ISSUES](src/Resources/Doc/known-issues.md)&nbsp;&bull;&nbsp;[SUPPORT](src/Resources/Doc/support.md)
   <br>
 
 </h4>
@@ -165,25 +165,25 @@ I think so.
 A blurb about development can go here.
 
 * [Project homepage](https://github.com/APrettyCoolProgram/Archiwizator)
-* [Changelog](src/Resources/Doc/archiwizator-changelog.md)
-* [Roadmap](src/Resources/Doc/archiwizator-roadmap.md)
-* [Known issues](src/Resources/Doc/archiwizator-known-issues.md)
-* [Support](src/Resources/Doc/archiwizator-support.md)
-* [Testing](src/Resources/Doc/archiwizator-testing.md)
-* [Built with](src/Resources/Doc/archiwizator-built-with.md)
-* [Contributors](src/Resources/Doc/archiwizator-contributors.md)
-* [Acknowledgements](src/Resources/Doc/archiwizator-acknowledgements.md)
-* [Notices](src/Resources/Doc/archiwizator-third-party-notices.md)
-* [Related projects](src/Resources/Doc/archiwizator-related-projects.md)
-* [Additional reading](src/Resources/Doc/archiwizator-additional-reading.md)
+* [Changelog](src/Resources/Doc/changelog.md)
+* [Roadmap](src/Resources/Doc/aroadmap.md)
+* [Known issues](src/Resources/Doc/known-issues.md)
+* [Support](src/Resources/Doc/support.md)
+* [Testing](src/Resources/Doc/testing.md)
+* [Built with](src/Resources/Doc/built-with.md)
+* [Contributors](src/Resources/Doc/contributors.md)
+* [Acknowledgements](src/Resources/Doc/acknowledgements.md)
+* [Notices](src/Resources/Doc/third-party-notices.md)
+* [Related projects](src/Resources/Doc/related-projects.md)
+* [Additional reading](src/Resources/Doc/additional-reading.md)
 
 ### Contributing
 If you are interested in contributing to this project, please see our:
-* [Code of conduct](src/Resources/Doc/archiwizator-code-of-conduct.md)
-* [Contributing guidelines](src/Resources/Doc/archiwizator-contributing.md)
-* [Testing procedures](src/Resources/Doc/archiwizator-testing.md)
-* [Issue template](src/Resources/Doc/archiwizator-issue-template.md)
-* [Pull request template](src/Resources/Doc/archiwizator-pull-request-template.md)
+* [Code of conduct](src/Resources/Doc/code-of-conduct.md)
+* [Contributing guidelines](src/Resources/Doc/contributing.md)
+* [Testing procedures](src/Resources/Doc/testing.md)
+* [Issue template](src/Resources/Doc/issue-template.md)
+* [Pull request template](src/Resources/Doc/pull-request-template.md)
 
 ### Repository
 

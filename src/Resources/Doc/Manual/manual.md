@@ -20,7 +20,23 @@
 
 ***
 
-# ARCHIWIZATOR
+<!-- The HTML indentations have to stay this way to work. -->
+<table>
+<tr>
+<td img src="RepositoryData/Asset/Image/Document/README/spacer.png" alt="blank-spacer" width="1000" height="1">
+
+  ### CONTENTS
+  [ABOUT ARCHIWIZATOR](#about-archiwizator)<br>
+  [THE MAIN WINDOW](#the-main-window)<br>
+  [ARCHIWIZATOR OPTIONS](#1-archiwizator-options)<br>
+
+</td>
+</tr>
+</table>
+
+
+
+# ABOUT ARCHIWIZATOR
 
 ### What
 Archiwizator is a GUI for 7-Zip.

@@ -53,8 +53,8 @@ The main window is comprised of:
 # Archiwizator options
 Archiwizator options are divided into three categories:
 
-### 1. Preparation
+## Preparation
 
-### 2. During compression
+## During compression
 
-### 3. Cleanup
+## Cleanup

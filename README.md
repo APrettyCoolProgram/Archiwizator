@@ -84,7 +84,7 @@ Archiwizator is a work in progress. It does what it is supposed to do, but not..
 
 ### Windows
 1. Download the current [Archiwizinator-X.x.zip](https://github.com/APrettyCoolProgram/Archiwizator/releases/tag/v0.905-beta) file
-2. Extract Archiwizator-X.x.zip to whatever directory you want it to reside
+2. Extract `Archiwizator-X.x.zip` to whatever directory you want it to reside
 
 ### Other operating systems
 While Archiwizator is written in .NET Core C#, and much of it is cross-platform, it does utilize WPF technology, and is therefore Windows-only.
@@ -93,48 +93,16 @@ While Archiwizator is written in .NET Core C#, and much of it is cross-platform,
 To start Archiwizator:
 1. Go to your Archiwizator directory
 2. Double-click `Archiwizator.exe`
-
-### The main Archiwizator window
-When Archiwizator starts, you'll see the main Archiwizator window:
-
-
-
-
+3. Read the [manual](https://github.com/APrettyCoolProgram/Archiwizator/blob/development/src/Resources/Doc/Manual/manual.md)
 
 # UPDATING
-Updating instructions go here
-
-
-
+Since Archiwizator is portable, you just need to replace the old version with the new version.
 
 # UNINSTALLING
-Instructions for uninstalling go here.
-
-# COMPILING
-Compling information blurb goes here.
-
-### Making
-Making instructions go here.
-
-### Building
-Building instructions go here.
-
-### Deploying
-Deployment instructions go here.
-
-# TESTING
-Testing instructions go here.
+Since Archiwizator is portable, you just need to delete the location where Archiwizator resides.
 
 # HOW IT WORKS
-Sometimes it's fun to let users know how the magic happens.
-
-# API
-If your project contains an API, it should be documented here (or link to the documentation).
-
-# FAQ
-
-### Are you nice?
-I think so.
+Archiwizator is a front-end for [7-Zip](7-zip.org)
 
 # DEVELOPMENT
 A blurb about development can go here.

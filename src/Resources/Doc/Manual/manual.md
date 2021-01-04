@@ -16,12 +16,6 @@
 </h5>
 </h1>
 
-<h5 align="center">
-
-  Archiwizator v0.905-beta&nbsp;&bull;&nbsp;Last updated January 4, 2021
-
-</h5>
-
 ***
 
 ## The main Archiwizinator window

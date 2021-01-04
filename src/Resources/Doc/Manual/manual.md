@@ -12,13 +12,11 @@
 
 </h1>
 
-<h3 align="center">
+<h2 align="center">
 
-  This manual is for Archiwizator v0.905-beta
-  <br>
-  Last updated January 4, 2021
+  Archiwizator v0.905-beta&nbsp;&bull;&nbsp;Last updated January 4, 2021
 
-</h3>
+</h2>
 
 ## The main Archiwizinator window
 ![Main Archiwizator window](https://github.com/APrettyCoolProgram/Archiwizator/blob/main/src/Resources/Doc/Manual/Image/main-window-shaded.png)

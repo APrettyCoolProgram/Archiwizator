@@ -200,7 +200,6 @@ If you are interested in contributing to this project, please see our:
 ![Top language](https://img.shields.io/github/languages/top/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;
 ![Repository size](https://img.shields.io/github/repo-size/aprettycoolprogram/Archiwizator?style=flat-square)&nbsp;
 ![Lines of code](https://img.shields.io/tokei/lines/github/aprettycoolprogram/Archiwizator?style=flat-square)
-
 [![Developed by](https://img.shields.io/badge/developed%20by-a%20pretty%20cool%20program-17806D?style=flat-square)](https://aprettycoolprogram.com)&nbsp;
 [![Feedback](https://img.shields.io/badge/feedback@aprettycoolprogram.com-17806D?style=flat-square)](mailto:feedback@aprettycoolprogram.com)&nbsp;
 [![GitHub](https://img.shields.io/github/followers/aprettycoolprogram.svg?label=GitHub&style=social)](https://github.com/aprettycoolprogram)&nbsp;

@@ -21,15 +21,17 @@
 ***
 
 ## The main Archiwizinator window
+When Archiwizator starts, you the main window will be displayed:
 
 <h3 align="center">
 
-  <img src="Image/main-window-shaded-numbered.png" alt="Archiwizator main window" width="500">
+  <img src="Image/main-window-shaded-numbered.png" alt="Archiwizator main window" width="600">
 
 </h3>
 
-1. **ARCHIWIZATOR**<br>
-This is something
+The main window is comprised of:
+
+1. [Archiwizator options](#archiwizator-options)<br>
 2. **7ZIP**<br>
 3. **SRC**<br>
 4. **ARCHIWIZATE!**<br>
@@ -37,10 +39,5 @@ This is something
 6. **PROGRESS DETAILS**<br>
 <br>
 
+#### Archiwizator options
 
-
-
-
-
-
-![Main Archiwizator window](https://github.com/APrettyCoolProgram/Archiwizator/blob/main/src/Resources/Doc/Manual/Image/main-window-shaded.png)

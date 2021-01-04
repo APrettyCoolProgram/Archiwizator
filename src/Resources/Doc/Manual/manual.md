@@ -50,11 +50,11 @@ The main window is comprised of:
 6. [Progress details display](#progress-details-display)
 <br>
 
-# Archiwizator options
+## Archiwizator options
 Archiwizator options are divided into three categories:
 
-## Preparation
+### Preparation
 
-## During compression
+### During compression
 
-## Cleanup
+### Cleanup

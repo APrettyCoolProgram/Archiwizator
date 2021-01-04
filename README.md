@@ -52,11 +52,9 @@
   [ABOUT](#about)<br>
   [GETTING STARTED](#getting-started)<br>
   [INSTALLING](#installing)<br>
-  [SETUP](#setup)<br>
   [USING](#using)<br>
-  [COMPILING](#compiling)<br>
-  [TESTING](#testing)<br>
-  [API](#api)<br>
+  [UPDATING](#updating)<br>
+  [UNINSTALLING](#uninstalling)<br>
   [DEVELOPMENT](#development)<br>
   [ADDITIONAL INFORMATION](#additional-information)<br>
 
@@ -84,9 +82,9 @@ Archiwizator is a work in progress. It does what it is supposed to do, but not..
 
 ### Windows
 1. Download the current [Archiwizinator-X.x.zip](https://github.com/APrettyCoolProgram/Archiwizator/releases/tag/v0.905-beta) file
-2. Extract Archiwizator-X.x.zip to whatever directory you want it to reside
+2. Extract `Archiwizator-X.x.zip` to whatever directory you want it to reside
 
-### Other operating systems
+#### Other operating systems
 While Archiwizator is written in .NET Core C#, and much of it is cross-platform, it does utilize WPF technology, and is therefore Windows-only.
 
 # USING
@@ -94,81 +92,29 @@ To start Archiwizator:
 1. Go to your Archiwizator directory
 2. Double-click `Archiwizator.exe`
 
-### The main Archiwizator window
-When Archiwizator starts, you'll see the main Archiwizator window:
-
-
-
-
+### There is a manual!
+The Archiwizator [manual](https://github.com/APrettyCoolProgram/Archiwizator/blob/development/src/Resources/Doc/Manual/manual.md) is updated when a new version is released, and is the best way to learn how to use Archiwizator.
 
 # UPDATING
-Updating instructions go here
-
-
-
+Since Archiwizator is portable, you just need to replace the old version with the new version.
 
 # UNINSTALLING
-Instructions for uninstalling go here.
-
-# COMPILING
-Compling information blurb goes here.
-
-### Making
-Making instructions go here.
-
-### Building
-Building instructions go here.
-
-### Deploying
-Deployment instructions go here.
-
-# TESTING
-Testing instructions go here.
+Since Archiwizator is portable, you just need to delete the location where Archiwizator resides.
 
 # HOW IT WORKS
-Sometimes it's fun to let users know how the magic happens.
-
-# API
-If your project contains an API, it should be documented here (or link to the documentation).
-
-# FAQ
-
-### Are you nice?
-I think so.
+Archiwizator is a front-end for [7-Zip](https://7-zip.org).
 
 # DEVELOPMENT
-A blurb about development can go here.
+Archiwizator is developed by [A Pretty Cool Program](https://aprettycoolprogram.com) and these [contributors](src/Resources/Doc/contributors.md), using these [third-party resources](https://github.com/APrettyCoolProgram/Archiwizator/blob/development/src/Resources/Doc/built-with.md).
 
-Roadmap
+You can find the development branch of Archiwizator [here](https://github.com/APrettyCoolProgram/Archiwizator/tree/development).
 
-prereqs/requirements
+To contribute to the development branch of Archiwizator, please see our [contributing guidelines](src/Resources/Doc/contributing.md)
 
-* [Project homepage](https://github.com/APrettyCoolProgram/Archiwizator)
-* [Changelog](src/Resources/Doc/changelog.md)
-* [Roadmap](src/Resources/Doc/aroadmap.md)
-* [Known issues](src/Resources/Doc/known-issues.md)
-* [Support](src/Resources/Doc/support.md)
-* [Testing](src/Resources/Doc/testing.md)
-* [Built with](src/Resources/Doc/built-with.md)
-* [Contributors](src/Resources/Doc/contributors.md)
+# ADDITIONAL INFORMATION
 * [Acknowledgements](src/Resources/Doc/acknowledgements.md)
-* [Notices](src/Resources/Doc/third-party-notices.md)
 * [Related projects](src/Resources/Doc/related-projects.md)
 * [Additional reading](src/Resources/Doc/additional-reading.md)
-
-### Contributing
-If you are interested in contributing to this project, please see our:
-* [Code of conduct](src/Resources/Doc/code-of-conduct.md)
-* [Contributing guidelines](src/Resources/Doc/contributing.md)
-* [Testing procedures](src/Resources/Doc/testing.md)
-* [Issue template](src/Resources/Doc/issue-template.md)
-* [Pull request template](src/Resources/Doc/pull-request-template.md)
-
-### Repository
-
-* [Projects](https://github.com/APrettyCoolProgram/Archiwizator/projects)
-* [Wiki](https://github.com/APrettyCoolProgram/Archiwizator/wiki)
-* [Insights](https://github.com/APrettyCoolProgram/Archiwizator/pulse)
 
 ***
 

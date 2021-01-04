@@ -1,1 +1,1 @@
-# CONTRIBUTORS: Archiziwator
+# Archiwizator: Contributors

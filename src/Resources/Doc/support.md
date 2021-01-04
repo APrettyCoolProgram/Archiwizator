@@ -1,1 +1,1 @@
-# SUPPORT: Archiziwator
+# Archiwizator: Support

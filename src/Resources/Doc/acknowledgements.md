@@ -1,1 +1,1 @@
-# ACKNOWLEDGEMENTS: Archiziwator
+# Archiwizator: Acknowledgements

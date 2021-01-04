@@ -22,17 +22,12 @@
 
 ## The main Archiwizinator window
 
-<h3 align="center">
-
-  <img src="Image/main-window-shaded.png" alt="Archiwizator main window" width="400">
+  <img src="Image/main-window-shaded.png" alt="Archiwizator main window" width="500">
   <br>
-  1.
-  2.
-  3.
+  1.<br>
+  2.<br>
+  3.<br>
   <br>
-
-</h3>
-
 
 
 

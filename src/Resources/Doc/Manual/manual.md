@@ -48,9 +48,8 @@ The main window is comprised of:
 4. [The Archiwizate button](#the-archiwizate-button)
 5. [Progress overview display](#progress-overview-display)
 6. [Progress details display](#progress-details-display)
-<br>
 
-# Archiwizator options
+# ARCHIWIZATOR OPTIONS
 Archiwizator options are divided into three categories:
 
 ## Preparation
@@ -62,17 +61,17 @@ Enable this option if there are archive files in the source directory that you w
 
 EXAMPLE
 The following archives:
-
+```
 ../SourcePath/compressed-file-01.zip
 ../SourcePath/compressed-file-02.zip
 ..
-
+```
 would be extracted to individual sub-directories:
-
+```
 ../SourcePath/compressed-file-01/
 ../SourcePath/compressed-file-02/
 ..
-
+```
 The newly created sub-directories would then be archived by Archiwizator.
 
 NOTES

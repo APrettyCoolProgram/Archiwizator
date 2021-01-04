@@ -86,7 +86,7 @@ Archiwizator is a work in progress. It does what it is supposed to do, but not..
 1. Download the current [Archiwizinator-X.x.zip](https://github.com/APrettyCoolProgram/Archiwizator/releases/tag/v0.905-beta) file
 2. Extract `Archiwizator-X.x.zip` to whatever directory you want it to reside
 
-### Other operating systems
+#### Other operating systems
 While Archiwizator is written in .NET Core C#, and much of it is cross-platform, it does utilize WPF technology, and is therefore Windows-only.
 
 # USING
@@ -94,7 +94,7 @@ To start Archiwizator:
 1. Go to your Archiwizator directory
 2. Double-click `Archiwizator.exe`
 
-### There is a manual
+### There is a manual!
 The Archiwizator [manual](https://github.com/APrettyCoolProgram/Archiwizator/blob/development/src/Resources/Doc/Manual/manual.md) is updated when a new version is released, and is the best way to learn how to use Archiwizator.
 
 # UPDATING
@@ -123,11 +123,6 @@ To contribute to the development branch of Archiwizator, please see our:
 If you are interested in forking Archiwizator, you will need:
 * [.NET Core 5.0](https://dotnet.microsoft.com/download/dotnet-core)
 * [Du](https://github.com/APrettyCoolProgram/Du) (specifically [this version](https://github.com/APrettyCoolProgram/Du/tree/development-archiwizator))
-
-### Repository
-* [Projects](https://github.com/APrettyCoolProgram/Archiwizator/projects)
-* [Wiki](https://github.com/APrettyCoolProgram/Archiwizator/wiki)
-* [Insights](https://github.com/APrettyCoolProgram/Archiwizator/pulse)
 
 # ADDITIONAL INFORMATION
 * [Acknowledgements](src/Resources/Doc/acknowledgements.md)

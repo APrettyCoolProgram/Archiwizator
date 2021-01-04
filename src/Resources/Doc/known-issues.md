@@ -1,4 +1,4 @@
-﻿# KNOWN ISSUES: Archiziwator
+﻿# Archiwizator: Known Issues
 
 ## v0.905-beta:
 * The CMD window pops up at the worst time.

@@ -1,4 +1,4 @@
-﻿# ROADMAP: Archiziwator
+﻿# Archiwizator: Roadmap
 
 # FIXES/REFACTORS
 * Move tooltip code someplace so:

@@ -67,70 +67,45 @@
 # ABOUT
 Archiwizator is a Graphical User Interface (GUI) front-end for [7-Zip](https://www.7-zip.org/).
 
-**Archiwizator v1.0 is pretty rough! It works, but it's a bit wonky. Use at your own risk!** 
-
 ### Features
-* Batch archiving
-* Datestamp postfixes
+* Batch archiving!
+* Simple file/folder cleanup prior to archiving data
+* Metal music soundrack (coming soon!)
+* Portable
 
 # GETTING STARTED
-
 ### Before you begin
-Please note that while v1.0 of Archiwizator works, it's not pretty and is not feature-complete.
+Archiwizator is a work in progress. It does what it is supposed to do, but not...gracefully. I would suggest that you take a look at the [known issues](https://github.com/APrettyCoolProgram/Archiwizator/blob/development/src/Resources/Doc/known-issues.md) before using Archiwizinator.
 
 ### Prerequisites
-* Prerequisite #1
-* Prerequisite #2
-* Prerequisite #3
+* .NET Core 5.x
 
 # INSTALLING
 
 ### Windows
-1. The steps to install the project in Windows
-2. Use both Markdown and/or HTML
-3. Include screenshots when possible.
-
-### MacOS
-1. The steps to install the project in MacOS
-2. Use both Markdown and/or HTML
-3. Include screenshots when possible.
-
-### Linux
-1. The steps to install the project in Linux
-2. Use both Markdown and/or HTML
-3. Include screenshots when possible.
+1. Download the current [Archiwizinator-X.x.zip](https://github.com/APrettyCoolProgram/Archiwizator/releases/tag/v0.905-beta) file
+2. Extract Archiwizator-X.x.zip to whatever directory you want it to reside
 
 ### Other operating systems
-1. The steps to install the project in other operating systems
-2. Use both Markdown and/or HTML
-3. Include screenshots when possible.
-4. If other operating systems are not supported, mention that here.
-
-# SETUP
-If your project has a setup procedure, document it here.
-
-For example, you may need to make changes to a configuration file before using the project.
-
-### Configuring
-Configuration introduction.
-
-#### Required configuration settings
-Required configuration settings go here.
-
-#### Recommended configuration settings
-Recommended configuration settings go here.
-
-#### Optional configuration settings
-Optional configuration settings go here.
-
-### Important notes about options
-Optional/important notes about options go here.
+While Archiwizator is written in .NET Core C#, and much of it is cross-platform, it does utilize WPF technology, and is therefore Windows-only.
 
 # USING
-Usage instructions go here.
+To start Archiwizator:
+1. Go to your Archiwizator directory
+2. Double-click `Archiwizator.exe`
+
+### The main Archiwizator window
+When Archiwizator starts, you'll see the main Archiwizator window:
+
+
+
+
 
 # UPDATING
 Updating instructions go here
+
+
+
 
 # UNINSTALLING
 Instructions for uninstalling go here.
@@ -163,6 +138,10 @@ I think so.
 
 # DEVELOPMENT
 A blurb about development can go here.
+
+Roadmap
+
+prereqs/requirements
 
 * [Project homepage](https://github.com/APrettyCoolProgram/Archiwizator)
 * [Changelog](src/Resources/Doc/changelog.md)

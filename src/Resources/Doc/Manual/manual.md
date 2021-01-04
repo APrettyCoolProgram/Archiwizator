@@ -67,7 +67,7 @@ The main window is comprised of:
 Archiwizator options are divided into three categories:
 
 ## PREPARATION
-These are done before.
+These options take place prior to Archiwizator doing any compression.
 
 ### Extract existing root directories
 Extracts all archive files in the source directory, then deletes the original archive files.
@@ -129,7 +129,9 @@ Enable this option if there are specific sub-directories that you don't want inc
 
 EXAMPLE
 If the provided list is:
-`!Temp, old, do-not-archive`
+```
+!Temp, old, do-not-archive
+```
 the following directories would not be archived:
 ```
 ../SourcePath/temporary/
@@ -143,4 +145,23 @@ The remaining sub-directories would then be archived by Archiwizator.
 
 ## DURING COMPRESSION
 
+### Prepend datestamp
+Adds a `_YYMMDD` datestamp to the end of an archive filename.
+
+Enable this option if you want to be able to easily determine when an archive was created.
+
+EXAMPLE
+An archive created on December 29th, 2020 with a prepended datestamp will have a filename like this:
+```
+../SourcePath/compressed-file-01_201229.7z
+```
+
 ## CLEANUP
+
+
+
+# 2. 7-ZIP OPTIONS
+7-Zip options are divided into three categories:
+
+## COMPRESSION
+These options

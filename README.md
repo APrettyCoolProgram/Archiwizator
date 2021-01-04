@@ -105,32 +105,27 @@ Since Archiwizator is portable, you just need to delete the location where Archi
 Archiwizator is a front-end for [7-Zip](https://7-zip.org)
 
 # DEVELOPMENT
-[Archiwizator](https://github.com/APrettyCoolProgram/Archiwizator) is developed by [A Pretty Cool Program](https://aprettycoolprogram.com) and these [contributors](src/Resources/Doc/contributors.md).
-
-Archiwizator was built using [third-party resources](https://github.com/APrettyCoolProgram/Archiwizator/blob/development/src/Resources/Doc/built-with.md).
-
-You can find the development branch of Archiwizator [here](https://github.com/APrettyCoolProgram/Archiwizator/tree/development).
-
-
-
-* [Changelog](src/Resources/Doc/changelog.md)
-* [Roadmap](src/Resources/Doc/aroadmap.md)
-* [Known issues](src/Resources/Doc/known-issues.md)
-* [Support](src/Resources/Doc/support.md)
-* [Testing](src/Resources/Doc/testing.md)
-* [Built with](src/Resources/Doc/built-with.md)
-* [Acknowledgements](src/Resources/Doc/acknowledgements.md)
-* [Notices](src/Resources/Doc/third-party-notices.md)
-* [Related projects](src/Resources/Doc/related-projects.md)
-* [Additional reading](src/Resources/Doc/additional-reading.md)
+Archiwizator is developed by [A Pretty Cool Program](https://aprettycoolprogram.com) and these [contributors](src/Resources/Doc/contributors.md), using these [third-party resources](https://github.com/APrettyCoolProgram/Archiwizator/blob/development/src/Resources/Doc/built-with.md).
 
 ### Contributing
-If you are interested in contributing to this project, please see our:
+You can find the development branch of Archiwizator [here](https://github.com/APrettyCoolProgram/Archiwizator/tree/development).
+
+To contribute to the development branch of Archiwizator, please see our:
 * [Code of conduct](src/Resources/Doc/code-of-conduct.md)
 * [Contributing guidelines](src/Resources/Doc/contributing.md)
 * [Testing procedures](src/Resources/Doc/testing.md)
 * [Issue template](src/Resources/Doc/issue-template.md)
 * [Pull request template](src/Resources/Doc/pull-request-template.md)
+
+If you are interested in forking Archiwizator, you will need:
+* [.NET Core 5.0](https://dotnet.microsoft.com/download/dotnet-core)
+* [Du](https://github.com/APrettyCoolProgram/Du) (specifically [this version](https://github.com/APrettyCoolProgram/Du/tree/development-archiwizator))
+
+* [Testing](src/Resources/Doc/testing.md)
+* [Acknowledgements](src/Resources/Doc/acknowledgements.md)
+* [Notices](src/Resources/Doc/third-party-notices.md)
+* [Related projects](src/Resources/Doc/related-projects.md)
+* [Additional reading](src/Resources/Doc/additional-reading.md)
 
 ### Repository
 

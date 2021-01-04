@@ -7,6 +7,4 @@
 
 * [.NET Core 5.0](https://dotnet.microsoft.com/download/dotnet-core)
 
-* [Du](https://github.com/APrettyCoolProgram/Du) (specifically [this version](https://github.com/APrettyCoolProgram/Du/tree/development-archiwizator))
-
 * [7-Zip](https://www.7-zip.org/)

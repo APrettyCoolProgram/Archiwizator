@@ -20,7 +20,10 @@
 
 ***
 
-## The main Archiwizinator window
+# ARCHIWIZATOR
+Archiwizator is a GUI for 7-Zip.
+
+# THE MAIN WINDOW
 When Archiwizator starts, you the main window will be displayed:
 
 <h3 align="center">
@@ -31,13 +34,19 @@ When Archiwizator starts, you the main window will be displayed:
 
 The main window is comprised of:
 
-1. [Archiwizator options](#archiwizator-options)<br>
-2. **7ZIP**<br>
-3. **SRC**<br>
-4. **ARCHIWIZATE!**<br>
-5. **PROGRESS OVERVIEW**<br>
-6. **PROGRESS DETAILS**<br>
+1. [Archiwizator options](#archiwizator-options)
+2. [7-Zip options](#7zip-options)
+3. [Source options](#source-options)
+4. [The Archiwizate button](#the-archiwizate-button)
+5. [Progress overview display](#progress-overview-display)
+6. [Progress details display](#progress-details-display)
 <br>
 
-#### Archiwizator options
+## Archiwizator options
+Archiwizator options are divided into three categories:
 
+### 1. Preparation
+
+### 2. During compression
+
+### 3. Cleanup

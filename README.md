@@ -124,17 +124,15 @@ If you are interested in forking Archiwizator, you will need:
 * [.NET Core 5.0](https://dotnet.microsoft.com/download/dotnet-core)
 * [Du](https://github.com/APrettyCoolProgram/Du) (specifically [this version](https://github.com/APrettyCoolProgram/Du/tree/development-archiwizator))
 
-* [Testing](src/Resources/Doc/testing.md)
-* [Acknowledgements](src/Resources/Doc/acknowledgements.md)
-* [Notices](src/Resources/Doc/third-party-notices.md)
-* [Related projects](src/Resources/Doc/related-projects.md)
-* [Additional reading](src/Resources/Doc/additional-reading.md)
-
 ### Repository
-
 * [Projects](https://github.com/APrettyCoolProgram/Archiwizator/projects)
 * [Wiki](https://github.com/APrettyCoolProgram/Archiwizator/wiki)
 * [Insights](https://github.com/APrettyCoolProgram/Archiwizator/pulse)
+
+# ADDITIONAL INFORMATION
+* [Acknowledgements](src/Resources/Doc/acknowledgements.md)
+* [Related projects](src/Resources/Doc/related-projects.md)
+* [Additional reading](src/Resources/Doc/additional-reading.md)
 
 ***
 

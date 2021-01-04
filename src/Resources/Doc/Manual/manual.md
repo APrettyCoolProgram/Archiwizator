@@ -30,6 +30,10 @@
   [THE MAIN WINDOW](#the-main-window)<br>
   &nbsp;&nbsp;&nbsp;&nbsp;[ARCHIWIZATOR OPTIONS](#1-archiwizator-options)<br>
   &nbsp;&nbsp;&nbsp;&nbsp;[7ZIP OPTIONS](#2-7zip-options)<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;[SOURCE DETAILS](#3-source-details)<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;[THE ARCHIWIZATE BUTTON](#4-the-archiwizate-button)<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;[THE PROGRESS OVERVIEW DISPLAY](#5-progress-overview-display)<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;[THE PROGRESS DETAILS DISPLAY](#6-progress-details-display)<br>
 
 </td>
 </tr>
@@ -59,7 +63,7 @@ The main window is comprised of:
 
 1. [Archiwizator options](#1-archiwizator-options)
 2. [7-Zip options](#7zip-options)
-3. [Source options](#source-options)
+3. [Source details](#source-details)
 4. [The Archiwizate button](#the-archiwizate-button)
 5. [Progress overview display](#progress-overview-display)
 6. [Progress details display](#progress-details-display)
@@ -189,3 +193,18 @@ The following compression levels are available:
 * Normal (default)
 * Maximum
 * Ultra
+
+# 3. SOURCE DETAILS
+Click the `CHOOSE` button to choose a source directory.
+
+# 4. THE ARCHIWIZATE BUTTON
+Click the `ARCHIZIWATE` button to start Archiziwizing.
+
+#### NOTES
+* This button is only enabled when there is a valid source directory chosen.
+
+# 5. THE PROGRESS OVERVIEW DISPLAY
+The progress overview will be displayed here.
+
+# 6. THE PROGRESS DETAILS DISPLAY
+The progress details will be displayed here.

@@ -52,11 +52,9 @@
   [ABOUT](#about)<br>
   [GETTING STARTED](#getting-started)<br>
   [INSTALLING](#installing)<br>
-  [SETUP](#setup)<br>
   [USING](#using)<br>
-  [COMPILING](#compiling)<br>
-  [TESTING](#testing)<br>
-  [API](#api)<br>
+  [UPDATING](#updating)<br>
+  [UNINSTALLING](#uninstalling)<br>
   [DEVELOPMENT](#development)<br>
   [ADDITIONAL INFORMATION](#additional-information)<br>
 
@@ -111,18 +109,7 @@ Archiwizator is developed by [A Pretty Cool Program](https://aprettycoolprogram.
 
 You can find the development branch of Archiwizator [here](https://github.com/APrettyCoolProgram/Archiwizator/tree/development).
 
-### Contributing
-To contribute to the development branch of Archiwizator, please see our:
-* [Code of conduct](src/Resources/Doc/code-of-conduct.md)
-* [Contributing guidelines](src/Resources/Doc/contributing.md)
-* [Testing procedures](src/Resources/Doc/testing.md)
-* [Issue template](src/Resources/Doc/issue-template.md)
-* [Pull request template](src/Resources/Doc/pull-request-template.md)
-
-### Forking
-If you are interested in forking Archiwizator, you will need:
-* [.NET Core 5.0](https://dotnet.microsoft.com/download/dotnet-core)
-* [Du](https://github.com/APrettyCoolProgram/Du) (specifically [this version](https://github.com/APrettyCoolProgram/Du/tree/development-archiwizator))
+To contribute to the development branch of Archiwizator, please see our [contributing guidelines](src/Resources/Doc/contributing.md)
 
 # ADDITIONAL INFORMATION
 * [Acknowledgements](src/Resources/Doc/acknowledgements.md)

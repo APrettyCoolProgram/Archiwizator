@@ -1,6 +1,6 @@
-# NOTICES: repository
-ProjectName
-Copyright [yyyy] [name of copyright owner]
+# NOTICES: Archiziwator
+Archiziwator
+Copyright 2020-2021 A Pretty Cool Program
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in
 compliance with the License. You may obtain a copy of the License at
@@ -11,4 +11,3 @@ distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, e
 See the License for the specific language governing permissions and limitations under the License.
 
 ## THIRD PARTY CONTENT
-* [shields.io](https://shields.io/) - Three parts: specifying how badges should look by reaching consensus among vendors, offering a library to generate arbitrary badges, and last but not least, maintaining a Web service at shields.io to get badges for arbitrary vendors or even custom badges.

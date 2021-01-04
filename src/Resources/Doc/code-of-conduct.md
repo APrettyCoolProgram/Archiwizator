@@ -1,4 +1,4 @@
-# CODE OF CONDUCT: repository
+# CODE OF CONDUCT: Archiziwator
 > **This project is released with a Contributor Code of Conduct, adapted from the [Contributor Covenant][homepage]. By participating in this project you agree to abide by its terms.**
 
 ## Contributor Covenant Code of Conduct

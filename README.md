@@ -102,23 +102,23 @@ Since Archiwizator is portable, you just need to replace the old version with th
 Since Archiwizator is portable, you just need to delete the location where Archiwizator resides.
 
 # HOW IT WORKS
-Archiwizator is a front-end for [7-Zip](7-zip.org)
+Archiwizator is a front-end for [7-Zip](https://7-zip.org)
 
 # DEVELOPMENT
-A blurb about development can go here.
+[Archiwizator](https://github.com/APrettyCoolProgram/Archiwizator) is developed by [A Pretty Cool Program](https://aprettycoolprogram.com) and these [contributors](src/Resources/Doc/contributors.md).
 
-Roadmap
+Archiwizator was built using [third-party resources](https://github.com/APrettyCoolProgram/Archiwizator/blob/development/src/Resources/Doc/built-with.md).
 
-prereqs/requirements
+You can find the development branch of Archiwizator [here](https://github.com/APrettyCoolProgram/Archiwizator/tree/development).
 
-* [Project homepage](https://github.com/APrettyCoolProgram/Archiwizator)
+
+
 * [Changelog](src/Resources/Doc/changelog.md)
 * [Roadmap](src/Resources/Doc/aroadmap.md)
 * [Known issues](src/Resources/Doc/known-issues.md)
 * [Support](src/Resources/Doc/support.md)
 * [Testing](src/Resources/Doc/testing.md)
 * [Built with](src/Resources/Doc/built-with.md)
-* [Contributors](src/Resources/Doc/contributors.md)
 * [Acknowledgements](src/Resources/Doc/acknowledgements.md)
 * [Notices](src/Resources/Doc/third-party-notices.md)
 * [Related projects](src/Resources/Doc/related-projects.md)

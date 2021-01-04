@@ -42,7 +42,7 @@ When Archiwizator starts, you the main window will be displayed:
 
 The main window is comprised of:
 
-1. [Archiwizator options](#1.-archiwizator-options)
+1. [Archiwizator options](#1-archiwizator-options)
 2. [7-Zip options](#7zip-options)
 3. [Source options](#source-options)
 4. [The Archiwizate button](#the-archiwizate-button)

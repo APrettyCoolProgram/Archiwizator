@@ -1,40 +1,43 @@
 ﻿# ROADMAP: Archiziwator
 
-## FIXES/REFACTORS
-* Move tooltip code someplace else
+# FIXES/REFACTORS
+* Move tooltip code someplace so:
+  * XAML is less complex
+  * Easier to update manual.md
 
+# FEATURES
 
-## FEATURES
-
-#### Before options
+## Before options
 * Pre-extract other formats
 
-#### During options
+## During options
 * Test after archiving
 * Don't overwrite existing
 * Always start one directory in
 * Logging
 * Metal soundtrack
 
-#### Cleanup options
+## Cleanup options
 
+## 7-Zip options
+* Test archive
+* Other 7-Zip options
 
-#### 7-Zip options
-
-
-#### Folder options
+## Source options
 * Allow different dest
 
+## Destination options (new)
+* Allow different dest
 
-#### Other
+## Other
 * Settings
   * Presets (GOG, etc)
 
-
-#### Code
+# CODE
 * Before/after stats next to logo
 * Clicking source/dest opens dialog
 * Stop cmd from interuppting
+* Progress updates while not having focus, etc.
 * What's going on with the Archiziwate button when archiziwating?
 * Version in title bar
 * Skip files if they exist, or overwrite

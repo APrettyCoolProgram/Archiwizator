@@ -1,4 +1,4 @@
 ﻿# CHANGELOG: Archiziwator
 
-#### v1.0
-`INFO` Initial release
+#### v0.905-beta
+`INFO` Initial beta release

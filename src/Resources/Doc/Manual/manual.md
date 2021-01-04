@@ -34,8 +34,6 @@
 </tr>
 </table>
 
-
-
 # ABOUT ARCHIWIZATOR
 
 ### What
@@ -69,6 +67,7 @@ The main window is comprised of:
 Archiwizator options are divided into three categories:
 
 ## PREPARATION
+These are done before.
 
 ### Extract existing root directories
 Extracts all archive files in the source directory, then deletes the original archive files.
@@ -123,8 +122,24 @@ The newly created sub-directories would then be included in the partent when arc
 * Only .zip files will be extracted
 * Only goes down one level
 
-
 #### Remove sub-directories named
+Remove sub-directories with specific names.
+
+Enable this option if there are specific sub-directories that you don't want included when using Archiwizator.
+
+EXAMPLE
+If the provided list is:
+`!Temp, old, do-not-archive`
+the following directories would not be archived:
+```
+../SourcePath/temporary/
+../SourcePath/old_data/
+../SourcePath/ignore-this-folder/
+```
+The remaining sub-directories would then be archived by Archiwizator.
+
+#### NOTES
+* Use caution with this option!
 
 ## DURING COMPRESSION
 

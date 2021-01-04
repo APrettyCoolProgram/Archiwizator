@@ -209,7 +209,7 @@ If you are interested in contributing to this project, please see our:
 </h3>
 
 <!-- DEVELOPMENT FOOTER -->
-[![Developed by](https://img.shields.io/badge/developed%20by-a%20pretty%20cool%20program-17806D?style=flat-square.svg)](https://aprettycoolprogram.com)&nbsp;[![Feedback](https://img.shields.io/badge/feedback@aprettycoolprogram.com-17806D?style=flat-square.svg)](mailto:feedback@aprettycoolprogram.com)&nbsp;[![GitHub](https://img.shields.io/github/followers/aprettycoolprogram.svg?label=GitHub&style=social)](https://github.com/aprettycoolprogram)&nbsp;[![Twitter](https://img.shields.io/twitter/follow/aprettycoolprog.svg?label=Twitter&style=social)](https://twitter.com/aprettycoolprog)&nbsp;<br>
-[![Repository built using](https://img.shields.io/badge/repository%20built%20using-a%20pretty%20cool%20GitHub%20repository%20template-17806D?style=flat-square.svg)](https://github.com/APrettyCoolProgram/my-development-environment/tree/master/templates/github)
+[![Developed by](https://img.shields.io/badge/developed%20by-a%20pretty%20cool%20program-17806D?style=flat-square)](https://aprettycoolprogram.com)&nbsp;[![Feedback](https://img.shields.io/badge/feedback@aprettycoolprogram.com-17806D?style=flat-square)](mailto:feedback@aprettycoolprogram.com)&nbsp;[![GitHub](https://img.shields.io/github/followers/aprettycoolprogram.svg?label=GitHub&style=social)](https://github.com/aprettycoolprogram)&nbsp;[![Twitter](https://img.shields.io/twitter/follow/aprettycoolprog.svg?label=Twitter&style=social)](https://twitter.com/aprettycoolprog)&nbsp;<br>
+[![Repository built using](https://img.shields.io/badge/repository%20built%20using-a%20pretty%20cool%20GitHub%20repository%20template-17806D?style=flat-square)](https://github.com/APrettyCoolProgram/my-development-environment/tree/master/templates/github)
 
 

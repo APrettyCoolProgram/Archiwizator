@@ -65,6 +65,9 @@ The main window is comprised of:
 
 # 1. ARCHIWIZATOR OPTIONS
 Archiwizator options are divided into three categories:
+* [Preparation](#preparation)
+* [During compression](#during-compression)
+* [Cleanup](#cleanup)
 
 ## PREPARATION
 These options take place prior to Archiwizator doing any compression.

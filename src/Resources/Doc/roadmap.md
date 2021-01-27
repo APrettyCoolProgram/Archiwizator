@@ -21,7 +21,7 @@
 
 ## 7-Zip options
 * Test archive
-* Other 7-Zip options
+* Other 7-Zip options (CPUs, dictionaries)
 
 ## Source options
 * Allow different dest
@@ -32,6 +32,12 @@
 ## Other
 * Settings
   * Presets (GOG, etc)
+* Pause between files/allow quit
+* SHA hash
+* Graceful quit (7-zip doesn't keep running)
+* Safe delete
+* Warn if empty directory
+* CMD window in app
 
 # CODE
 * Before/after stats next to logo

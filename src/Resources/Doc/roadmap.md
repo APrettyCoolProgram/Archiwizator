@@ -1,59 +1,94 @@
 ﻿# Archiwizator: Roadmap
 
-# FIXES/REFACTORS
-* Move tooltip code someplace so:
-  * XAML is less complex
-  * Easier to update manual.md
-
-# FEATURES
-
-## Before options
-* Pre-extract other formats
-
-## During options
-* Test after archiving
+# VERSION 1.0
+## USER INTERFACE
+### Application
+* Titlebar logo
+* Startbar logo
+### Feedback
+* Stats next to logo
+* Migrate to Sobchak-like
+## ARCHIWIZATOR OPTIONS
+### Preparation
+* "Extract existing root archives" functionality
+* "Extract existing archives in the target" functionality
+* "Remove sub-directories" named functionality
+* Ignore sub-dirs/files (files already zipped, etc)
+* Extract other formats (.zip, .7z, etc)
+### During
+* Sobchak functionality
+* Test archive after archiving
+* Log activites
+* Pause between archives, allow quitting
 * Don't overwrite existing
 * Always start one directory in
-* Logging
 * Metal soundtrack
+### Cleanup
 
-## Cleanup options
+## 7ZIP OPTIONS
+### Compression
+* Number of CPU threads
 
-## 7-Zip options
-* Test archive
-* Other 7-Zip options (CPUs, dictionaries)
+## SOURCE OPTIONS
 
-## Source options
-* Allow different dest
-
-## Destination options (new)
-* Allow different dest
-
-## Other
-* Settings
-  * Presets (GOG, etc)
-* Pause between files/allow quit
-* SHA hash
-* Graceful quit (7-zip doesn't keep running)
-* Safe delete
-* Warn if empty directory
-* CMD window in app
+## DESTINATION OPTIONS
+* Allow a different destination
 
 # CODE
-* Before/after stats next to logo
-* Clicking source/dest opens dialog
-* Stop cmd from interuppting
-* Progress updates while not having focus, etc.
+* Graceful quit (7-zip doesn't keep running)
+* Move tooltip code someplace so the XAML is less complex and it's easier to update the manual
+* CMD window in app (stop it from interuppting things)
+* Progress updates even when app doesn't have focus
 * What's going on with the Archiziwate button when archiziwating?
-* Version in title bar
-* Skip files if they exist, or overwrite
-* Verify that the source/dest textboxes validate correctly.
-* Change lblProgressDetails to a TextBox/TextBlock
-* Add ToolTipService.ShowOnDisabled="True" to all tooltips
-* Add a tooltip delay
-* Cleanup unused xaml tags
-* Clean up help/tooltips
-* Clean up the remove directories lists (i.e. quotes, *, etc)
+* Warn if empty directory
 * Tooltips can open the manual
-* SHA hashes
+* Clicking source/dest textbox opens dialog
 * Get the EXE once
+
+## Other
+* Safe delete
+
+***
+
+# VERSION 1.1
+
+## USER INTERFACE
+
+### Settings
+* Button next to logo
+* More in-depth settings are in a seperate window
+* Presets for GOG, etc
+
+## ARCHIWIZATOR OPTIONS
+### Preparation
+
+### During
+
+### Cleanup
+
+## 7ZIP OPTIONS
+
+### Compression
+* Compression format
+* Compression method
+* Dictionary size
+* Word size
+* Solid block size
+* Split to volumes (dropdown options or custom)
+* Parameters
+* Update mode
+* Path mode
+* Create SFX archive
+* Compress shared files
+* Delete files after compression
+* Encryption password
+* Encryption method
+* Encrypt filenames
+
+## SOURCE OPTIONS
+
+## DESTINATION OPTIONS
+
+# CODE
+
+## Other

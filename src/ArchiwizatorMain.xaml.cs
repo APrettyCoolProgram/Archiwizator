@@ -1,33 +1,36 @@
 ﻿/* PROJECT: Archiwizator (https://github.com/aprettycoolprogram/Archiwizator)
  *    FILE: Archiwizator.ArchiwizatorMain.xaml.cs
- * UPDATED: 12-31-2020-1:28 PM
+ * UPDATED: 1-27-2021-9:29 AM
  * LICENSE: Apache v2 (https://apache.org/licenses/LICENSE-2.0)
  *          Copyright 2020 A Pretty Cool Program All rights reserved
  */
 
+/* Event handlers are located in ArchiwizatorMain.EventHandlers.cs.
+ */
+
 using System.IO;
 using System.Windows;
-using System.Windows.Controls;
-
 using Du;
 
 namespace Archiwizator
 {
-    public partial class MainWindow : Window
+    public partial class ArchiwizatorMain : Window
     {
         /// <summary>Default constructor.</summary>
-        public MainWindow()
+        public ArchiwizatorMain()
         {
             InitializeComponent();
 
-            SetupArchiwizator(this);
+            SetupArchiwizator();
         }
 
         /// <summary>Setup Archiwizator when it launches.</summary>
-        /// <param name="archiwizatorMainWindow">The Archiwizinator MainWindow object.</param>
-        private static void SetupArchiwizator(Window archiwizatorMainWindow)
+        private void SetupArchiwizator()
         {
-            archiwizatorMainWindow.Title = $"Archiwizator v{DuApplication.GetApplicationVersion()}";
+            var archiwizatorAssemblyName = DuApplication.GetAssemblyName();
+
+            Title = $"Archiwizator v{DuApplication.GetVersionInformational()}";
+            imgArchiwizatorLogo.Source = DuBitmap.FromUri(archiwizatorAssemblyName, "/Resources/Asset/Image/Logo/archiwizator-logo-575x150.png");
         }
 
         /// <summary>Enables/disables the textboxes that contains sub-directories to remove information.</summary>
@@ -86,30 +89,6 @@ namespace Archiwizator
             };
 
             DuArchiwizator.CreateArchive(archiwizator, sevenZip, lblProgressOverview, lblProgressDetails);
-        }
-
-        // EVENT HANDLERS
-        private void btnChooseSource_Click(object sender, RoutedEventArgs e) => ChooseSource();
-
-        private void txbxSource_TextChanged(object sender, TextChangedEventArgs e) => ModifyArchiwizateButton();
-
-        private void btnArchiwizate_Click(object sender, RoutedEventArgs e) => Archiwizate();
-
-        private void ckbxRemoveSubDirectoriesNamed_CheckChanged(object sender, RoutedEventArgs e) => ModifyRemoveDirectoryTextBoxes();
-
-        /*  These event handlers are placeholders for functionality that is not yet implemented.
-         */
-
-        private void ckbxRemoveSubDirectoriesStartingWith_CheckChanged(object sender, RoutedEventArgs e)
-        {
-        }
-
-        private void txbxDestination_TextChanged(object sender, TextChangedEventArgs e)
-        {
-        }
-
-        private void btnChooseDestination_Click(object sender, RoutedEventArgs e)
-        {
         }
     }
 }

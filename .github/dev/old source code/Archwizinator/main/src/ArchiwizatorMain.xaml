@@ -1,0 +1,1780 @@
+﻿<!--
+    PROJECT: Archiwizator (https://github.com/aprettycoolprogram/Archiwizator)
+    FILE: ArchiwizatorMain.xaml
+    UPDATED: 12-31-2020-9:05 AM
+    LICENSE: Apache v2 (https://apache.org/licenses/LICENSE-2.0)
+    Copyright 2020 A Pretty Cool Program All rights reserved
+-->
+
+<Window x:Class="Archiwizator.ArchiwizatorMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:Archiwizator"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="Archiwizator vX.X.X.X"
+        Width="825"
+        Height="725"
+        mc:Ignorable="d">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120" />
+            <RowDefinition Height="220" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--  Archiwizator : Logo  -->
+        <Border x:Name="brdrArchiwizatorLogo"
+                Grid.Row="0">
+            <Image x:Name="imgArchiwizatorLogo"
+                   Width="575"
+                   Height="100"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+        </Border>
+
+        <!--  Archiwizator : Archiwizator options  -->
+        <WrapPanel x:Name="wpnlArchiwizatorOptions"
+                   Grid.Row="1">
+            <TextBox x:Name="txbxArchiwizatorOptions"
+                     Width="21"
+                     Height="210"
+                     Margin="20,5,0,5"
+                     Padding="3"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center"
+                     Background="#990000"
+                     FontFamily="Consolas"
+                     FontSize="14"
+                     FontWeight="Bold"
+                     Foreground="White"
+                     Text="ARCHIWIZATOR"
+                     TextAlignment="Center"
+                     TextWrapping="Wrap"
+                     ToolTipService.InitialShowDelay="2000"
+                     ToolTipService.ShowDuration="10000">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5" />
+                    </Style>
+                </TextBox.Resources>
+                <TextBox.ToolTip>
+                    <StackPanel>
+                        <TextBlock Margin="0,0,0,5"
+                                   HorizontalAlignment="Left"
+                                   FontSize="18"
+                                   FontWeight="Bold"
+                                   Foreground="#990000">
+                            Archiwizinator options
+                        </TextBlock>
+                        <TextBlock Margin="0,0,0,5"
+                                   HorizontalAlignment="Left"
+                                   FontSize="14">
+                            Archiwizator options are to the right.
+                        </TextBlock>
+                        <TextBlock Margin="0,0,0,5"
+                                   HorizontalAlignment="Left"
+                                   FontSize="12">
+                            Mouse over any of the options to the right, and a pop-up will appear with option<LineBreak />
+                            descriptions, details, and examples.</TextBlock>
+                        <Border Margin="0,8"
+                                BorderBrush="#990000"
+                                BorderThickness="0,2,0,0" />
+                        <TextBlock Margin="0,0,0,5"
+                                   FontSize="12">
+                            For more information, please see the Archwizator manual.
+                        </TextBlock>
+                    </StackPanel>
+                </TextBox.ToolTip>
+            </TextBox>
+
+            <!--  Archiwizator : Archiwizator options : Preparation  -->
+            <StackPanel x:Name="spnlArchiwizatorPreparationOptions"
+                        Width="250"
+                        Margin="0,10,0,10">
+                <Label x:Name="lblPreperationOptions"
+                       Width="230"
+                       Height="25"
+                       HorizontalContentAlignment="Center"
+                       BorderBrush="#FF990000"
+                       BorderThickness="1"
+                       Content="PREPARATION"
+                       FontFamily="Consolas"
+                       FontWeight="Bold"
+                       Foreground="#FF990000"
+                       ToolTipService.InitialShowDelay="2000"
+                       ToolTipService.ShowDuration="10000">
+                    <Label.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="5" />
+                        </Style>
+                    </Label.Resources>
+                    <Label.ToolTip>
+                        <StackPanel>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="#990000">
+                                Preparation options
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="14">
+                                These options will be performed prior to creating archives.
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                Mouse over any of the options below, and a pop-up will appear with option<LineBreak />
+                                descriptions, details, and examples.</TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,2,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
+                                       FontSize="12">
+                                For more information, please see the Archwizator manual.
+                            </TextBlock>
+                        </StackPanel>
+                    </Label.ToolTip>
+                </Label>
+
+                <!--  Archiwizator : Archiwizator options : Preparation : Extract root archives  -->
+                <CheckBox x:Name="ckbxExtractRootArchives"
+                          Margin="15,10,0,0"
+                          HorizontalAlignment="Left"
+                          BorderBrush="#990000"
+                          Content="Extract existing root archives"
+                          Foreground="#990000"
+                          IsChecked="False"
+                          ToolTipService.InitialShowDelay="2000"
+                          ToolTipService.ShowDuration="10000"
+                          ToolTipService.ShowOnDisabled="True">
+                    <CheckBox.ToolTip>
+                        <StackPanel>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="#990000">
+                                Extract existing root archives
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="14">
+                                Extracts all archive files in the source directory, then deletes the original<LineBreak />
+                                archive files.</TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                Enable this option if there are archive files in the source directory that you<LineBreak />
+                                want to re-archive using Archiwizator.</TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,1,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12"
+                                       FontWeight="Bold">
+                                <TextBlock.TextDecorations>
+                                    <TextDecoration />
+                                </TextBlock.TextDecorations>
+                                EXAMPLE
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                The following archives:
+                            </TextBlock>
+                            <TextBlock Margin="10,0,0,5"
+                                       FontSize="12"
+                                       FontStyle="Italic">
+                                ../SourcePath/compressed-file-01.zip<LineBreak />
+                                ../SourcePath/compressed-file-02.zip<LineBreak />
+                                ..</TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                would be extracted to individual sub-directories:
+                            </TextBlock>
+                            <TextBlock Margin="10,0,0,5"
+                                       FontSize="12"
+                                       FontStyle="Italic">
+                                ../SourcePath/compressed-file-01/<LineBreak />
+                                ../SourcePath/compressed-file-02/<LineBreak />
+                                ...</TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                The newly created sub-directories would then be archived by Archiwizator.
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12"
+                                       FontWeight="Bold">
+                                <TextBlock.TextDecorations>
+                                    <TextDecoration />
+                                </TextBlock.TextDecorations>
+                                NOTES
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                - Only .zip files will be extracted.
+                            </TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,2,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
+                                       FontSize="12">
+                                For more information, please see the Archwizator manual.
+                            </TextBlock>
+                        </StackPanel>
+                    </CheckBox.ToolTip>
+                </CheckBox>
+
+                <!--  Archiwizator : Archiwizator options : Preparation : Extract sub-directory archives  -->
+                <CheckBox x:Name="ckbxExtractTargetArchives"
+                          Width="230"
+                          Margin="15,5,0,0"
+                          HorizontalAlignment="Left"
+                          BorderBrush="#990000"
+                          Content="Extract existing archives in the target"
+                          Foreground="#990000"
+                          IsChecked="False"
+                          ToolTipService.InitialShowDelay="2000"
+                          ToolTipService.ShowDuration="10000"
+                          ToolTipService.ShowOnDisabled="True">
+                    <CheckBox.ToolTip>
+                        <StackPanel>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="#990000">
+                                Extract existing sub-directory archives
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="14">
+                                Extracts any archive file in the all sub-directories of the source directory,<LineBreak />
+                                then deletes the original archive files.</TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                Enable this option if there are archive files in the sub-directories of the<LineBreak />
+                                source directory that you want to re-archive using Archiwizator.</TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,1,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12"
+                                       FontWeight="Bold">
+                                <TextBlock.TextDecorations>
+                                    <TextDecoration />
+                                </TextBlock.TextDecorations>
+                                EXAMPLE
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                The following archives:
+                            </TextBlock>
+                            <TextBlock Margin="10,0,0,5"
+                                       FontSize="12"
+                                       FontStyle="Italic">
+                                ../SourcePath/SubDirectory01/compressed-file-01.zip<LineBreak />
+                                ../SourcePath/SubDirectory01/compressed-file-02.zip<LineBreak />
+                                ..<LineBreak />
+                                ../SourcePath/SubDirectory99/compressed-file-03.zip<LineBreak />
+                                ../SourcePath/SubDirectory99/compressed-file-04.zip<LineBreak />
+                                ..</TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                would be extracted to individual sub-directories:
+                            </TextBlock>
+                            <TextBlock Margin="10,0,0,5"
+                                       FontSize="12"
+                                       FontStyle="Italic">
+                                ../SourcePath/SubDirectory01/compressed-file-01/<LineBreak />
+                                ../SourcePath/SubDirectory01/compressed-file-02/<LineBreak />
+                                ..<LineBreak />
+                                ../SourcePath/SubDirectory99/compressed-file-03/<LineBreak />
+                                ../SourcePath/SubDirectory99/compressed-file-04/<LineBreak />
+                                ..</TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                The newly created sub-directories would then included in the parent when<LineBreak />
+                                archived by Archiwizator.</TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12"
+                                       FontWeight="Bold">
+                                <TextBlock.TextDecorations>
+                                    <TextDecoration />
+                                </TextBlock.TextDecorations>
+                                NOTES
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                - Only .zip files will be extracted.<LineBreak />
+                                - This won't go further down than one level.</TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,2,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
+                                       FontSize="12">
+                                For more information, please see the Archwizator manual.
+                            </TextBlock>
+                        </StackPanel>
+                    </CheckBox.ToolTip>
+                </CheckBox>
+
+                <!--  Archiwizator : Archiwizator options : Preparation : Remove sub-directories named  -->
+                <CheckBox x:Name="ckbxRemoveSubDirectoriesNamed"
+                          Margin="15,5,0,0"
+                          HorizontalAlignment="Left"
+                          BorderBrush="#990000"
+                          Checked="ckbxRemoveSubDirectoriesNamed_CheckChanged"
+                          Content="Remove sub-directories named:"
+                          Foreground="#990000"
+                          IsChecked="False"
+                          ToolTipService.InitialShowDelay="2000"
+                          ToolTipService.ShowDuration="10000"
+                          ToolTipService.ShowOnDisabled="True"
+                          Unchecked="ckbxRemoveSubDirectoriesNamed_CheckChanged">
+                    <CheckBox.ToolTip>
+                        <StackPanel>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="#990000">
+                                Remove sub-directories named
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="14">
+                                Removes sub-directories whose name match the provided list.
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                Enable this option if there are specific sub-directories that you don't want included<LineBreak />
+                                when using Archiwizator.</TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,1,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12"
+                                       FontWeight="Bold">
+                                <TextBlock.TextDecorations>
+                                    <TextDecoration />
+                                </TextBlock.TextDecorations>
+                                EXAMPLE
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                If the provided list is:
+                            </TextBlock>
+                            <TextBlock Margin="10,0,0,5"
+                                       FontSize="12"
+                                       FontStyle="Italic">
+                                &quot;!Temp, old, do-not-archive&quot;
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                the following directories would not be archived:
+                            </TextBlock>
+                            <TextBlock Margin="10,0,0,5"
+                                       FontSize="12"
+                                       FontStyle="Italic">
+                                ../SourcePath/temporary/<LineBreak />
+                                ../SourcePath/old_data/<LineBreak />
+                                ../SourcePath/ignore-this-folder/</TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                The remaining sub-directories would then be archived by Archiwizator.
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12"
+                                       FontWeight="Bold">
+                                <TextBlock.TextDecorations>
+                                    <TextDecoration />
+                                </TextBlock.TextDecorations>
+                                NOTES
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                - Use caution when using this option!
+                            </TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,2,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
+                                       FontSize="12">
+                                For more information, please see the Archwizator manual.
+                            </TextBlock>
+                        </StackPanel>
+                    </CheckBox.ToolTip>
+                </CheckBox>
+                <TextBox x:Name="txbxRemoveSubDirectoriesNamed"
+                         Width="200"
+                         Height="18"
+                         Margin="15,5,0,0"
+                         VerticalAlignment="Top"
+                         BorderBrush="#990000"
+                         IsEnabled="False"
+                         Text=""
+                         TextWrapping="Wrap"
+                         ToolTipService.InitialShowDelay="2000"
+                         ToolTipService.ShowDuration="10000"
+                         ToolTipService.ShowOnDisabled="True">
+                    <TextBox.ToolTip>
+                        <StackPanel>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="#990000">
+                                List of sub-directories with specific names
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="14">
+                                Removes sub-directories that share the name of any member of this list.
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                Members are not quoted, and are seperated by commas.
+                            </TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,1,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12"
+                                       FontWeight="Bold">
+                                <TextBlock.TextDecorations>
+                                    <TextDecoration />
+                                </TextBlock.TextDecorations>
+                                EXAMPLE
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                If you wanted to remove sub-directories that are named &quot;!Temp&quot;, &quot;old&quot;, or<LineBreak />
+                                &quot;do-not-archive&quot;, the list would look like this:</TextBlock>
+                            <TextBlock Margin="10,0,0,5"
+                                       FontSize="12"
+                                       FontStyle="Italic">
+                                !Temp, old, do-not-archive
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12"
+                                       FontWeight="Bold">
+                                <TextBlock.TextDecorations>
+                                    <TextDecoration />
+                                </TextBlock.TextDecorations>
+                                NOTES
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                - Only active when a &quot;Remove sub-directories named&quot; is checked.<LineBreak />
+                                - Don't use quotes.<LineBreak />
+                                - Seperate with commas.</TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,2,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
+                                       FontSize="12">
+                                For more information, please see the Archwizator manual.
+                            </TextBlock>
+                        </StackPanel>
+                    </TextBox.ToolTip>
+                </TextBox>
+
+                <!--  Archiwizator : Archiwizator options : Preparation : Remove sub-directories starting with  -->
+
+                <!-- This is disabled for the current release
+
+                <CheckBox x:Name="ckbxRemoveSubDirectoriesStartingWith"
+                          Margin="10,5,0,0"
+                          HorizontalAlignment="Left"
+                          Checked="ckbxRemoveSubDirectoriesStartingWith_CheckChanged"
+                          Content="Remove sub-directories starting with:"
+                          IsChecked="False"
+                          IsEnabled="True"
+                          ToolTipService.ShowDuration="10000"
+                          ToolTipService.ShowOnDisabled="True"
+                          Unchecked="ckbxRemoveSubDirectoriesStartingWith_CheckChanged">
+                    <CheckBox.ToolTip>
+                        <StackPanel>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="#990000">
+                                Remove sub-directories starting with
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="14">
+                                Removes sub-directories that start with any member of the provided list.
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                This option is currently disabled.<LineBreak />
+                                <LineBreak />
+                                Enable this option if there are general sub-directories that you don't want<LineBreak />
+                                included when using Archiwizator.</TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,1,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12"
+                                       FontWeight="Bold">
+                                <TextBlock.TextDecorations>
+                                    <TextDecoration />
+                                </TextBlock.TextDecorations>
+                                EXAMPLE
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                If the provided list is:
+                            </TextBlock>
+                            <TextBlock Margin="10,0,0,5"
+                                       FontSize="12"
+                                       FontStyle="Italic">
+                                &quot;temp, old, ignore&quot;
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                the following directories would not be archived:
+                            </TextBlock>
+                            <TextBlock Margin="10,0,0,5"
+                                       FontSize="12"
+                                       FontStyle="Italic">
+                                ../SourcePath/temporary/<LineBreak />
+                                ../SourcePath/old_data/<LineBreak />
+                                ../SourcePath/ignore-this-folder/</TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                The remaining sub-directories would then be archived by Archiwizator.
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12"
+                                       FontWeight="Bold">
+                                <TextBlock.TextDecorations>
+                                    <TextDecoration />
+                                </TextBlock.TextDecorations>
+                                NOTES
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                - Currently not enabled<LineBreak />
+                                - Use caution when using this option!<LineBreak />
+                                - You should probably use the &quot;Remove sub-directories named&quot; option instead.</TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,2,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
+                                       FontSize="12">
+                                For more information, please see the Archwizator manual.
+                            </TextBlock>
+                        </StackPanel>
+                    </CheckBox.ToolTip>
+                </CheckBox>
+                <TextBox x:Name="txbxRemoveSubDirectoriesStartingWith"
+                         Width="200"
+                         Height="18"
+                         Margin="10,5,0,0"
+                         VerticalAlignment="Top"
+                         BorderBrush="Black"
+                         IsEnabled="False"
+                         Text=""
+                         TextWrapping="Wrap"
+                         ToolTipService.ShowDuration="10000"
+                         ToolTipService.ShowOnDisabled="True">
+                    <TextBox.ToolTip>
+                        <StackPanel>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="#990000">
+                                List of sub-directories starting with
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="14">
+                                Removes sub-directories that start with any member of this list.
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                Members are not quoted, and are seperated by commas.
+                            </TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,1,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12"
+                                       FontWeight="Bold">
+                                <TextBlock.TextDecorations>
+                                    <TextDecoration />
+                                </TextBlock.TextDecorations>
+                                EXAMPLE
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                If you wanted to remove sub-directories that start with &quot;temp&quot;, &quot;old&quot; or<LineBreak />
+                                &quot;ignore&quot;, the list would look like this:</TextBlock>
+                            <TextBlock Margin="10,0,0,5"
+                                       FontSize="12"
+                                       FontStyle="Italic">
+                                temp, old, ignore
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12"
+                                       FontWeight="Bold">
+                                <TextBlock.TextDecorations>
+                                    <TextDecoration />
+                                </TextBlock.TextDecorations>
+                                NOTES
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                - Only active when a &quot;Remove sub-directories that start with&quot; is checked.<LineBreak />
+                                - Don't use quotes.<LineBreak />
+                                - Seperate with commas.</TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,2,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
+                                       FontSize="12">
+                                For more information, please see the Archwizator manual.
+                            </TextBlock>
+                        </StackPanel>
+                    </TextBox.ToolTip>
+                </TextBox>
+
+                This is disabled for the current release-->
+            </StackPanel>
+
+            <!--  Archiwizator : Archiwizator options : During compression  -->
+            <StackPanel x:Name="spnlArchiwizatorDuringCompressingOptions"
+                        Width="250"
+                        Margin="0,10,0,10">
+                <Label x:Name="lblDuringCompressionOptions"
+                       Width="230"
+                       Height="25"
+                       Margin="10,0,0,10"
+                       HorizontalAlignment="Left"
+                       HorizontalContentAlignment="Center"
+                       BorderBrush="#990000"
+                       BorderThickness="1"
+                       Content="DURING COMPRESSION"
+                       FontFamily="Consolas"
+                       FontWeight="Bold"
+                       Foreground="#FF990000"
+                       ToolTipService.InitialShowDelay="2000"
+                       ToolTipService.ShowDuration="10000">
+                    <Label.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="5" />
+                        </Style>
+                    </Label.Resources>
+                    <Label.ToolTip>
+                        <StackPanel>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="#990000">
+                                During compression options
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="14">
+                                These options will be performed while Archiwizator is creating archives.
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                Mouse over any of the options below, and a pop-up will appear with option<LineBreak />
+                                descriptions, details, and examples.</TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,2,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
+                                       FontSize="12">
+                                For more information, please see the Archwizator manual.
+                            </TextBlock>
+                        </StackPanel>
+                    </Label.ToolTip>
+                </Label>
+
+                <!--  Archiwizator : Archiwizator options : During compression : Prepend datestamp  -->
+                <CheckBox x:Name="ckbxPrependDateStamp"
+                          Margin="15,0,0,0"
+                          BorderBrush="#990000"
+                          Content="Prepend datestamp"
+                          Foreground="#990000"
+                          IsChecked="False"
+                          ToolTipService.InitialShowDelay="2000"
+                          ToolTipService.ShowDuration="10000"
+                          ToolTipService.ShowOnDisabled="True">
+                    <CheckBox.ToolTip>
+                        <StackPanel>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="#990000">
+                                Prepend datestamp
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="14">
+                                Adds a &quot;_YYMMDD&quot; datestamp to the end of an archive filename.
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                Enable this option if you want to be able to easily determine when an archive<LineBreak />
+                                was created.</TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,1,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12"
+                                       FontWeight="Bold">
+                                <TextBlock.TextDecorations>
+                                    <TextDecoration />
+                                </TextBlock.TextDecorations>
+                                EXAMPLE
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                An archive created on &quot;December 29th, 2020&quot; with a prepended datestamp<LineBreak />
+                                will have a filename like this:</TextBlock>
+                            <TextBlock Margin="10,0,0,5"
+                                       FontSize="12"
+                                       FontStyle="Italic">
+                                ../SourcePath/compressed-file-01_201229.7z
+                            </TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,2,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
+                                       FontSize="12">
+                                For more information, please see the Archwizator manual.
+                            </TextBlock>
+                        </StackPanel>
+                    </CheckBox.ToolTip>
+                </CheckBox>
+            </StackPanel>
+
+            <!--  Archiwizator : Archiwizator options : Cleanup  -->
+            <StackPanel x:Name="spnlArchiwizatorCleanupOptions"
+                        Width="250"
+                        Margin="0,10,0,10">
+                <Label x:Name="lblCleanupOptions"
+                       Width="230"
+                       Height="25"
+                       Margin="10,0,0,10"
+                       HorizontalAlignment="Left"
+                       HorizontalContentAlignment="Center"
+                       BorderBrush="#990000"
+                       BorderThickness="1"
+                       Content="CLEANUP"
+                       FontFamily="Consolas"
+                       FontWeight="Bold"
+                       Foreground="#FF990000"
+                       ToolTipService.InitialShowDelay="2000"
+                       ToolTipService.ShowDuration="10000">
+                    <Label.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="5" />
+                        </Style>
+                    </Label.Resources>
+                    <Label.ToolTip>
+                        <StackPanel>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="#990000">
+                                Cleanup options
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="14">
+                                These options will be performed after Archiwizator has finished compressing a<LineBreak />
+                                sub-directory.</TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                Mouse over any of the options below, and a pop-up will appear with option<LineBreak />
+                                descriptions, details, and examples.</TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,2,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
+                                       FontSize="12">
+                                For more information, please see the Archwizator manual.
+                            </TextBlock>
+                        </StackPanel>
+                    </Label.ToolTip>
+                </Label>
+
+                <!--  Archiwizator : Archiwizator options : Cleanup : Delete source after compressing  -->
+                <CheckBox x:Name="ckbxDeleteSourceAfterCompressing"
+                          Margin="15,0,0,0"
+                          HorizontalAlignment="Left"
+                          BorderBrush="#990000"
+                          Content="Delete source after compressing"
+                          Foreground="#990000"
+                          IsChecked="False"
+                          ToolTipService.InitialShowDelay="2000"
+                          ToolTipService.ShowDuration="10000"
+                          ToolTipService.ShowOnDisabled="True">
+                    <CheckBox.ToolTip>
+                        <StackPanel>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="#990000">
+                                Delete source after compressing
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="14">
+                                Deletes the source directory after Archiwizating.
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                Enable this option to keep your directories clean.
+                            </TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,1,0,0" />
+
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12"
+                                       FontWeight="Bold">
+                                <TextBlock.TextDecorations>
+                                    <TextDecoration />
+                                </TextBlock.TextDecorations>
+                                NOTES
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                - Be careful with this option!
+                            </TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,2,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
+                                       FontSize="12">
+                                For more information, please see the Archwizator manual.
+                            </TextBlock>
+                        </StackPanel>
+                    </CheckBox.ToolTip>
+                </CheckBox>
+            </StackPanel>
+        </WrapPanel>
+
+        <!--  Archiwizator : 7-Zip Options  -->
+        <WrapPanel x:Name="wpnlSevenZipOptions"
+                   Grid.Row="2">
+            <TextBox x:Name="lblSevenZipOptions"
+                     Width="21"
+                     Height="80"
+                     Margin="20,0,0,0"
+                     Padding="4"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center"
+                     Background="Black"
+                     FontFamily="Consolas"
+                     FontSize="14"
+                     FontWeight="Bold"
+                     Foreground="White"
+                     Text="7ZIP"
+                     TextAlignment="Center"
+                     TextWrapping="Wrap"
+                     ToolTipService.InitialShowDelay="2000"
+                     ToolTipService.ShowDuration="10000">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5" />
+                    </Style>
+                </TextBox.Resources>
+                <TextBox.ToolTip>
+                    <StackPanel>
+                        <TextBlock Margin="0,0,0,5"
+                                   HorizontalAlignment="Left"
+                                   FontSize="18"
+                                   FontWeight="Bold"
+                                   Foreground="#990000">
+                            7-Zip options
+                        </TextBlock>
+                        <TextBlock Margin="0,0,0,5"
+                                   HorizontalAlignment="Left"
+                                   FontSize="14">
+                            7-Zip options are to the right.
+                        </TextBlock>
+                        <TextBlock Margin="0,0,0,5"
+                                   HorizontalAlignment="Left"
+                                   FontSize="12">
+                            Mouse over any of the options to the right, and a pop-up will appear with option<LineBreak />
+                            descriptions, details, and examples.</TextBlock>
+                        <Border Margin="0,8"
+                                BorderBrush="#990000"
+                                BorderThickness="0,2,0,0" />
+                        <TextBlock Margin="0,0,0,5"
+                                   HorizontalAlignment="Center"
+                                   FontSize="12">
+                            For more information, please see the Archwizator manual.
+                        </TextBlock>
+                    </StackPanel>
+                </TextBox.ToolTip>
+            </TextBox>
+
+            <!--  Archiwizator : 7-Zip Options : Compression options  -->
+            <WrapPanel x:Name="wpnlCompressionOptions"
+                       Width="240"
+                       Margin="0,5,0,10">
+                <Label x:Name="lblCompressionOptions"
+                       Width="220"
+                       Height="25"
+                       Margin="10,10,0,0"
+                       HorizontalAlignment="Left"
+                       HorizontalContentAlignment="Center"
+                       BorderBrush="Black"
+                       BorderThickness="1"
+                       Content="COMPRESSION"
+                       FontFamily="Consolas"
+                       FontWeight="Bold"
+                       ToolTipService.InitialShowDelay="2000"
+                       ToolTipService.ShowDuration="10000">
+                    <Label.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="5" />
+                        </Style>
+                    </Label.Resources>
+                    <Label.ToolTip>
+                        <StackPanel>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="#990000">
+                                Compression options
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="14">
+                                7-Zip compression options
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="12">
+                                Mouse over any of the options below, and a pop-up will appear with option<LineBreak />
+                                descriptions, details, and examples.</TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,2,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
+                                       FontSize="12">
+                                For more information, please see the Archwizator manual.
+                            </TextBlock>
+                        </StackPanel>
+                    </Label.ToolTip>
+                </Label>
+
+                <!--  Archiwizator : 7-Zip Options : Compression options : Compression level  -->
+                <StackPanel x:Name="spnlCompressionLevelOptions"
+                            Width="120"
+                            HorizontalAlignment="Left">
+                    <Label x:Name="lblCompressionLevel"
+                           Width="100"
+                           Height="23"
+                           Margin="15,0,0,0"
+                           HorizontalAlignment="Left"
+                           HorizontalContentAlignment="Center"
+                           Content="Level"
+                           FontFamily="Consolas"
+                           ToolTipService.InitialShowDelay="2000"
+                           ToolTipService.ShowDuration="10000">
+                        <Label.ToolTip>
+                            <StackPanel>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="18"
+                                           FontWeight="Bold"
+                                           Foreground="#990000">
+                                    Compression level
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="14">
+                                    Determines the level of compression that 7-Zip will use.
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12">
+                                    The default level of compression is &quot;Normal&quot;.
+                                </TextBlock>
+                                <Border Margin="0,8"
+                                        BorderBrush="#990000"
+                                        BorderThickness="0,1,0,0" />
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12"
+                                           FontWeight="Bold">
+                                    <TextBlock.TextDecorations>
+                                        <TextDecoration />
+                                    </TextBlock.TextDecorations>
+                                    EXAMPLE
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12">
+                                    The following compression levels are available:
+                                </TextBlock>
+                                <TextBlock Margin="10,0,0,5"
+                                           FontSize="12"
+                                           FontStyle="Italic">
+                                    Store<LineBreak />
+                                    Fastest<LineBreak />
+                                    Fast<LineBreak />
+                                    Normal<LineBreak />
+                                    Maximum<LineBreak />
+                                    Ultra</TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12"
+                                           FontWeight="Bold">
+                                    <TextBlock.TextDecorations>
+                                        <TextDecoration />
+                                    </TextBlock.TextDecorations>
+                                    NOTES
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12">
+                                    - Greater compression takes longer
+                                </TextBlock>
+                                <Border Margin="0,8"
+                                        BorderBrush="#990000"
+                                        BorderThickness="0,2,0,0" />
+                                <TextBlock Margin="0,0,0,5"
+                                           HorizontalAlignment="Center"
+                                           FontSize="12">
+                                    For more information, please see the Archwizator manual.
+                                </TextBlock>
+                            </StackPanel>
+                        </Label.ToolTip>
+                    </Label>
+                    <ComboBox x:Name="cmbxCompressionLevel"
+                              Width="100"
+                              Margin="15,0,0,5"
+                              HorizontalAlignment="Left"
+                              VerticalAlignment="Top"
+                              Background="White"
+                              BorderBrush="Black"
+                              BorderThickness="1"
+                              ToolTipService.InitialShowDelay="2000"
+                              ToolTipService.ShowDuration="10000"
+                              ToolTipService.ShowOnDisabled="True">
+                        <ComboBoxItem Content="Store" />
+                        <ComboBoxItem Content="Fastest" />
+                        <ComboBoxItem Content="Fast" />
+                        <ComboBoxItem Content="Normal"
+                                      IsSelected="true" />
+                        <ComboBoxItem Content="Maximum" />
+                        <ComboBoxItem Content="Ultra" />
+                        <ComboBox.ToolTip>
+                            <StackPanel>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="18"
+                                           FontWeight="Bold"
+                                           Foreground="#990000">
+                                    Compression level
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="14">
+                                    Determines the level of compression that 7-Zip will use.
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12">
+                                    The default level of compression is &quot;Normal&quot;.
+                                </TextBlock>
+                                <Border Margin="0,8"
+                                        BorderBrush="#990000"
+                                        BorderThickness="0,1,0,0" />
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12"
+                                           FontWeight="Bold">
+                                    <TextBlock.TextDecorations>
+                                        <TextDecoration />
+                                    </TextBlock.TextDecorations>
+                                    EXAMPLE
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12">
+                                    The following compression levels are available:
+                                </TextBlock>
+                                <TextBlock Margin="10,0,0,5"
+                                           FontSize="12"
+                                           FontStyle="Italic">
+                                    Store<LineBreak />
+                                    Fastest<LineBreak />
+                                    Fast<LineBreak />
+                                    Normal<LineBreak />
+                                    Maximum<LineBreak />
+                                    Ultra</TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12"
+                                           FontWeight="Bold">
+                                    <TextBlock.TextDecorations>
+                                        <TextDecoration />
+                                    </TextBlock.TextDecorations>
+                                    NOTES
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12">
+                                    - Greater compression takes longer
+                                </TextBlock>
+                                <Border Margin="0,8"
+                                        BorderBrush="#990000"
+                                        BorderThickness="0,2,0,0" />
+                                <TextBlock Margin="0,0,0,5"
+                                           HorizontalAlignment="Center"
+                                           FontSize="12">
+                                    For more information, please see the Archwizator manual.
+                                </TextBlock>
+                            </StackPanel>
+                        </ComboBox.ToolTip>
+                    </ComboBox>
+                </StackPanel>
+
+                <!--  Archiwizator : 7-Zip Options : Compression options : Compression method  -->
+                <StackPanel x:Name="spnlCompressionMethodOptions"
+                            Width="120"
+                            HorizontalAlignment="Left">
+
+                    <!-- This is disabled for the current release
+
+                    <Label x:Name="lblCompressionMethod"
+                           Width="100"
+                           Height="23"
+                           Margin="10,0,0,0"
+                           HorizontalAlignment="Left"
+                           HorizontalContentAlignment="Center"
+                           Content="Method"
+                           FontFamily="Consolas"
+                           ToolTipService.ShowDuration="10000">
+                        <Label.ToolTip>
+                            <StackPanel>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="18"
+                                           FontWeight="Bold"
+                                           Foreground="#990000">
+                                    Compression method
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="14">
+                                    Determines the method of compression that 7-Zip will use.
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12">
+                                    The default level of compression is &quot;LZMA2&quot;.
+                                </TextBlock>
+                                <Border Margin="0,8"
+                                        BorderBrush="#990000"
+                                        BorderThickness="0,1,0,0" />
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12"
+                                           FontWeight="Bold">
+                                    <TextBlock.TextDecorations>
+                                        <TextDecoration />
+                                    </TextBlock.TextDecorations>
+                                    EXAMPLE
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12">
+                                    The following compression methods are available:
+                                </TextBlock>
+                                <TextBlock Margin="10,0,0,5"
+                                           FontSize="12"
+                                           FontStyle="Italic">
+                                    LZMA2<LineBreak />
+                                    LZMA<LineBreak />
+                                    PPMd<LineBreak />
+                                    BZip2</TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12"
+                                           FontWeight="Bold">
+                                    <TextBlock.TextDecorations>
+                                        <TextDecoration />
+                                    </TextBlock.TextDecorations>
+                                    NOTES
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12">
+                                    - It is recommended that you leave the compression method set to &quot;LZMA2&quot;.
+                                </TextBlock>
+                                <Border Margin="0,8"
+                                        BorderBrush="#990000"
+                                        BorderThickness="0,2,0,0" />
+                                <TextBlock Margin="0,0,0,5"
+                                           HorizontalAlignment="Center"
+                                           FontSize="12">
+                                    For more information, please see the Archwizator manual.
+                                </TextBlock>
+                            </StackPanel>
+                        </Label.ToolTip>
+                    </Label>
+                    <ComboBox x:Name="cmbxCompressionMethod"
+                              Width="100"
+                              Margin="10,0,0,5"
+                              HorizontalAlignment="Left"
+                              VerticalAlignment="Top"
+                              Background="White"
+                              BorderBrush="Black"
+                              BorderThickness="1"
+                              IsEnabled="False"
+                              ToolTipService.ShowDuration="10000"
+                              ToolTipService.ShowOnDisabled="True">
+                        <ComboBoxItem Content="LZMA2"
+                                      IsSelected="True" />
+                        <ComboBoxItem Content="LZMA" />
+                        <ComboBoxItem Content="PPMd" />
+                        <ComboBoxItem Content="BZip2" />
+                        <ComboBox.ToolTip>
+                            <StackPanel>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="18"
+                                           FontWeight="Bold"
+                                           Foreground="#990000">
+                                    Compression method
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="14">
+                                    Determines the method of compression that 7-Zip will use.
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12">
+                                    The default level of compression is &quot;LZMA2&quot;.
+                                </TextBlock>
+                                <Border Margin="0,8"
+                                        BorderBrush="#990000"
+                                        BorderThickness="0,1,0,0" />
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12"
+                                           FontWeight="Bold">
+                                    <TextBlock.TextDecorations>
+                                        <TextDecoration />
+                                    </TextBlock.TextDecorations>
+                                    EXAMPLE
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12">
+                                    The following compression methods will available at a later date:
+                                </TextBlock>
+                                <TextBlock Margin="10,0,0,5"
+                                           FontSize="12"
+                                           FontStyle="Italic">
+                                    LZMA2<LineBreak />
+                                    LZMA<LineBreak />
+                                    PPMd<LineBreak />
+                                    BZip2</TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12"
+                                           FontWeight="Bold">
+                                    <TextBlock.TextDecorations>
+                                        <TextDecoration />
+                                    </TextBlock.TextDecorations>
+                                    NOTES
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12">
+                                    - This option is disabled for now.<LineBreak />
+                                    - It is recommended that you leave the compression method set to &quot;LZMA2&quot;.</TextBlock>
+                                <Border Margin="0,8"
+                                        BorderBrush="#990000"
+                                        BorderThickness="0,2,0,0" />
+                                <TextBlock Margin="0,0,0,5"
+                                           HorizontalAlignment="Center"
+                                           FontSize="12">
+                                    For more information, please see the Archwizator manual.
+                                </TextBlock>
+                            </StackPanel>
+                        </ComboBox.ToolTip>
+                    </ComboBox>
+
+                    This is disabled in the current release-->
+                </StackPanel>
+            </WrapPanel>
+        </WrapPanel>
+
+        <!--  Archiwizator : Source and destination  -->
+        <DockPanel x:Name="dpnlSourceAndDestination"
+                   Grid.Row="3"
+                   HorizontalAlignment="Left">
+
+            <!--  Archiwizator : Source  -->
+            <WrapPanel x:Name="wpnlSource"
+                       Width="390"
+                       DockPanel.Dock="Left">
+                <TextBox x:Name="lblSourceOptions"
+                         Width="21"
+                         Height="60"
+                         Margin="20,5,0,5"
+                         Padding="4"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Background="DarkSlateBlue"
+                         FontFamily="Consolas"
+                         FontSize="14"
+                         FontWeight="Bold"
+                         Foreground="White"
+                         Text="SRC"
+                         TextAlignment="Center"
+                         TextWrapping="Wrap"
+                         ToolTipService.InitialShowDelay="2000"
+                         ToolTipService.ShowDuration="10000">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="5" />
+                        </Style>
+                    </TextBox.Resources>
+                    <TextBox.ToolTip>
+                        <StackPanel>
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Left"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="#990000">
+                                Source options
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Left"
+                                       FontSize="14">
+                                Source options are to the right.
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Left"
+                                       FontSize="12">
+                                Mouse over any of the options to the right, and a pop-up will appear with option<LineBreak />
+                                descriptions, details, and examples.</TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,2,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
+                                       FontSize="12">
+                                For more information, please see the Archwizator manual.
+                            </TextBlock>
+                        </StackPanel>
+                    </TextBox.ToolTip>
+                </TextBox>
+
+                <!--  Archiwizator : Source : TextBox  -->
+                <StackPanel x:Name="spnlSourceChoice"
+                            Width="345">
+                    <TextBox x:Name="txbxSourcePath"
+                             Width="325"
+                             Height="22"
+                             Margin="10,10,10,0"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Top"
+                             VerticalContentAlignment="Center"
+                             BorderBrush="DarkSlateBlue"
+                             FontSize="12"
+                             Text=""
+                             TextChanged="txbxSource_TextChanged"
+                             TextWrapping="Wrap"
+                             ToolTipService.InitialShowDelay="2000"
+                             ToolTipService.ShowDuration="10000"
+                             ToolTipService.ShowOnDisabled="True">
+                        <TextBox.ToolTip>
+                            <StackPanel>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="18"
+                                           FontWeight="Bold"
+                                           Foreground="#990000">
+                                    Source folder path
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="14">
+                                    The source folder path.
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12">
+                                    All sub-directories in this path will be Archiwizatorized.
+                                </TextBlock>
+                                <Border Margin="0,8"
+                                        BorderBrush="#990000"
+                                        BorderThickness="0,1,0,0" />
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12"
+                                           FontWeight="Bold">
+                                    <TextBlock.TextDecorations>
+                                        <TextDecoration />
+                                    </TextBlock.TextDecorations>
+                                    EXAMPLE
+                                </TextBlock>
+                                <TextBlock Margin="10,0,0,5"
+                                           FontSize="12"
+                                           FontStyle="Italic">
+                                    ../archive/all/files/located/here/
+                                </TextBlock>
+                                <Border Margin="0,8"
+                                        BorderBrush="#990000"
+                                        BorderThickness="0,2,0,0" />
+                                <TextBlock Margin="0,0,0,5"
+                                           HorizontalAlignment="Center"
+                                           FontSize="12">
+                                    For more information, please see the Archwizator manual.
+                                </TextBlock>
+                            </StackPanel>
+                        </TextBox.ToolTip>
+                    </TextBox>
+
+                    <!--  Archiwizator : Source : Choose button  -->
+                    <Button x:Name="btnChooseSource"
+                            Width="75"
+                            Height="20"
+                            Margin="250,5,10,10"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Background="White"
+                            BorderBrush="DarkSlateBlue"
+                            Click="btnChooseSource_Click"
+                            Content="CHOOSE"
+                            FontFamily="Consolas"
+                            Foreground="DarkSlateBlue"
+                            ToolTipService.ShowDuration="10000"
+                            ToolTipService.ShowOnDisabled="True">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="3" />
+                            </Style>
+                        </Button.Resources>
+                        <Button.ToolTip>
+                            <StackPanel>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="18"
+                                           FontWeight="Bold"
+                                           Foreground="#990000">
+                                    Choose the source folder
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="14">
+                                    Choose the source folder
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12">
+                                    Pressing this button starts lets you choose a source folder.<LineBreak />
+                                </TextBlock>
+                                <Border Margin="0,8"
+                                        BorderBrush="#990000"
+                                        BorderThickness="0,2,0,0" />
+                                <TextBlock Margin="0,0,0,5"
+                                           HorizontalAlignment="Center"
+                                           FontSize="12">
+                                    For more information, please see the Archwizator manual.
+                                </TextBlock>
+                            </StackPanel>
+                        </Button.ToolTip>
+                    </Button>
+                </StackPanel>
+            </WrapPanel>
+
+            <!--  Archiwizator : Destination
+            <WrapPanel x:Name="wpnlDestination"
+                       Width="390"
+                       DockPanel.Dock="Right">
+                <TextBox x:Name="lblDestinationOptions"
+                         Width="21"
+                         Height="60"
+                         Margin="20,5,0,5"
+                         Padding="4"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Background="DarkSlateBlue"
+                         FontFamily="Consolas"
+                         FontSize="14"
+                         FontWeight="Bold"
+                         Foreground="White"
+                         Text="SRC"
+                         TextAlignment="Center"
+                         TextWrapping="Wrap"
+                         ToolTipService.ShowDuration="10000">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="5" />
+                        </Style>
+                    </TextBox.Resources>
+                    <TextBox.ToolTip>
+                        <StackPanel>
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Left"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="#990000">
+                                7-Zip options
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Left"
+                                       FontSize="14">
+                                7-Zip options are to the right.
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Left"
+                                       FontSize="12">
+                                Mouse over any of the options to the right, and a pop-up will appear with option<LineBreak />
+                                descriptions, details, and examples.</TextBlock>
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,2,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
+                                       FontSize="12">
+                                For more information, please see the Archwizator manual.
+                            </TextBlock>
+                        </StackPanel>
+                    </TextBox.ToolTip>
+                </TextBox>
+
+                <StackPanel Width="345">
+                    <TextBox x:Name="txbxDestination"
+                             Width="325"
+                             Height="24"
+                             Margin="10,10,10,0"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Top"
+                             VerticalContentAlignment="Center"
+                             BorderBrush="DarkSlateBlue"
+                             FontSize="14"
+                             Text="D:\Thpq"
+                             TextChanged="txbxDestination_TextChanged"
+                             TextWrapping="Wrap"
+                             ToolTipService.ShowDuration="10000"
+                             ToolTipService.ShowOnDisabled="True">
+                        <TextBox.ToolTip>
+                            <StackPanel>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="18"
+                                           FontWeight="Bold"
+                                           Foreground="#990000">
+                                    Source folder path
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="14">
+                                    The source folder path.
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12">
+                                    All sub-directories in this path will be Archiwizatorized.
+                                </TextBlock>
+                                <Border Margin="0,8"
+                                        BorderBrush="#990000"
+                                        BorderThickness="0,1,0,0" />
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12"
+                                           FontWeight="Bold">
+                                    <TextBlock.TextDecorations>
+                                        <TextDecoration />
+                                    </TextBlock.TextDecorations>
+                                    EXAMPLE
+                                </TextBlock>
+                                <TextBlock Margin="10,0,0,5"
+                                           FontSize="12"
+                                           FontStyle="Italic">
+                                    ../archive/all/files/located/here/
+                                </TextBlock>
+                                <Border Margin="0,8"
+                                        BorderBrush="#990000"
+                                        BorderThickness="0,2,0,0" />
+                                <TextBlock Margin="0,0,0,5"
+                                           HorizontalAlignment="Center"
+                                           FontSize="12">
+                                    For more information, please see the Archwizator manual.
+                                </TextBlock>
+                            </StackPanel>
+                        </TextBox.ToolTip>
+                    </TextBox>
+
+                    <Button x:Name="btnChooseDestination"
+                            Width="75"
+                            Height="20"
+                            Margin="20,5,10,10"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Background="White"
+                            BorderBrush="DarkSlateBlue"
+                            Click="btnChooseDestination_Click"
+                            Content="CHOOSE"
+                            FontFamily="Consolas"
+                            Foreground="DarkSlateBlue"
+                            ToolTipService.ShowDuration="10000"
+                            ToolTipService.ShowOnDisabled="True">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="3" />
+                            </Style>
+                        </Button.Resources>
+                        <Button.ToolTip>
+                            <StackPanel>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="18"
+                                           FontWeight="Bold"
+                                           Foreground="#990000">
+                                    Choose the source folder
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="14">
+                                    Choose the source folder
+                                </TextBlock>
+                                <TextBlock Margin="0,0,0,5"
+                                           FontSize="12">
+                                    Pressing this button starts lets you choose a source folder.<LineBreak />
+                                </TextBlock>
+                                <Border Margin="0,8"
+                                        BorderBrush="#990000"
+                                        BorderThickness="0,2,0,0" />
+                                <TextBlock Margin="0,0,0,5"
+                                           HorizontalAlignment="Center"
+                                           FontSize="12">
+                                    For more information, please see the Archwizator manual.
+                                </TextBlock>
+                            </StackPanel>
+                        </Button.ToolTip>
+                    </Button>
+                </StackPanel>
+            </WrapPanel>-->
+        </DockPanel>
+
+        <!--  Archiwizator : Start and update user  -->
+        <DockPanel x:Name="dpnlStartAndUpdateUser"
+                   Grid.Row="4">
+
+            <!--  Archiwizator : Start and update user : Start button  -->
+            <Button x:Name="btnArchiwizate"
+                    Width="120"
+                    Height="80"
+                    Margin="50,10,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Background="#990000"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    Click="btnArchiwizate_Click"
+                    Content="Archiwizate!"
+                    DockPanel.Dock="Left"
+                    FontFamily="Consolas"
+                    FontSize="16"
+                    FontWeight="Normal"
+                    Foreground="MistyRose"
+                    IsEnabled="False"
+                    ToolTipService.InitialShowDelay="2000"
+                    ToolTipService.ShowDuration="10000"
+                    ToolTipService.ShowOnDisabled="True">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="3" />
+                    </Style>
+                </Button.Resources>
+                <Button.ToolTip>
+                    <StackPanel>
+                        <TextBlock Margin="0,0,0,5"
+                                   FontSize="18"
+                                   FontWeight="Bold"
+                                   Foreground="#990000">
+                            Archiwizate!
+                        </TextBlock>
+                        <TextBlock Margin="0,0,0,5"
+                                   FontSize="14">
+                            Starts the Archiwization process.
+                        </TextBlock>
+                        <TextBlock Margin="0,0,0,5"
+                                   FontSize="12">
+                            Pressing this button starts the Archiwization process.<LineBreak />
+                            <LineBreak />
+                            Make sure you are comfortable with all of the options above before you click it!</TextBlock>
+                        <Border Margin="0,8"
+                                BorderBrush="#990000"
+                                BorderThickness="0,1,0,0" />
+                        <TextBlock Margin="0,0,0,5"
+                                   FontSize="12"
+                                   FontWeight="Bold">
+                            <TextBlock.TextDecorations>
+                                <TextDecoration />
+                            </TextBlock.TextDecorations>
+                            NOTES
+                        </TextBlock>
+                        <TextBlock Margin="0,0,0,5"
+                                   FontSize="12">
+                            - This button is only active when a valid source folder has been chosen.
+                        </TextBlock>
+                        <Border Margin="0,8"
+                                BorderBrush="#990000"
+                                BorderThickness="0,2,0,0" />
+                        <TextBlock Margin="0,0,0,5"
+                                   HorizontalAlignment="Center"
+                                   FontSize="12">
+                            For more information, please see the Archwizator manual.
+                        </TextBlock>
+                    </StackPanel>
+                </Button.ToolTip>
+            </Button>
+
+            <!--  Archiwizator : Start and update user : Progress overview  -->
+            <StackPanel x:Name="spnlProgressUpdates"
+                        Width="600"
+                        Height="100"
+                        Margin="0,0,30,30"
+                        DockPanel.Dock="Right">
+                <Label x:Name="lblProgressOverview"
+                       Width="590"
+                       Margin="0,1,0,0"
+                       Content="Choose a source folder."
+                       FontFamily="Consolas"
+                       FontSize="14"
+                       ToolTipService.InitialShowDelay="2000"
+                       ToolTipService.ShowDuration="10000"
+                       ToolTipService.ShowOnDisabled="True">
+                    <Label.ToolTip>
+                        <StackPanel>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="#990000">
+                                Progress overview
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="14">
+                                Progress overview will be shown here.
+                            </TextBlock>
+
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,2,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
+                                       FontSize="12">
+                                For more information, please see the Archwizator manual.
+                            </TextBlock>
+                        </StackPanel>
+                    </Label.ToolTip>
+                </Label>
+
+                <!--  Archiwizator : Start and update user : Progress details  -->
+                <Label x:Name="lblProgressDetails"
+                       Width="590"
+                       Height="50"
+                       Margin="0,0,0,0"
+                       Content="The start button will become available when a valid source folder is found."
+                       FontFamily="Consolas"
+                       ToolTipService.InitialShowDelay="2000"
+                       ToolTipService.ShowDuration="10000"
+                       ToolTipService.ShowOnDisabled="True">
+                    <Label.ToolTip>
+                        <StackPanel>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="#990000">
+                                Progress details
+                            </TextBlock>
+                            <TextBlock Margin="0,0,0,5"
+                                       FontSize="14">
+                                Progress details will be shown here.
+                            </TextBlock>
+
+                            <Border Margin="0,8"
+                                    BorderBrush="#990000"
+                                    BorderThickness="0,2,0,0" />
+                            <TextBlock Margin="0,0,0,5"
+                                       HorizontalAlignment="Center"
+                                       FontSize="12">
+                                For more information, please see the Archwizator manual.
+                            </TextBlock>
+                        </StackPanel>
+                    </Label.ToolTip>
+                </Label>
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</Window>

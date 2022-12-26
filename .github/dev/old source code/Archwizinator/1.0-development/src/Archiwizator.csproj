@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AppData\Resource\Asset\Logo\Archiwizator-logo-575x150.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="AppData\Resource\Asset\Image\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Du\src\Du.csproj" />
+    <ProjectReference Include="..\..\Du\src\Du\Du.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="AppData\Resource\Asset\Logo\Archiwizator-logo-575x150.png" />
+  </ItemGroup>
+
+</Project>

@@ -29,3 +29,5 @@
 # About Archiwizator
 
 Archiwizator is a GUI front-end for [7-Zip](https://www.7-zip.org/).
+
+Archiwizator works, but isn't being developed and doesn't have any documentation.

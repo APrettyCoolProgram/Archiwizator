@@ -4,6 +4,7 @@
 
 > [!WARNING]  
 > This project is archived, and no longer maintained.  
+>  
 > [Peazip](https://peazip.github.io/) does this sort of stuff better anyway.
 
 ***

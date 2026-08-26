@@ -24,6 +24,7 @@
   <br>
 
 </div>
+
 ***
 
 | CONTENTS |
@@ -31,9 +32,8 @@
 | [About](#about)<br> |
 | [Installing](#installing)<br> |
 | [Using](#using)<br> |
-| [Updating](#updating)<br> |
 | [Uninstalling](#uninstalling)<br> |
-| [Development](#development)<br> |
+| [Licenser](#license)<br> |
 | [Addtional information](#additional-information)<br> |
 
 ## About
@@ -43,9 +43,8 @@ Archiwizator is a Graphical User Interface (GUI) front-end for [7-Zip](https://w
 ### Features
 
 * Batch archiving!
-* Simple file/folder cleanup prior to archiving data
-* Metal music soundrack (coming soon!)
-* Portable
+* Simple file/folder cleanup prior to archiving data!
+* Portable!
 
 ### Prerequisites
 
@@ -53,14 +52,10 @@ Archiwizator is a Graphical User Interface (GUI) front-end for [7-Zip](https://w
 
 ## Installing
 
-### Windows
+Archiwizator is portable, so installation is straightforward:
 
 1. Download the current [Archiwizinator-X.x.zip](https://github.com/APrettyCoolProgram/Archiwizator/releases/tag/v0.905-beta) file
 2. Extract `Archiwizator-X.x.zip` to whatever directory you want it to reside
-
-#### Other operating systems
-
-While Archiwizator is written in .NET Core C#, and much of it is cross-platform, it does utilize WPF technology, and is therefore Windows-only.
 
 ## Using
 
@@ -68,10 +63,6 @@ To start Archiwizator:
 
 1. Go to your Archiwizator directory
 2. Double-click `Archiwizator.exe`
-
-## Updating
-
-Since Archiwizator is portable, you just need to replace the old version with the new version.
 
 ## Uninstalling
 

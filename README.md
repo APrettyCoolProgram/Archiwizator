@@ -33,11 +33,6 @@
 
 </h4>
 
-<!-- The HTML indentations have to stay this way to work. -->
-<table>
-<tr>
-<td img src="RepositoryData/Asset/Image/Document/README/spacer.png" alt="blank-spacer" width="1000" height="1">
-
 | CONTENTS |
 |----------|
 | [About](#about)<br> |
@@ -47,10 +42,6 @@
 | [Uninstalling](#uninstalling)<br> |
 | [Development](#development)<br> |
 | [Addtional information](#additional-information)<br> |
-
-</td>
-</tr>
-</table>
 
 ## About
 

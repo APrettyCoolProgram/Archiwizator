@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h1>Repository: Notices</h1>
+  <h1>Archiwizator: Notices</h1>
 
 </div>
 

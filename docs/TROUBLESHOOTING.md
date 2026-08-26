@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h1>Repository: Troubleshooting</h1>
+  <h1>Archiwizator: Troubleshooting</h1>
 
 </div>
 

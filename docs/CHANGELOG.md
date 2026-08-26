@@ -2,13 +2,11 @@
 
 <div align="center">
 
-  <h1>Repository: Changelog</h1>
+  <h1>Archiwizator: Changelog</h1>
 
 </div>
 
-## RYY.MM (YYYY-MM-DD)
-
-> Please see the [release notes](release-notes/RXX.md) for more details.
+Unfortunately, the history of Archiwizator has been lost to the sands of time.
 
 ***
 

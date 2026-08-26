@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h1>Repository: Frequently Asked Questions</h1>
+  <h1>Archiwizator: Frequently Asked Questions</h1>
 
 </div>
 

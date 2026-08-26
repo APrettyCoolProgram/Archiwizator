@@ -9,29 +9,22 @@
 
 ***
 
-<h1 align="center">
+<div align="center">
 
   <img src=".github/logo/archiwizator-575x150.png" alt="Archiwizator logo">
   <br>
-  A 7-Zip GUI
+  <h1>A 7-Zip GUI</h1>
   <br>
-
-</h1>
-
-<h3 align="center">
 
   <img src="https://img.shields.io/badge/status-archived-red?style=flat-square">&nbsp;
   [![License](https://img.shields.io/github/license/aprettycoolprogram/Archiwizator?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0)&nbsp;
   [![GitHub release](https://img.shields.io/github/v/release/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/APrettyCoolProgram/Archiwizator/releases)&nbsp;  ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)&nbsp;
 
-</h3>
-
-<h4 align="center">
-
   <img src=".github/repository/readme/archiwizator-screenshot-01.png" alt="Archiwizator Screenshot" width="400">
   <br>
 
-</h4>
+</div>
+***
 
 | CONTENTS |
 |----------|

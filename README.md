@@ -1,18 +1,30 @@
-<!--
-  GitHub Sourcode Repository template (b201224)
-  https://github.com/APrettyCoolProgram/my-development-environment/tree/master/templates/github/sourcecode-repository
--->
+<!-- 260824 -->
+
+***
+
+> [!WARNING]  
+> This project is archived, and no longer maintained.  
+>  
+> [Peazip](https://peazip.github.io/) does this sort of stuff better anyway.
+
+***
 
 <h3 align="center">
 
-  <img src="resources/image/logo/archiwizator-575x150.png" alt="Archiwizator logo" width="575">
+  <img src=".github/logo/archiwizator-575x150.png" alt="Archiwizator logo">
   <br>
   A 7-Zip GUI
   <br>
 
 </h3>
 
-<h2 align="center">
+<h3 align="center">
+
+  <img src="https://img.shields.io/badge/status-archived-red?style=flat-square">&nbsp;
+  [![License](https://img.shields.io/github/license/aprettycoolprogram/Archiwizator?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0)&nbsp;
+  [![GitHub release](https://img.shields.io/github/v/release/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/APrettyCoolProgram/Archiwizator/releases)&nbsp;
+
+</h3>
 
   <img src="https://img.shields.io/badge/status-not%20actively%20developed-orange.svg">&nbsp;[![License](https://img.shields.io/github/license/aprettycoolprogram/Archiwizator)](https://www.apache.org/licenses/LICENSE-2.0)&nbsp;![GitHub release](https://img.shields.io/github/release/aprettycoolprogram/Archiwizator?label=latest%20release)
   <br>

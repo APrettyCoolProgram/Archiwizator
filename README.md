@@ -11,7 +11,7 @@
 
 <h3 align="center">
 
-  <img src=".github/logo/archiwizator-575x150.png" alt="Archiwizator logo" width="575">
+  <img src=".github/logo/archiwizator-575x150.png" alt="Archiwizator logo">
   <br>
   A 7-Zip GUI
   <br>

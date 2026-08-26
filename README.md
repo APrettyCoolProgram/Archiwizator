@@ -22,7 +22,7 @@
 
   <img src="https://img.shields.io/badge/status-archived-red?style=flat-square">&nbsp;
   [![License](https://img.shields.io/github/license/aprettycoolprogram/Archiwizator?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0)&nbsp;
-  [![GitHub release](https://img.shields.io/github/v/release/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/APrettyCoolProgram/Archiwizator/releases)&nbsp;
+  [![GitHub release](https://img.shields.io/github/v/release/aprettycoolprogram/Archiwizator?style=flat-square)](https://github.com/APrettyCoolProgram/Archiwizator/releases)&nbsp;  ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)&nbsp;
 
 </h3>
 
@@ -38,15 +38,15 @@
 <tr>
 <td img src="RepositoryData/Asset/Image/Document/README/spacer.png" alt="blank-spacer" width="1000" height="1">
 
-  ### CONTENTS
-  [About](#about)<br>
-  [Getting started](#getting-started)<br>
-  [Installing](#installing)<br>
-  [Using](#using)<br>
-  [Updating](#updating)<br>
-  [Uninstalling]#uninstalling)<br>
-  [Development](#development)<br>
-  [Addtional information](#additional-information)<br>
+| CONTENTS |
+|----------|
+| [About](#about)<br> |
+| [Installing](#installing)<br> |
+| [Using](#using)<br> |
+| [Updating](#updating)<br> |
+| [Uninstalling](#uninstalling)<br> |
+| [Development](#development)<br> |
+| [Addtional information](#additional-information)<br> |
 
 </td>
 </tr>
@@ -62,12 +62,6 @@ Archiwizator is a Graphical User Interface (GUI) front-end for [7-Zip](https://w
 * Simple file/folder cleanup prior to archiving data
 * Metal music soundrack (coming soon!)
 * Portable
-
-## Getting started
-
-### Before you begin
-
-Archiwizator is a work in progress. It does what it is supposed to do, but not...gracefully. I would suggest that you take a look at the [known issues](https://github.com/APrettyCoolProgram/Archiwizator/blob/development/src/Resources/Doc/known-issues.md) before using Archiwizinator.
 
 ### Prerequisites
 

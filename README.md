@@ -28,7 +28,7 @@
 
 <h4 align="center">
 
-  <img src="resources/image/screenshot/archiwizator-screenshot-01.png" alt="Archiwizator Screenshot" width="400">
+  <img src=".github/repository/readme/archiwizator-screenshot-01.png" alt="Archiwizator Screenshot" width="400">
   <br>
 
 </h4>
